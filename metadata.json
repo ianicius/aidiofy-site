@@ -1,0 +1,5 @@
+{
+  "name": "AIdiofy Landing Page",
+  "description": "Transform printed text into immersive audio using Gemini AI. Scan, convert, and listen instantly.",
+  "requestFramePermissions": []
+}
