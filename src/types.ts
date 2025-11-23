@@ -1,4 +1,4 @@
-export type ProcessingStatus =
+export type ProcessingStatus = 
   | "IDLE"
   | "UPLOADING"
   | "PROCESSING_OCR"
