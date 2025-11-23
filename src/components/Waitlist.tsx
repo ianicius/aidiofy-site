@@ -7,10 +7,10 @@ export const Waitlist: FC = () => {
   return (
     <section id="waitlist" className="py-24 px-4">
       <div className="max-w-4xl mx-auto">
-        <div className="glass-panel rounded-3xl p-8 md:p-16 text-center relative overflow-hidden">
+        <div className="glass-panel rounded-3xl p-8 md:p-16 text-center relative overflow-visible">
           {/* Background Decoration */}
-          <div className="absolute -top-1/2 -left-1/2 w-full h-full bg-primary/20 rounded-full blur-[120px] opacity-50"></div>
-          <div className="absolute -bottom-1/2 -right-1/2 w-full h-full bg-secondary/20 rounded-full blur-[120px] opacity-50"></div>
+          <div className="absolute -top-1/2 -left-1/2 w-full h-full bg-primary/20 rounded-full blur-[120px] opacity-50 pointer-events-none"></div>
+          <div className="absolute -bottom-1/2 -right-1/2 w-full h-full bg-secondary/20 rounded-full blur-[120px] opacity-50 pointer-events-none"></div>
 
           <div className="relative z-10">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
@@ -33,7 +33,7 @@ export const Waitlist: FC = () => {
               </button>
 
               {showContact && (
-                <div className="absolute top-full mt-3 px-4 py-3 rounded-xl bg-background-dark/90 border border-white/10 text-white shadow-lg shadow-primary/20">
+                <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 px-4 py-3 rounded-xl bg-background-dark/90 border border-white/10 text-white shadow-lg shadow-primary/20 w-max max-w-[calc(100vw-3rem)]">
                   Email us at <span className="font-semibold">rj@aidiofy.com</span>
                 </div>
               )}
