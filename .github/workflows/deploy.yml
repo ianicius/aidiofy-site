@@ -24,20 +24,20 @@ jobs:
         with:
           node-version: 20
           cache: npm
-          cache-dependency-path: aidiofy-landing-page/aidiofy/package-lock.json
+          cache-dependency-path: /package-lock.json
 
       - name: Install
-        working-directory: aidiofy-landing-page/aidiofy
+        working-directory: aidiofy-site
         run: npm ci
 
       - name: Build
-        working-directory: aidiofy-landing-page/aidiofy
+        working-directory: aidiofy-site
         run: npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: aidiofy-landing-page/aidiofy/dist
+          path: aidiofy-site/dist
 
   deploy:
     needs: build
