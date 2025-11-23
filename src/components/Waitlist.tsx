@@ -1,7 +1,9 @@
-import type { FC } from "react";
+import { useState, type FC } from "react";
 import { ArrowRight } from "lucide-react";
 
 export const Waitlist: FC = () => {
+  const [showContact, setShowContact] = useState(false);
+
   return (
     <section id="waitlist" className="py-24 px-4">
       <div className="max-w-4xl mx-auto">
@@ -19,21 +21,23 @@ export const Waitlist: FC = () => {
               The future of reading is listening.
             </p>
 
-            <form className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto" onSubmit={(e) => e.preventDefault()}>
-              <input 
-                type="email" 
-                placeholder="Enter your email" 
-                required
-                className="flex-1 h-14 px-6 rounded-xl bg-white/5 border border-white/10 focus:border-primary focus:ring-1 focus:ring-primary outline-none text-white placeholder:text-white/30 transition-all"
-              />
+            <div className="relative flex justify-center">
               <button 
-                type="submit"
-                className="h-14 px-8 rounded-xl bg-white text-primary font-bold text-lg hover:bg-gray-100 transition-colors flex items-center justify-center gap-2"
+                type="button"
+                onClick={() => setShowContact((open) => !open)}
+                onBlur={() => setShowContact(false)}
+                className="h-14 px-8 rounded-xl bg-white text-primary font-bold text-lg hover:bg-gray-100 transition-colors flex items-center justify-center gap-2 shadow-lg shadow-white/10"
               >
-                Join Waitlist
+                Contact
                 <ArrowRight className="w-5 h-5" />
               </button>
-            </form>
+
+              {showContact && (
+                <div className="absolute top-full mt-3 px-4 py-3 rounded-xl bg-background-dark/90 border border-white/10 text-white shadow-lg shadow-primary/20">
+                  Email us at <span className="font-semibold">rj@aidiofy.com</span>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>
