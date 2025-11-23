@@ -1,7 +1,7 @@
-import React from "react";
+import type { FC } from "react";
 import { ArrowRight } from "lucide-react";
 
-export const Waitlist: React.FC = () => {
+export const Waitlist: FC = () => {
   return (
     <section id="waitlist" className="py-24 px-4">
       <div className="max-w-4xl mx-auto">

@@ -1,5 +1,5 @@
-import React from "react";
+import type { FC } from "react";
 
-export const DemoModal: React.FC<any> = () => {
+export const DemoModal: FC<any> = () => {
   return null;
 };

@@ -1,10 +1,10 @@
-import React from "react";
+import type { FC } from "react";
 
 interface LogoProps {
   className?: string;
 }
 
-export const Logo: React.FC<LogoProps> = ({ className = "w-10 h-10" }) => {
+export const Logo: FC<LogoProps> = ({ className = "w-10 h-10" }) => {
   return (
     <svg
       viewBox="0 0 100 100"

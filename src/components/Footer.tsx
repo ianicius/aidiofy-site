@@ -1,7 +1,7 @@
-import React from "react";
+import type { FC } from "react";
 import { Logo } from "./Logo";
 
-export const Footer: React.FC = () => {
+export const Footer: FC = () => {
   return (
     <footer className="border-t border-white/10 py-12 bg-[#0F172A]">
       <div className="max-w-6xl mx-auto px-4 flex flex-col items-center gap-6">
