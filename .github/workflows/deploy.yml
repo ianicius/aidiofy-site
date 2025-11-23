@@ -1,9 +1,9 @@
-name: Deploy landing page
+name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main]      # gałąź, która wyzwala deploy
-  workflow_dispatch:      # pozwala uruchomić ręcznie z UI
+    branches: [main]   # change if your default branch is different
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -11,7 +11,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
+  group: pages
   cancel-in-progress: true
 
 jobs:
@@ -19,25 +19,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
-          cache-dependency-path: package-lock.json
-
-      - name: Install
-        working-directory: aidiofy-site
-        run: npm ci
-
-      - name: Build
-        working-directory: aidiofy-site
-        run: npm run build
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - run: npm ci
+      - run: npm run build
+      - uses: actions/upload-pages-artifact@v3
         with:
-          path: aidiofy-site/dist
+          path: dist
 
   deploy:
     needs: build
