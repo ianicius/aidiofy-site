@@ -3,30 +3,36 @@ on:
   push:
     branches: [main]
 
-defaults:
-  run:
-    working-directory: aidiofy-site  # run all npm commands in the app folder
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: aidiofy-site   # IMPORTANT: build in the app folder
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
-          cache-dependency-path: aidiofy-site/package-lock.json  # correct path
+          cache-dependency-path: aidiofy-site/package-lock.json
       - run: npm ci
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: aidiofy-site/dist  # upload the built assets
+          path: aidiofy-site/dist        # upload the built assets
+
   deploy:
     needs: build
-    permissions:
-      pages: write
-      id-token: write
     environment:
       name: github-pages
     runs-on: ubuntu-latest
