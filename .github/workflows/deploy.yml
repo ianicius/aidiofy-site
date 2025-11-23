@@ -3,6 +3,10 @@ on:
   push:
     branches: [main]
 
+defaults:
+  run:
+    working-directory: aidiofy-site  # <— important
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -11,11 +15,13 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: npm
+          cache-dependency-path: aidiofy-site/package-lock.json
       - run: npm ci
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: aidiofy-site/dist  # <— important
   deploy:
     needs: build
     permissions:
