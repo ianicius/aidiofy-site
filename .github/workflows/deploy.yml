@@ -5,7 +5,7 @@ on:
 
 defaults:
   run:
-    working-directory: aidiofy-site  # <— important
+    working-directory: aidiofy-site  # run all npm commands in the app folder
 
 jobs:
   build:
@@ -16,12 +16,12 @@ jobs:
         with:
           node-version: 20
           cache: npm
-          cache-dependency-path: aidiofy-site/package-lock.json
+          cache-dependency-path: aidiofy-site/package-lock.json  # correct path
       - run: npm ci
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: aidiofy-site/dist  # <— important
+          path: aidiofy-site/dist  # upload the built assets
   deploy:
     needs: build
     permissions:
