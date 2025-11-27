@@ -1,0 +1,254 @@
+import type { FC } from "react";
+import { useEffect, useMemo, useState } from "react";
+
+declare global {
+  interface Window {
+    dataLayer?: unknown[];
+  }
+}
+
+type ConsentState = {
+  necessary: boolean;
+  analytics: boolean;
+  updatedAt: string;
+};
+
+const STORAGE_KEY = "aidiofy-cookie-consent";
+let gaScriptLoaded = false;
+
+const readConsent = (): ConsentState | null => {
+  if (typeof window === "undefined") return null;
+  try {
+    const raw = window.localStorage.getItem(STORAGE_KEY);
+    if (!raw) return null;
+    return JSON.parse(raw) as ConsentState;
+  } catch {
+    return null;
+  }
+};
+
+const persistConsent = (consent: ConsentState) => {
+  if (typeof window === "undefined") return;
+  try {
+    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(consent));
+  } catch {
+    // ignore storage failures
+  }
+};
+
+const loadGoogleAnalytics = (measurementId: string) => {
+  if (gaScriptLoaded) return;
+  gaScriptLoaded = true;
+
+  const existing = document.getElementById("ga4-script");
+  if (!existing) {
+    const script = document.createElement("script");
+    script.id = "ga4-script";
+    script.async = true;
+    script.src = `https://www.googletagmanager.com/gtag/js?id=${measurementId}`;
+    document.head.appendChild(script);
+  }
+
+  const w = window as Window;
+  w.dataLayer = w.dataLayer || [];
+  function gtag(...args: unknown[]) {
+    w.dataLayer?.push(args);
+  }
+  gtag("js", new Date());
+  gtag("config", measurementId, { anonymize_ip: true });
+};
+
+export const CookieBanner: FC = () => {
+  const [consent, setConsent] = useState<ConsentState | null>(() => readConsent());
+  const [showSettings, setShowSettings] = useState(false);
+  const [analyticsChecked, setAnalyticsChecked] = useState(consent?.analytics ?? false);
+  const measurementId = useMemo(
+    () =>
+      (import.meta as ImportMeta & { env: { VITE_GA_MEASUREMENT_ID?: string } }).env
+        .VITE_GA_MEASUREMENT_ID,
+    [],
+  );
+
+  useEffect(() => {
+    if (consent) {
+      persistConsent(consent);
+    }
+  }, [consent]);
+
+  useEffect(() => {
+    setAnalyticsChecked(consent?.analytics ?? false);
+  }, [consent]);
+
+  useEffect(() => {
+    if (!measurementId) return;
+    const disableKey = `ga-disable-${measurementId}`;
+
+    const w = window as unknown as Record<string, unknown>;
+
+    if (!consent || !consent.analytics) {
+      w[disableKey] = true;
+      return;
+    }
+
+    w[disableKey] = false;
+    loadGoogleAnalytics(measurementId);
+  }, [consent, measurementId]);
+
+  const saveConsent = (analytics: boolean) => {
+    setConsent({
+      necessary: true,
+      analytics,
+      updatedAt: new Date().toISOString(),
+    });
+    setShowSettings(false);
+  };
+
+  const bannerVisible = !consent;
+
+  return (
+    <>
+      {bannerVisible && (
+        <div className="fixed inset-x-0 bottom-4 z-50 flex justify-center px-4">
+          <div className="max-w-4xl w-full bg-white/10 border border-white/15 backdrop-blur-lg rounded-2xl shadow-glow-purple shadow-xl p-5 sm:p-6">
+            <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+              <div className="space-y-2 text-sm text-text-muted">
+                <p className="text-lg font-semibold text-white">Szanujemy Twoją prywatność</p>
+                <p>
+                  Nasza strona AIdiofy wykorzystuje pliki cookies oraz podobne technologie. Część z nich jest niezbędna
+                  do działania aplikacji (np. logowanie, bezpieczne płatności), a inne pomagają nam analizować ruch i
+                  ulepszać usługi.
+                </p>
+                <p>
+                  Możesz zaakceptować wszystkie pliki cookies lub dostosować swoje zgody. Więcej informacji znajdziesz w{" "}
+                  <a className="text-primary hover:text-white transition-colors underline" href="#/privacy-policy">
+                    Polityce Prywatności
+                  </a>
+                  .
+                </p>
+              </div>
+              <div className="flex flex-col gap-2 w-full sm:w-auto sm:min-w-[240px]">
+                <button
+                  onClick={() => saveConsent(true)}
+                  className="w-full rounded-lg bg-primary text-white font-semibold px-4 py-2.5 shadow-glow-purple hover:brightness-105 transition-all duration-200"
+                >
+                  Zaakceptuj wszystkie
+                </button>
+                <button
+                  onClick={() => saveConsent(false)}
+                  className="w-full rounded-lg bg-white/10 text-white font-semibold px-4 py-2.5 border border-white/20 hover:border-white/40 transition-all duration-200"
+                >
+                  Tylko niezbędne
+                </button>
+                <button
+                  onClick={() => setShowSettings(true)}
+                  className="w-full rounded-lg bg-transparent text-text-muted hover:text-white font-semibold px-4 py-2.5 border border-white/10 hover:border-white/30 transition-all duration-200"
+                >
+                  Ustawienia
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {showSettings && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center px-4 py-8 bg-black/70 backdrop-blur-md">
+          <div className="max-w-2xl w-full bg-background-dark border border-white/15 rounded-2xl shadow-2xl overflow-hidden">
+            <div className="p-6 sm:p-8 space-y-6">
+              <div className="flex items-start justify-between gap-4">
+                <div>
+                  <p className="text-2xl font-semibold text-white">Ustawienia plików cookies</p>
+                  <p className="text-sm text-text-muted mt-1">
+                    Zarządzaj preferencjami. Zablokowanie niektórych kategorii może wpłynąć na działanie serwisu.
+                  </p>
+                </div>
+                <button
+                  onClick={() => setShowSettings(false)}
+                  className="text-text-muted hover:text-white transition-colors"
+                  aria-label="Zamknij ustawienia cookies"
+                >
+                  ✕
+                </button>
+              </div>
+
+              <div className="space-y-4">
+                <div className="rounded-xl border border-white/10 bg-white/5 p-4">
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <p className="font-semibold text-white">Niezbędne (wymagane)</p>
+                      <p className="text-sm text-text-muted mt-1">
+                        Kluczowe dla działania AIdiofy: bezpieczne logowanie (Firebase/Google), zapamiętanie sesji,
+                        płatności (Stripe). Zawsze włączone.
+                      </p>
+                      <p className="text-xs text-text-muted mt-2">Przykładowi dostawcy: Google Firebase, Stripe.</p>
+                    </div>
+                    <span className="text-xs font-semibold text-primary bg-primary/10 px-3 py-1 rounded-full border border-primary/30">
+                      Zawsze aktywne
+                    </span>
+                  </div>
+                </div>
+
+                <div className="rounded-xl border border-white/10 bg-white/5 p-4 flex flex-col gap-2">
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <p className="font-semibold text-white">Analityczne i wydajnościowe</p>
+                      <p className="text-sm text-text-muted mt-1">
+                        Pomagają zrozumieć, jak korzystasz z serwisu (popularne funkcje, czas na stronie). Dane są
+                        zagregowane i anonimowe.
+                      </p>
+                      <p className="text-xs text-text-muted mt-2">Przykładowi dostawcy: Google Analytics.</p>
+                    </div>
+                    <label className="inline-flex items-center gap-2 cursor-pointer select-none">
+                      <input
+                        type="checkbox"
+                        className="h-4 w-4 accent-primary"
+                        checked={analyticsChecked}
+                        onChange={(e) => setAnalyticsChecked(e.target.checked)}
+                      />
+                      <span className="text-sm text-text-muted">{analyticsChecked ? "Włączone" : "Wyłączone"}</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex flex-col sm:flex-row sm:justify-end gap-3">
+                <button
+                  onClick={() => saveConsent(analyticsChecked)}
+                  className="w-full sm:w-auto rounded-lg bg-primary text-white font-semibold px-5 py-2.5 shadow-glow-purple hover:brightness-105 transition-all duration-200"
+                >
+                  Zapisz ustawienia
+                </button>
+                <button
+                  onClick={() => {
+                    setAnalyticsChecked(false);
+                    saveConsent(false);
+                  }}
+                  className="w-full sm:w-auto rounded-lg bg-white/10 text-white font-semibold px-5 py-2.5 border border-white/20 hover:border-white/40 transition-all duration-200"
+                >
+                  Tylko niezbędne
+                </button>
+                <button
+                  onClick={() => setShowSettings(false)}
+                  className="w-full sm:w-auto rounded-lg bg-transparent text-text-muted hover:text-white font-semibold px-5 py-2.5 border border-white/10 hover:border-white/30 transition-all duration-200"
+                >
+                  Anuluj
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {!bannerVisible && !showSettings && (
+        <div className="fixed bottom-4 right-4 z-40">
+          <button
+            onClick={() => setShowSettings(true)}
+            className="rounded-full bg-white/10 text-text-muted hover:text-white px-4 py-2 border border-white/20 hover:border-white/40 transition-all text-xs font-semibold backdrop-blur"
+          >
+            Ustawienia cookies
+          </button>
+        </div>
+      )}
+    </>
+  );
+};

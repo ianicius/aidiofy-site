@@ -1,11 +1,50 @@
+import { useEffect, useState } from "react";
 import { Hero } from "./components/Hero";
 import { HowItWorks } from "./components/HowItWorks";
 import { Features } from "./components/Features";
 import { Waitlist } from "./components/Waitlist";
 import { Footer } from "./components/Footer";
 import { Logo } from "./components/Logo";
+import { PrivacyPolicy } from "./components/legal/PrivacyPolicy";
+import { TermsOfUse } from "./components/legal/TermsOfUse";
+import { CookieBanner } from "./components/CookieBanner";
+
+type View = "home" | "privacy" | "terms";
+
+const resolveView = (hash: string): View => {
+  const normalized = hash.replace(/^#/, "").toLowerCase();
+  if (normalized.startsWith("/privacy")) return "privacy";
+  if (normalized.startsWith("/terms")) return "terms";
+  return "home";
+};
 
 function App() {
+  const [view, setView] = useState<View>(() => resolveView(window.location.hash));
+
+  useEffect(() => {
+    const onHashChange = () => setView(resolveView(window.location.hash));
+    window.addEventListener("hashchange", onHashChange);
+    return () => window.removeEventListener("hashchange", onHashChange);
+  }, []);
+
+  if (view === "privacy") {
+    return (
+      <>
+        <PrivacyPolicy />
+        <CookieBanner />
+      </>
+    );
+  }
+
+  if (view === "terms") {
+    return (
+      <>
+        <TermsOfUse />
+        <CookieBanner />
+      </>
+    );
+  }
+
   return (
     <div className="min-h-screen w-full flex flex-col font-display bg-background-dark text-text-main overflow-x-hidden selection:bg-primary/30">
       
@@ -20,6 +59,8 @@ function App() {
           <div className="flex items-center gap-6">
             <a href="#features" className="hidden sm:block text-sm font-medium text-text-muted hover:text-white transition-colors">Features</a>
             <a href="#how-it-works" className="hidden sm:block text-sm font-medium text-text-muted hover:text-white transition-colors">How it Works</a>
+            <a href="#/privacy-policy" className="hidden sm:block text-sm font-medium text-text-muted hover:text-white transition-colors">Privacy</a>
+            <a href="#/terms-of-use" className="hidden sm:block text-sm font-medium text-text-muted hover:text-white transition-colors">Terms</a>
             <a 
               href="#waitlist"
               className="px-4 py-2 rounded-lg bg-primary/10 text-primary hover:bg-primary hover:text-white font-medium text-sm transition-all duration-300 border border-primary/20 hover:border-primary"
@@ -38,6 +79,7 @@ function App() {
       </main>
 
       <Footer />
+      <CookieBanner />
     </div>
   );
 }

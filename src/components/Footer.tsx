@@ -11,9 +11,9 @@ export const Footer: FC = () => {
         </div>
         
         <div className="flex gap-8 text-sm text-text-muted">
-          <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
-          <a href="#" className="hover:text-primary transition-colors">Terms of Service</a>
-          <a href="#" className="hover:text-primary transition-colors">Contact</a>
+          <a href="#/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</a>
+          <a href="#/terms-of-use" className="hover:text-primary transition-colors">Terms of Use</a>
+          <a href="mailto:rj@aidiofy.com" className="hover:text-primary transition-colors">Contact</a>
         </div>
 
         <p className="text-xs text-text-muted/50">
