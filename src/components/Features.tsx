@@ -5,34 +5,22 @@ const features = [
   {
     icon: ScanText,
     title: "Instant OCR Capture",
-    desc: "Use your camera to instantly capture and convert printed text from any source with high accuracy.",
-    color: "text-primary",
-    bg: "bg-primary/10",
-    shadow: "shadow-glow-purple"
+    desc: "Use your camera to instantly capture and convert printed text from any source with high accuracy."
   },
   {
     icon: Bot,
     title: "Natural AI Voiceover",
-    desc: "Listen to your text read aloud by our state-of-the-art AI voices, designed for clarity and engagement.",
-    color: "text-secondary",
-    bg: "bg-secondary/10",
-    shadow: "shadow-glow-cyan"
+    desc: "Listen to your text read aloud by our state-of-the-art AI voices, designed for clarity and engagement."
   },
   {
     icon: Mic,
     title: "Voice Customization",
-    desc: "Choose from a library of voices and adjust the speed and pitch to create your perfect listening experience.",
-    color: "text-tertiary",
-    bg: "bg-tertiary/10",
-    shadow: "shadow-glow-green"
+    desc: "Choose from a library of voices and adjust the speed and pitch to create your perfect listening experience."
   },
   {
     icon: Play,
     title: "Intuitive Playback",
-    desc: "Easily play, pause, skip, and navigate through your audio content with a simple and accessible interface.",
-    color: "text-primary",
-    bg: "bg-primary/10",
-    shadow: "shadow-glow-purple"
+    desc: "Easily play, pause, skip, and navigate through your audio content with a simple and accessible interface."
   }
 ];
 
@@ -51,9 +39,9 @@ export const Features: FC = () => {
           {features.map((feature, idx) => (
             <div 
               key={idx}
-              className="glass-effect p-8 rounded-2xl flex flex-col gap-4 transition-transform hover:-translate-y-1 duration-300 group"
+              className="glass-effect p-8 rounded-2xl flex flex-col gap-4 transition-transform hover:-translate-y-1 duration-300 group shadow-glow-obsidian border border-border-subtle/70"
             >
-              <div className={`w-12 h-12 rounded-lg ${feature.bg} ${feature.color} flex items-center justify-center ${feature.shadow}`}>
+              <div className="w-12 h-12 rounded-xl bg-primary/15 text-primary flex items-center justify-center shadow-glow-accent border border-border-subtle/80">
                 <feature.icon className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-bold text-text-main">{feature.title}</h3>

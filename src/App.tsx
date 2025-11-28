@@ -49,21 +49,21 @@ function App() {
     <div className="min-h-screen w-full flex flex-col font-display bg-background-dark text-text-main overflow-x-hidden selection:bg-primary/30">
       
       {/* Navbar */}
-      <nav className="fixed top-0 left-0 w-full z-40 bg-background-dark/80 backdrop-blur-lg border-b border-white/5">
+      <nav className="fixed top-0 left-0 w-full z-40 bg-background-dark/85 backdrop-blur-xl border-b border-border-subtle/60">
         <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-3 text-white font-bold text-xl">
+          <div className="flex items-center gap-3 text-text-main font-bold text-xl">
             <Logo className="w-9 h-9" />
             AIdiofy
           </div>
           
           <div className="flex items-center gap-6">
-            <a href="#features" className="hidden sm:block text-sm font-medium text-text-muted hover:text-white transition-colors">Features</a>
-            <a href="#how-it-works" className="hidden sm:block text-sm font-medium text-text-muted hover:text-white transition-colors">How it Works</a>
-            <a href="#/privacy-policy" className="hidden sm:block text-sm font-medium text-text-muted hover:text-white transition-colors">Privacy</a>
-            <a href="#/terms-of-use" className="hidden sm:block text-sm font-medium text-text-muted hover:text-white transition-colors">Terms</a>
+            <a href="#features" className="hidden sm:block text-sm font-medium text-text-muted hover:text-text-main transition-colors">Features</a>
+            <a href="#how-it-works" className="hidden sm:block text-sm font-medium text-text-muted hover:text-text-main transition-colors">How it Works</a>
+            <a href="#/privacy-policy" className="hidden sm:block text-sm font-medium text-text-muted hover:text-text-main transition-colors">Privacy</a>
+            <a href="#/terms-of-use" className="hidden sm:block text-sm font-medium text-text-muted hover:text-text-main transition-colors">Terms</a>
             <a 
               href="#waitlist"
-              className="px-4 py-2 rounded-lg bg-primary/10 text-primary hover:bg-primary hover:text-white font-medium text-sm transition-all duration-300 border border-primary/20 hover:border-primary"
+              className="px-4 py-2 rounded-lg bg-primary text-text-main hover:bg-primary/90 font-semibold text-sm transition-all duration-300 shadow-glow-accent"
             >
               Join Waitlist
             </a>

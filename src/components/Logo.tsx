@@ -15,12 +15,12 @@ export const Logo: FC<LogoProps> = ({ className = "w-10 h-10" }) => {
     >
       <defs>
         <linearGradient id="logo_gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" stopColor="#A855F7" /> {/* Purple */}
-          <stop offset="50%" stopColor="#06B6D4" /> {/* Cyan */}
-          <stop offset="100%" stopColor="#34D399" /> {/* Green */}
+          <stop offset="0%" stopColor="#0D9488" />
+          <stop offset="55%" stopColor="#14B8A6" />
+          <stop offset="100%" stopColor="#E2E8F0" />
         </linearGradient>
         <filter id="glow-filter" x="-50%" y="-50%" width="200%" height="200%">
-          <feGaussianBlur stdDeviation="2" result="coloredBlur" />
+          <feGaussianBlur stdDeviation="1.4" result="coloredBlur" />
           <feMerge>
             <feMergeNode in="coloredBlur" />
             <feMergeNode in="SourceGraphic" />
@@ -85,8 +85,8 @@ export const Logo: FC<LogoProps> = ({ className = "w-10 h-10" }) => {
           <circle cx="80" cy="85" r="3" />
           
           {/* Waveform Intersections (Visual flair) */}
-          <circle cx="45" cy="50" r="2" fill="#fff" />
-          <circle cx="55" cy="50" r="2" fill="#fff" />
+          <circle cx="45" cy="50" r="2" fill="#F1F5F9" />
+          <circle cx="55" cy="50" r="2" fill="#F1F5F9" />
         </g>
       </g>
     </svg>

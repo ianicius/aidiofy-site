@@ -109,10 +109,10 @@ export const CookieBanner: FC = () => {
     <>
       {bannerVisible && (
         <div className="fixed inset-x-0 bottom-4 z-50 flex justify-center px-4">
-          <div className="max-w-4xl w-full bg-white/10 border border-white/15 backdrop-blur-lg rounded-2xl shadow-glow-purple shadow-xl p-5 sm:p-6">
+          <div className="max-w-4xl w-full bg-surface border border-border-subtle/80 backdrop-blur-xl rounded-2xl shadow-glow-obsidian p-5 sm:p-6">
             <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
               <div className="space-y-2 text-sm text-text-muted">
-                <p className="text-lg font-semibold text-white">Szanujemy Twoją prywatność</p>
+                <p className="text-lg font-semibold text-text-main">Szanujemy Twoją prywatność</p>
                 <p>
                   Nasza strona AIdiofy wykorzystuje pliki cookies oraz podobne technologie. Część z nich jest niezbędna
                   do działania aplikacji (np. logowanie, bezpieczne płatności), a inne pomagają nam analizować ruch i
@@ -120,7 +120,7 @@ export const CookieBanner: FC = () => {
                 </p>
                 <p>
                   Możesz zaakceptować wszystkie pliki cookies lub dostosować swoje zgody. Więcej informacji znajdziesz w{" "}
-                  <a className="text-primary hover:text-white transition-colors underline" href="#/privacy-policy">
+                  <a className="text-text-main underline decoration-primary/60 hover:decoration-primary transition-colors" href="#/privacy-policy">
                     Polityce Prywatności
                   </a>
                   .
@@ -129,19 +129,19 @@ export const CookieBanner: FC = () => {
               <div className="flex flex-col gap-2 w-full sm:w-auto sm:min-w-[240px]">
                 <button
                   onClick={() => saveConsent(true)}
-                  className="w-full rounded-lg bg-primary text-white font-semibold px-4 py-2.5 shadow-glow-purple hover:brightness-105 transition-all duration-200"
+                  className="w-full rounded-lg bg-primary text-text-main font-semibold px-4 py-2.5 shadow-glow-accent hover:bg-primary/90 transition-all duration-200"
                 >
                   Zaakceptuj wszystkie
                 </button>
                 <button
                   onClick={() => saveConsent(false)}
-                  className="w-full rounded-lg bg-white/10 text-white font-semibold px-4 py-2.5 border border-white/20 hover:border-white/40 transition-all duration-200"
+                  className="w-full rounded-lg bg-surface text-text-main font-semibold px-4 py-2.5 border border-border-subtle/80 hover:bg-surface/80 transition-all duration-200"
                 >
                   Tylko niezbędne
                 </button>
                 <button
                   onClick={() => setShowSettings(true)}
-                  className="w-full rounded-lg bg-transparent text-text-muted hover:text-white font-semibold px-4 py-2.5 border border-white/10 hover:border-white/30 transition-all duration-200"
+                  className="w-full rounded-lg bg-transparent text-text-muted hover:text-text-main font-semibold px-4 py-2.5 border border-border-subtle/70 hover:border-border-subtle transition-all duration-200"
                 >
                   Ustawienia
                 </button>
@@ -152,19 +152,19 @@ export const CookieBanner: FC = () => {
       )}
 
       {showSettings && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center px-4 py-8 bg-black/70 backdrop-blur-md">
-          <div className="max-w-2xl w-full bg-background-dark border border-white/15 rounded-2xl shadow-2xl overflow-hidden">
+        <div className="fixed inset-0 z-50 flex items-center justify-center px-4 py-8 bg-background-dark/90 backdrop-blur-md">
+          <div className="max-w-2xl w-full bg-surface border border-border-subtle/90 rounded-2xl shadow-glow-obsidian overflow-hidden">
             <div className="p-6 sm:p-8 space-y-6">
               <div className="flex items-start justify-between gap-4">
                 <div>
-                  <p className="text-2xl font-semibold text-white">Ustawienia plików cookies</p>
+                  <p className="text-2xl font-semibold text-text-main">Ustawienia plików cookies</p>
                   <p className="text-sm text-text-muted mt-1">
                     Zarządzaj preferencjami. Zablokowanie niektórych kategorii może wpłynąć na działanie serwisu.
                   </p>
                 </div>
                 <button
                   onClick={() => setShowSettings(false)}
-                  className="text-text-muted hover:text-white transition-colors"
+                  className="text-text-muted hover:text-text-main transition-colors"
                   aria-label="Zamknij ustawienia cookies"
                 >
                   ✕
@@ -172,26 +172,26 @@ export const CookieBanner: FC = () => {
               </div>
 
               <div className="space-y-4">
-                <div className="rounded-xl border border-white/10 bg-white/5 p-4">
+                <div className="rounded-xl border border-border-subtle/70 bg-surface/80 p-4">
                   <div className="flex items-center justify-between">
                     <div>
-                      <p className="font-semibold text-white">Niezbędne (wymagane)</p>
+                      <p className="font-semibold text-text-main">Niezbędne (wymagane)</p>
                       <p className="text-sm text-text-muted mt-1">
                         Kluczowe dla działania AIdiofy: bezpieczne logowanie (Firebase/Google), zapamiętanie sesji,
                         płatności (Stripe). Zawsze włączone.
                       </p>
                       <p className="text-xs text-text-muted mt-2">Przykładowi dostawcy: Google Firebase, Stripe.</p>
                     </div>
-                    <span className="text-xs font-semibold text-primary bg-primary/10 px-3 py-1 rounded-full border border-primary/30">
+                    <span className="text-xs font-semibold text-text-main bg-primary/20 px-3 py-1 rounded-full border border-primary/35">
                       Zawsze aktywne
                     </span>
                   </div>
                 </div>
 
-                <div className="rounded-xl border border-white/10 bg-white/5 p-4 flex flex-col gap-2">
+                <div className="rounded-xl border border-border-subtle/70 bg-surface/80 p-4 flex flex-col gap-2">
                   <div className="flex items-center justify-between">
                     <div>
-                      <p className="font-semibold text-white">Analityczne i wydajnościowe</p>
+                      <p className="font-semibold text-text-main">Analityczne i wydajnościowe</p>
                       <p className="text-sm text-text-muted mt-1">
                         Pomagają zrozumieć, jak korzystasz z serwisu (popularne funkcje, czas na stronie). Dane są
                         zagregowane i anonimowe.
@@ -214,7 +214,7 @@ export const CookieBanner: FC = () => {
               <div className="flex flex-col sm:flex-row sm:justify-end gap-3">
                 <button
                   onClick={() => saveConsent(analyticsChecked)}
-                  className="w-full sm:w-auto rounded-lg bg-primary text-white font-semibold px-5 py-2.5 shadow-glow-purple hover:brightness-105 transition-all duration-200"
+                  className="w-full sm:w-auto rounded-lg bg-primary text-text-main font-semibold px-5 py-2.5 shadow-glow-accent hover:bg-primary/90 transition-all duration-200"
                 >
                   Zapisz ustawienia
                 </button>
@@ -223,13 +223,13 @@ export const CookieBanner: FC = () => {
                     setAnalyticsChecked(false);
                     saveConsent(false);
                   }}
-                  className="w-full sm:w-auto rounded-lg bg-white/10 text-white font-semibold px-5 py-2.5 border border-white/20 hover:border-white/40 transition-all duration-200"
+                  className="w-full sm:w-auto rounded-lg bg-surface text-text-main font-semibold px-5 py-2.5 border border-border-subtle/80 hover:bg-surface/80 transition-all duration-200"
                 >
                   Tylko niezbędne
                 </button>
                 <button
                   onClick={() => setShowSettings(false)}
-                  className="w-full sm:w-auto rounded-lg bg-transparent text-text-muted hover:text-white font-semibold px-5 py-2.5 border border-white/10 hover:border-white/30 transition-all duration-200"
+                  className="w-full sm:w-auto rounded-lg bg-transparent text-text-muted hover:text-text-main font-semibold px-5 py-2.5 border border-border-subtle/70 hover:border-border-subtle transition-all duration-200"
                 >
                   Anuluj
                 </button>
@@ -243,7 +243,7 @@ export const CookieBanner: FC = () => {
         <div className="fixed bottom-4 right-4 z-40">
           <button
             onClick={() => setShowSettings(true)}
-            className="rounded-full bg-white/10 text-text-muted hover:text-white px-4 py-2 border border-white/20 hover:border-white/40 transition-all text-xs font-semibold backdrop-blur"
+            className="rounded-full bg-surface text-text-muted hover:text-text-main px-4 py-2 border border-border-subtle/70 hover:border-border-subtle transition-all text-xs font-semibold backdrop-blur"
           >
             Ustawienia cookies
           </button>

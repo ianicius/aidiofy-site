@@ -1,0 +1,88 @@
+Terms of Use (AIdiofy)
+
+Last updated: 2025-11-27
+
+1. Introduction
+These Terms of Use (“Terms”) govern your access to and use of AIdiofy, a web application that allows users to convert scanned text into audio using text-to-speech (TTS) technology and AI models (“Service”). The Service is operated by:
+Rafał Janicki
+ul. Jagiellońska 36/42, 03-719 Warsaw, Poland
+E-mail: rj@aidiofy.com
+In these Terms, “we”, “us”, or “our” refer to Rafał Janicki, and “you” or “User” refers to any person using the Service. By creating an account or using AIdiofy, you agree to be bound by these Terms. If you do not agree, do not use the Service. These Terms are provided in English and governed by Polish law.
+
+2. Service description
+AIdiofy is a web-based application (with future mobile apps planned for Android and iOS) that:
+- allows you to upload or capture text and images (e.g. parts of board game manuals, scenarios, descriptions),
+- processes this content using AI models and TTS engines,
+- generates audio output that you can listen to or download (where technically available).
+The Service is currently offered as a freemium model:
+- a free tier with limited usage (“Free Plan”), and
+- one or more paid plans (“Paid Plan(s)”) with extended limits and/or additional features.
+The Service is a recreational/entertainment tool at this stage. It is not designed or warranted for mission-critical, medical, legal, or other high-risk uses. The Service is provided on an “as is” and “as available” basis. We do not guarantee uninterrupted or error-free operation.
+
+3. Eligibility
+The Service is intended for natural persons using it for their own purposes. The Service is not directed at children. If you are under the age where you can lawfully enter into an online contract in your country (typically 16-18), you should use the Service only with the permission of a parent or legal guardian. By using the Service, you confirm that you have the legal capacity to agree to these Terms and that your use of the Service is lawful in your jurisdiction.
+
+4. Account registration
+To use the Service, you may need to create an account by:
+- providing your e-mail address and password, or
+- using supported social login (e.g. Google authentication).
+You must provide accurate and up-to-date information, keep your login details confidential, and promptly notify us if you suspect any unauthorized use of your account. You are responsible for all activities carried out under your account. We may refuse registration, suspend, or terminate any account if we reasonably believe there is a breach of these Terms or misuse of the Service.
+
+5. Plans, billing, and payments
+Some features or higher usage limits may require a Paid Plan. Payments for Paid Plans are processed by Stripe or another payment provider (“Payment Processor”). We do not store your full payment card details; these are handled by the Payment Processor.
+Details of pricing, limits, and features are available on our website or within the application. We may update prices and features over time; if we do, we will inform you in advance where required by law.
+Paid Plans may be subscription-based (recurring fees) or use other billing models (e.g. usage-based), as described in the purchase flow. Where applicable, you may have statutory rights to withdraw from a distance contract or receive refunds under consumer protection laws. The exact rules may depend on your country of residence and will be further clarified by legal counsel.
+
+6. User content and intellectual property
+6.1 Your content
+“User Content” means any text, images, and other material you upload, capture, or submit to the Service (e.g. screenshots or photos of manuals, scenarios, descriptions). You retain all intellectual property rights to your User Content, subject to the rights granted to us in these Terms.
+By submitting User Content, you represent and warrant that you either own the rights to the content or have all necessary rights and permissions to use it in the Service and to grant us the licenses described below. You are solely responsible for your User Content and for ensuring that its use in AIdiofy does not infringe any third-party rights (including copyright and related rights).
+
+6.2 License you grant to us (to operate the Service)
+To operate the Service, you grant us a non-exclusive, worldwide, royalty-free license to host, process, transmit, and temporarily store your User Content; use it as input to AI/TTS models; and generate corresponding audio or other outputs for you. This license is limited to what is technically necessary to provide the Service and is valid for the time your content is processed and as needed for security, logging, and legal compliance.
+
+6.3 Optional use for improvement and marketing
+Only if you explicitly opt in (e.g. in the app settings or interface), you grant us a license to use selected User Content and/or generated outputs in an anonymized or pseudonymized form for research and improvement of the Service and underlying models, or for creating examples, demos, or marketing materials (e.g. short anonymized audio samples). You can withdraw this optional consent at any time through settings or by contacting us at rj@aidiofy.com. Withdrawal does not affect processing performed before withdrawal, but we will stop using your content for these optional purposes going forward.
+
+7. Generated audio and usage rights
+The Service may generate audio and other outputs based on your User Content (“Generated Output”). Subject to your compliance with these Terms and any applicable limitations of the plan you use, we grant you a personal, non-exclusive, non-transferable, revocable license to use the Generated Output for private, personal, and domestic purposes only. Any commercial use of the Generated Output (e.g. monetized YouTube content, podcasts, paid audiobooks, commercial campaigns) is not permitted under these standard Terms and requires a separate written agreement with us. You are responsible for ensuring that any use of Generated Output complies with applicable laws and does not infringe third-party rights (e.g. rights of game publishers, authors, etc.).
+
+8. Acceptable use
+You agree not to:
+- use the Service in a way that violates any applicable law, regulation, or third-party rights;
+- upload or submit content that is illegal, defamatory, hateful, discriminatory, violent, exploitative, sexually explicit, or infringing any copyright, trademark, or other intellectual property rights;
+- use the Service to create deepfakes, impersonations, or misleading content that could reasonably cause harm or confusion;
+- attempt to circumvent usage limits, security mechanisms, or technical restrictions;
+- reverse engineer, decompile, or otherwise attempt to access the source code, models, or underlying systems, except where permitted by law;
+- interfere with or disrupt the Service, servers, or networks.
+We may suspend or terminate your access if we reasonably believe you have violated this section.
+
+9. Third-party services and AI models
+The Service relies on third-party infrastructure and tools, such as Google Cloud / Firebase (hosting and backend, EU region), ElevenLabs (planned TTS provider), Stripe (payments), and Google Analytics (analytics). Your use of some features may be subject to additional terms of those third-party providers.
+AI and TTS models can produce incorrect, distorted, or unexpected outputs. You understand and accept that the outputs are probabilistic and may contain errors, and you should not rely on them as factual or professional advice.
+
+10. Beta features and changes to the Service
+AIdiofy is under active development and may include beta or experimental features. We may modify, add, or remove features and plans from time to time, including free and paid tiers. Where required by law or where changes are material, we will provide notice (e.g. via e-mail or in-app notifications).
+
+11. Termination
+You may stop using the Service at any time. You can request deletion of your account by e-mailing rj@aidiofy.com (and, in future, possibly via self-service in the app).
+We may suspend or terminate your account or access to the Service if you materially breach these Terms, misuse the Service or cause security risks, or if we are required to do so by law or by a third-party provider.
+Upon termination: your right to use the Service and Generated Output under these Terms may end; we may retain certain data for up to 1 year for legal, security, or accounting purposes, as described in the Privacy Policy.
+
+12. Disclaimers
+The Service and all content, including Generated Output, are provided on an “as is” and “as available” basis, without any warranties of any kind, whether express or implied.
+We specifically do not warrant that the Service will be uninterrupted, secure, or error-free, or that Generated Output will be accurate, reliable, or suitable for any particular purpose.
+
+13. Limitation of liability
+To the maximum extent permitted by law, we shall not be liable for loss of profits, revenue, or data; indirect, incidental, or consequential damages; or damages resulting from inaccuracies or defects in Generated Output.
+To the extent we are liable despite the above, our total aggregate liability arising out of or in connection with the Service, whether in contract, tort, or otherwise, shall be limited to: the amount you paid for the Service in the 12 months immediately preceding the event giving rise to the claim, or if you are on a Free Plan and have not paid anything, EUR 0.
+Nothing in these Terms excludes or limits liability that cannot be excluded or limited under applicable law (e.g. for intentional misconduct).
+
+14. Changes to these Terms
+We may update these Terms from time to time, for example to reflect changes in the Service, legal or regulatory requirements, or improvements to clarity. When we make material changes, we will notify you (e.g. via e-mail or in-app notice). Continued use of the Service after the new Terms become effective will constitute your acceptance of the updated Terms.
+
+15. Governing law and disputes
+These Terms are governed by Polish law, without regard to conflict of law rules. Any disputes arising out of or in connection with these Terms or the Service shall be resolved by the competent common courts in Poland, unless mandatory consumer protection law of your country provides otherwise.
+
+16. Contact
+For any questions regarding these Terms, you can contact: rj@aidiofy.com

@@ -27,20 +27,21 @@
         theme: {
           extend: {
             colors: {
-              primary: "#8B5CF6", // Electric Purple
-              secondary: "#06B6D4", // Turquoise
-              tertiary: "#34D399", // Lime Green
-              "background-dark": "#0F172A",
-              "text-main": "#F8FAFC",
+              primary: "#0D9488", // Deep teal accent
+              "background-dark": "#0F172A", // Obsidian
+              surface: "#1E293B", // Dark slate surface
+              "surface-muted": "#111827",
+              "text-main": "#F1F5F9",
               "text-muted": "#94A3B8",
+              "border-subtle": "#334155",
             },
             fontFamily: {
-              display: ["Inter", "sans-serif"],
+              display: ["Inter", "SF Pro Display", "sans-serif"],
             },
             boxShadow: {
-              "glow-purple": "0 0 20px rgba(139, 92, 246, 0.4)",
-              "glow-cyan": "0 0 20px rgba(6, 182, 212, 0.4)",
-              "glow-green": "0 0 20px rgba(52, 211, 153, 0.4)",
+              "glow-accent": "0 18px 50px rgba(13, 148, 136, 0.32)",
+              "glow-obsidian": "0 28px 90px rgba(4, 7, 15, 0.6)",
+              "ring-subtle": "0 0 0 1px rgba(51, 65, 85, 0.85)",
             },
             animation: {
               "pulse-slow": "pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite",
@@ -75,21 +76,26 @@
       }
       body {
         background-color: #0f172a;
-        color: #f8fafc;
+        color: #f1f5f9;
+        font-family: 'Inter', 'SF Pro Display', system-ui, -apple-system, sans-serif;
+        line-height: 1.6;
+        letter-spacing: 0.01em;
       }
       .glass-effect {
-        background: rgba(255, 255, 255, 0.03);
+        background: rgba(30, 41, 59, 0.85);
         backdrop-filter: blur(16px);
         -webkit-backdrop-filter: blur(16px);
-        border: 1px solid rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(51, 65, 85, 0.85);
+        box-shadow: 0 24px 70px rgba(4, 7, 15, 0.55);
       }
       .glass-panel {
-        background: rgba(15, 23, 42, 0.6);
-        backdrop-filter: blur(12px);
-        border: 1px solid rgba(139, 92, 246, 0.2);
+        background: linear-gradient(135deg, rgba(30, 41, 59, 0.95), rgba(15, 23, 42, 0.92));
+        backdrop-filter: blur(18px);
+        border: 1px solid rgba(51, 65, 85, 0.9);
+        box-shadow: 0 28px 90px rgba(4, 7, 15, 0.62);
       }
       .gradient-text {
-        background: linear-gradient(to right, #8b5cf6, #06b6d4, #34d399);
+        background: linear-gradient(120deg, #0d9488 0%, #14b8a6 45%, #cbd5e1 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;

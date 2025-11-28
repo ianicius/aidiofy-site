@@ -5,12 +5,12 @@ export const TermsOfUse: FC = () => {
   return (
     <LegalLayout title="Terms of Use" lastUpdated="27 November 2025">
       <section className="space-y-3">
-        <h2 className="text-xl md:text-2xl font-semibold text-white">1. Introduction</h2>
+        <h2 className="text-xl md:text-2xl font-semibold text-text-main">1. Introduction</h2>
         <p>
           These Terms of Use (&quot;Terms&quot;) govern your access to and use of AIdiofy, a web application that
           converts scanned text into audio using text-to-speech (TTS) technology and AI models (&quot;Service&quot;).
           The Service is operated by Rafał Janicki, ul. Jagiellońska 36/42, 03-719 Warsaw, Poland (
-          <a className="text-primary hover:text-white transition-colors" href="mailto:rj@aidiofy.com">
+          <a className="text-text-main underline decoration-primary/60 hover:decoration-primary transition-colors" href="mailto:rj@aidiofy.com">
             rj@aidiofy.com
           </a>
           ). By creating an account or using AIdiofy, you agree to be bound by these Terms. If you do not agree, do not
@@ -19,7 +19,7 @@ export const TermsOfUse: FC = () => {
       </section>
 
       <section className="space-y-3">
-        <h2 className="text-xl md:text-2xl font-semibold text-white">2. Service description</h2>
+        <h2 className="text-xl md:text-2xl font-semibold text-text-main">2. Service description</h2>
         <p>The Service:</p>
         <ul className="list-disc list-inside space-y-1">
           <li>lets you upload or capture text and images (e.g. parts of board game manuals, scenarios, descriptions),</li>
@@ -34,7 +34,7 @@ export const TermsOfUse: FC = () => {
       </section>
 
       <section className="space-y-3">
-        <h2 className="text-xl md:text-2xl font-semibold text-white">3. Eligibility</h2>
+        <h2 className="text-xl md:text-2xl font-semibold text-text-main">3. Eligibility</h2>
         <p>
           The Service is intended for natural persons using it for their own purposes. It is not directed at children.
           If you are under the age at which you can lawfully enter into an online contract in your country (typically
@@ -44,7 +44,7 @@ export const TermsOfUse: FC = () => {
       </section>
 
       <section className="space-y-3">
-        <h2 className="text-xl md:text-2xl font-semibold text-white">4. Account registration</h2>
+        <h2 className="text-xl md:text-2xl font-semibold text-text-main">4. Account registration</h2>
         <p>To use the Service, you may need an account using:</p>
         <ul className="list-disc list-inside space-y-1">
           <li>e-mail and password, or</li>
@@ -58,7 +58,7 @@ export const TermsOfUse: FC = () => {
       </section>
 
       <section className="space-y-3">
-        <h2 className="text-xl md:text-2xl font-semibold text-white">5. Plans, billing, and payments</h2>
+        <h2 className="text-xl md:text-2xl font-semibold text-text-main">5. Plans, billing, and payments</h2>
         <p>
           Some features or higher limits may require a Paid Plan. Payments are processed by Stripe or another payment
           provider. We do not store full payment card details. Pricing, limits, and features are described in the
@@ -69,7 +69,7 @@ export const TermsOfUse: FC = () => {
       </section>
 
       <section className="space-y-3">
-        <h2 className="text-xl md:text-2xl font-semibold text-white">6. User content and intellectual property</h2>
+        <h2 className="text-xl md:text-2xl font-semibold text-text-main">6. User content and intellectual property</h2>
         <p>
           &quot;User Content&quot; means any text, images, or other material you upload, capture, or submit (e.g.
           screenshots or photos of manuals, scenarios, descriptions). You retain all intellectual property rights, but
@@ -91,7 +91,7 @@ export const TermsOfUse: FC = () => {
       </section>
 
       <section className="space-y-3">
-        <h2 className="text-xl md:text-2xl font-semibold text-white">7. Generated audio and usage rights</h2>
+        <h2 className="text-xl md:text-2xl font-semibold text-text-main">7. Generated audio and usage rights</h2>
         <p>
           Subject to these Terms and plan limits, we grant you a personal, non-exclusive, non-transferable, revocable
           license to use Generated Output for private, personal, and domestic purposes only. Commercial use (e.g.
@@ -101,7 +101,7 @@ export const TermsOfUse: FC = () => {
       </section>
 
       <section className="space-y-3">
-        <h2 className="text-xl md:text-2xl font-semibold text-white">8. Acceptable use</h2>
+        <h2 className="text-xl md:text-2xl font-semibold text-text-main">8. Acceptable use</h2>
         <p>You agree not to:</p>
         <ul className="list-disc list-inside space-y-1">
           <li>violate laws or third-party rights;</li>
@@ -115,7 +115,7 @@ export const TermsOfUse: FC = () => {
       </section>
 
       <section className="space-y-3">
-        <h2 className="text-xl md:text-2xl font-semibold text-white">9. Third-party services and AI models</h2>
+        <h2 className="text-xl md:text-2xl font-semibold text-text-main">9. Third-party services and AI models</h2>
         <p>
           The Service relies on third-party infrastructure and tools, such as Google Cloud / Firebase (hosting/backend,
           EU region), ElevenLabs (planned TTS), Stripe (payments), and Google Analytics (analytics). Your use of some
@@ -125,7 +125,7 @@ export const TermsOfUse: FC = () => {
       </section>
 
       <section className="space-y-3">
-        <h2 className="text-xl md:text-2xl font-semibold text-white">10. Beta features and changes</h2>
+        <h2 className="text-xl md:text-2xl font-semibold text-text-main">10. Beta features and changes</h2>
         <p>
           AIdiofy is under active development and may include beta or experimental features. We may modify, add, or
           remove features and plans over time. Where required by law or where changes are material, we will provide
@@ -134,10 +134,10 @@ export const TermsOfUse: FC = () => {
       </section>
 
       <section className="space-y-3">
-        <h2 className="text-xl md:text-2xl font-semibold text-white">11. Termination</h2>
+        <h2 className="text-xl md:text-2xl font-semibold text-text-main">11. Termination</h2>
         <p>
           You may stop using the Service anytime and request deletion of your account by e-mailing{" "}
-          <a className="text-primary hover:text-white transition-colors" href="mailto:rj@aidiofy.com">
+          <a className="text-text-main underline decoration-primary/60 hover:decoration-primary transition-colors" href="mailto:rj@aidiofy.com">
             rj@aidiofy.com
           </a>
           . We may suspend or terminate your account for material breach, misuse, security risks, or legal obligations.
@@ -148,7 +148,7 @@ export const TermsOfUse: FC = () => {
       </section>
 
       <section className="space-y-3">
-        <h2 className="text-xl md:text-2xl font-semibold text-white">12. Disclaimers</h2>
+        <h2 className="text-xl md:text-2xl font-semibold text-text-main">12. Disclaimers</h2>
         <p>
           The Service and all content, including Generated Output, are provided &quot;as is&quot; and &quot;as
           available&quot; without warranties of any kind. We do not warrant that the Service will be uninterrupted,
@@ -157,7 +157,7 @@ export const TermsOfUse: FC = () => {
       </section>
 
       <section className="space-y-3">
-        <h2 className="text-xl md:text-2xl font-semibold text-white">13. Limitation of liability</h2>
+        <h2 className="text-xl md:text-2xl font-semibold text-text-main">13. Limitation of liability</h2>
         <p>
           To the maximum extent permitted by law, we are not liable for loss of profits, revenue, or data; indirect,
           incidental, or consequential damages; or damages from inaccuracies or defects in Generated Output. Our total
@@ -168,7 +168,7 @@ export const TermsOfUse: FC = () => {
       </section>
 
       <section className="space-y-3">
-        <h2 className="text-xl md:text-2xl font-semibold text-white">14. Changes to these Terms</h2>
+        <h2 className="text-xl md:text-2xl font-semibold text-text-main">14. Changes to these Terms</h2>
         <p>
           We may update these Terms to reflect Service changes, legal requirements, or clarity improvements. Material
           changes will be notified (e.g. via e-mail or in-app). Continued use after the new Terms become effective
@@ -177,7 +177,7 @@ export const TermsOfUse: FC = () => {
       </section>
 
       <section className="space-y-3">
-        <h2 className="text-xl md:text-2xl font-semibold text-white">15. Governing law and disputes</h2>
+        <h2 className="text-xl md:text-2xl font-semibold text-text-main">15. Governing law and disputes</h2>
         <p>
           These Terms are governed by Polish law (excluding conflict rules). Disputes shall be resolved by competent
           common courts in Poland unless mandatory consumer protection law in your country provides otherwise.
@@ -185,10 +185,10 @@ export const TermsOfUse: FC = () => {
       </section>
 
       <section className="space-y-3">
-        <h2 className="text-xl md:text-2xl font-semibold text-white">16. Contact</h2>
+        <h2 className="text-xl md:text-2xl font-semibold text-text-main">16. Contact</h2>
         <p>
           For questions about these Terms, contact{" "}
-          <a className="text-primary hover:text-white transition-colors" href="mailto:rj@aidiofy.com">
+          <a className="text-text-main underline decoration-primary/60 hover:decoration-primary transition-colors" href="mailto:rj@aidiofy.com">
             rj@aidiofy.com
           </a>
           .
