@@ -30,10 +30,10 @@ export const Hero: FC = () => {
             <ArrowDown className="w-5 h-5" />
           </a>
           <a 
-            href="#waitlist"
+            href="#app"
             className="h-14 px-8 rounded-xl bg-surface border border-border-subtle/80 hover:bg-surface/80 text-text-main font-semibold text-lg backdrop-blur-md transition-all duration-300 flex items-center justify-center shadow-glow-obsidian"
           >
-            Join Waitlist
+            Try the App
           </a>
         </div>
       </div>

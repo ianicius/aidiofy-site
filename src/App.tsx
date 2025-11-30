@@ -62,10 +62,12 @@ function App() {
             <a href="#/privacy-policy" className="hidden sm:block text-sm font-medium text-text-muted hover:text-text-main transition-colors">Privacy</a>
             <a href="#/terms-of-use" className="hidden sm:block text-sm font-medium text-text-muted hover:text-text-main transition-colors">Terms</a>
             <a 
-              href="#waitlist"
+              href="https://app.aidiofy.com"
+              target="_blank"
+              rel="noreferrer"
               className="px-4 py-2 rounded-lg bg-primary text-text-main hover:bg-primary/90 font-semibold text-sm transition-all duration-300 shadow-glow-accent"
             >
-              Join Waitlist
+              App
             </a>
           </div>
         </div>
@@ -73,8 +75,8 @@ function App() {
 
       <main className="flex-grow w-full">
         <Hero />
-        <HowItWorks />
         <Features />
+        <HowItWorks />
         <Waitlist />
       </main>
 
