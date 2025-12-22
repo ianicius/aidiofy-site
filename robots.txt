@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://aidiofy.com/sitemap.xml
+Sitemap: https://aidiofy.com/sitemap-zh.xml
