@@ -27,6 +27,7 @@ jobs:
       - name: Copy SEO files into dist
         run: |
           cp robots.txt dist/robots.txt
+          cp BingSiteAuth.xml dist/BingSiteAuth.xml
           cp sitemap.xml dist/sitemap.xml
           cp sitemap-zh.xml dist/sitemap-zh.xml
 
