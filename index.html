@@ -141,13 +141,17 @@
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
     <script>
+      window.__gaMeasurementId = 'G-WLXGK043JB';
       window.loadGA = function () {
         if (window.__gaLoaded) return;
         window.__gaLoaded = true;
 
+        const measurementId = window.__gaMeasurementId;
+        if (!measurementId) return;
+
         const s = document.createElement('script');
         s.async = true;
-        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-WLXGK043JB';
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=' + measurementId;
         document.head.appendChild(s);
 
         window.dataLayer = window.dataLayer || [];
@@ -155,9 +159,9 @@
         window.gtag = gtag;
 
         gtag('js', new Date());
-        gtag('config', 'G-WLXGK043JB', { anonymize_ip: true });
+        gtag('config', measurementId, { anonymize_ip: true });
         gtag('event', 'page_view');
-      }
+      };
     </script>
   </body>
 </html>

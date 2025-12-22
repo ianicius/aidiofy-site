@@ -5,6 +5,8 @@ import { useI18n } from "../i18n";
 declare global {
   interface Window {
     dataLayer?: unknown[];
+    loadGA?: () => void;
+    __gaMeasurementId?: string;
   }
 }
 
@@ -65,12 +67,16 @@ export const CookieBanner: FC = () => {
   const [consent, setConsent] = useState<ConsentState | null>(() => readConsent());
   const [showSettings, setShowSettings] = useState(false);
   const [analyticsChecked, setAnalyticsChecked] = useState(consent?.analytics ?? false);
-  const measurementId = useMemo(
-    () =>
+  const measurementId = useMemo(() => {
+    const envId =
       (import.meta as ImportMeta & { env: { VITE_GA_MEASUREMENT_ID?: string } }).env
-        .VITE_GA_MEASUREMENT_ID,
-    [],
-  );
+        .VITE_GA_MEASUREMENT_ID;
+    if (envId) return envId;
+    if (typeof window !== "undefined") {
+      return window.__gaMeasurementId;
+    }
+    return undefined;
+  }, []);
 
   useEffect(() => {
     if (consent) {
@@ -83,18 +89,30 @@ export const CookieBanner: FC = () => {
   }, [consent]);
 
   useEffect(() => {
-    if (!measurementId) return;
-    const disableKey = `ga-disable-${measurementId}`;
+    if (typeof window === "undefined") return;
+    const disableKey = measurementId ? `ga-disable-${measurementId}` : null;
 
     const w = window as unknown as Record<string, unknown>;
 
     if (!consent || !consent.analytics) {
-      w[disableKey] = true;
+      if (disableKey) {
+        w[disableKey] = true;
+      }
       return;
     }
 
-    w[disableKey] = false;
-    loadGoogleAnalytics(measurementId);
+    if (disableKey) {
+      w[disableKey] = false;
+    }
+
+    if (typeof window.loadGA === "function") {
+      window.loadGA();
+      return;
+    }
+
+    if (measurementId) {
+      loadGoogleAnalytics(measurementId);
+    }
   }, [consent, measurementId]);
 
   const saveConsent = (analytics: boolean) => {
