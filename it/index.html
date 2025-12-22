@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="it" class="dark">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AIdiofy - Turn Text into Immersive Audio</title>
+    <title>Testo in audio per giochi con IA | AIdiofy</title>
     <meta
       name="description"
-      content="Turn books, rulebooks, and game text into immersive audio with AI. Scan and listen with AIdiofy."
+      content="Trasforma regole e testi di gioco in narrazione audio. Scansiona, converti e ascolta con voce IA — ideale per giochi da tavolo e RPG."
     />
-    <link rel="canonical" href="https://aidiofy.com/" />
+    <link rel="canonical" href="https://aidiofy.com/it/" />
 
     <link rel="alternate" hreflang="de" href="https://aidiofy.com/de/" />
     <link rel="alternate" hreflang="fr" href="https://aidiofy.com/fr/" />
@@ -21,6 +21,7 @@
     <link rel="alternate" hreflang="ko" href="https://aidiofy.com/ko/" />
     <link rel="alternate" hreflang="en" href="https://aidiofy.com/" />
     <link rel="alternate" hreflang="x-default" href="https://aidiofy.com/" />
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
@@ -30,14 +31,20 @@
     />
     <link rel="icon" type="image/svg+xml" href="/thumbnail.svg" />
     <meta name="theme-color" content="#0F172A" />
-    <meta property="og:title" content="AIdiofy - Turn Text into Immersive Audio" />
-    <meta property="og:description" content="Transform any text into captivating audio with AIdiofy." />
+    <meta property="og:title" content="Testo in audio per giochi con IA | AIdiofy" />
+    <meta
+      property="og:description"
+      content="Trasforma regole e testi di gioco in narrazione audio. Scansiona, converti e ascolta con voce IA — ideale per giochi da tavolo e RPG."
+    />
     <meta property="og:image" content="/thumbnail.svg" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://aidiofy.com/" />
+    <meta property="og:url" content="https://aidiofy.com/it/" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="AIdiofy - Turn Text into Immersive Audio" />
-    <meta name="twitter:description" content="Transform any text into captivating audio with AIdiofy." />
+    <meta name="twitter:title" content="Testo in audio per giochi con IA | AIdiofy" />
+    <meta
+      name="twitter:description"
+      content="Trasforma regole e testi di gioco in narrazione audio. Scansiona, converti e ascolta con voce IA — ideale per giochi da tavolo e RPG."
+    />
     <meta name="twitter:image" content="/thumbnail.svg" />
     <script>
       tailwind.config = {
@@ -45,9 +52,9 @@
         theme: {
           extend: {
             colors: {
-              primary: "#0D9488", // Deep teal accent
-              "background-dark": "#0F172A", // Obsidian
-              surface: "#1E293B", // Dark slate surface
+              primary: "#0D9488",
+              "background-dark": "#0F172A",
+              surface: "#1E293B",
               "surface-muted": "#111827",
               "text-main": "#F1F5F9",
               "text-muted": "#94A3B8",
@@ -120,19 +127,20 @@
         color: transparent;
       }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "react": "https://aistudiocdn.com/react@^19.2.0"
-  }
-}
-</script>
-</head>
+    <script type="importmap">
+      {
+        "imports": {
+          "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+          "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+          "react/": "https://aistudiocdn.com/react@^19.2.0/",
+          "react": "https://aistudiocdn.com/react@^19.2.0"
+        }
+      }
+    </script>
+  </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
+

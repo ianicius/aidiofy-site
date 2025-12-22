@@ -2,12 +2,15 @@ import { useEffect, useState } from "react";
 import { Hero } from "./components/Hero";
 import { HowItWorks } from "./components/HowItWorks";
 import { Features } from "./components/Features";
+import { FAQ } from "./components/FAQ";
 import { Waitlist } from "./components/Waitlist";
 import { Footer } from "./components/Footer";
 import { Logo } from "./components/Logo";
 import { PrivacyPolicy } from "./components/legal/PrivacyPolicy";
 import { TermsOfUse } from "./components/legal/TermsOfUse";
 import { CookieBanner } from "./components/CookieBanner";
+import { LanguageSwitcher } from "./components/LanguageSwitcher";
+import { useI18n } from "./i18n";
 
 type View = "home" | "privacy" | "terms";
 
@@ -19,6 +22,7 @@ const resolveView = (hash: string): View => {
 };
 
 function App() {
+  const { copy } = useI18n();
   const [view, setView] = useState<View>(() => resolveView(window.location.hash));
 
   useEffect(() => {
@@ -57,17 +61,18 @@ function App() {
           </div>
           
           <div className="flex items-center gap-6">
-            <a href="#features" className="hidden sm:block text-sm font-medium text-text-muted hover:text-text-main transition-colors">Features</a>
-            <a href="#how-it-works" className="hidden sm:block text-sm font-medium text-text-muted hover:text-text-main transition-colors">How it Works</a>
-            <a href="#/privacy-policy" className="hidden sm:block text-sm font-medium text-text-muted hover:text-text-main transition-colors">Privacy</a>
-            <a href="#/terms-of-use" className="hidden sm:block text-sm font-medium text-text-muted hover:text-text-main transition-colors">Terms</a>
+            <a href="#features" className="hidden sm:block text-sm font-medium text-text-muted hover:text-text-main transition-colors">{copy.nav.features}</a>
+            <a href="#how-it-works" className="hidden sm:block text-sm font-medium text-text-muted hover:text-text-main transition-colors">{copy.nav.howItWorks}</a>
+            <a href="#/privacy-policy" className="hidden sm:block text-sm font-medium text-text-muted hover:text-text-main transition-colors">{copy.nav.privacy}</a>
+            <a href="#/terms-of-use" className="hidden sm:block text-sm font-medium text-text-muted hover:text-text-main transition-colors">{copy.nav.terms}</a>
+            <LanguageSwitcher />
             <a 
               href="https://app.aidiofy.com"
               target="_blank"
               rel="noreferrer"
               className="px-4 py-2 rounded-lg bg-primary text-text-main hover:bg-primary/90 font-semibold text-sm transition-all duration-300 shadow-glow-accent"
             >
-              App
+              {copy.nav.app}
             </a>
           </div>
         </div>
@@ -77,6 +82,7 @@ function App() {
         <Hero />
         <Features />
         <HowItWorks />
+        <FAQ />
         <Waitlist />
       </main>
 

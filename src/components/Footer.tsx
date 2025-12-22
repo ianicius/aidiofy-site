@@ -1,7 +1,9 @@
 import type { FC } from "react";
 import { Logo } from "./Logo";
+import { useI18n } from "../i18n";
 
 export const Footer: FC = () => {
+  const { copy } = useI18n();
   return (
     <footer className="border-t border-border-subtle/60 py-12 bg-background-dark">
       <div className="max-w-6xl mx-auto px-4 flex flex-col items-center gap-6">
@@ -11,13 +13,13 @@ export const Footer: FC = () => {
         </div>
         
         <div className="flex gap-8 text-sm text-text-muted">
-          <a href="#/privacy-policy" className="hover:text-text-main transition-colors">Privacy Policy</a>
-          <a href="#/terms-of-use" className="hover:text-text-main transition-colors">Terms of Use</a>
-          <a href="mailto:rj@aidiofy.com" className="hover:text-text-main transition-colors">Contact</a>
+          <a href="#/privacy-policy" className="hover:text-text-main transition-colors">{copy.footer.privacy}</a>
+          <a href="#/terms-of-use" className="hover:text-text-main transition-colors">{copy.footer.terms}</a>
+          <a href="mailto:rj@aidiofy.com" className="hover:text-text-main transition-colors">{copy.footer.contact}</a>
         </div>
 
         <p className="text-xs text-text-muted">
-          (c) 2024 AIdiofy. All rights reserved.
+          {copy.footer.copyright}
         </p>
       </div>
     </footer>

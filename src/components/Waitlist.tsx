@@ -1,7 +1,9 @@
 import { useState, type FC } from "react";
 import { ArrowRight } from "lucide-react";
+import { useI18n } from "../i18n";
 
 export const Waitlist: FC = () => {
+  const { copy } = useI18n();
   const [showContact, setShowContact] = useState(false);
 
   return (
@@ -14,14 +16,14 @@ export const Waitlist: FC = () => {
 
           <div className="relative z-10">
             <h2 className="text-3xl md:text-4xl font-bold text-text-main mb-6">
-              Be the First to Experience AIdiofy
+              {copy.waitlist.heading}
             </h2>
             <p className="text-text-muted text-lg max-w-xl mx-auto mb-4 leading-relaxed">
-              The AIdiofy app is already live—sign up to get feature updates, tips, and early notice about new releases.
+              {copy.waitlist.description}
             </p>
             <div className="max-w-xl mx-auto mb-10 text-sm md:text-base bg-surface/70 border border-border-subtle/80 rounded-2xl px-4 py-3 text-text-main shadow-glow-obsidian/30">
-              <span className="font-semibold text-text-main">Already on board?</span>{" "}
-              Run the application at{" "}
+              <span className="font-semibold text-text-main">{copy.waitlist.alreadyOnBoardLead}</span>{" "}
+              {copy.waitlist.alreadyOnBoardBeforeLink}{" "}
               <a 
                 href="https://app.aidiofy.com" 
                 target="_blank" 
@@ -30,7 +32,7 @@ export const Waitlist: FC = () => {
               >
                 app.aidiofy.com
               </a>{" "}
-              and start listening now.
+              {copy.waitlist.alreadyOnBoardAfterLink}
             </div>
 
             <div className="relative flex justify-center">
@@ -40,13 +42,13 @@ export const Waitlist: FC = () => {
                 onBlur={() => setShowContact(false)}
                 className="h-14 px-8 rounded-xl bg-primary text-text-main font-bold text-lg hover:bg-primary/90 transition-colors flex items-center justify-center gap-2 shadow-glow-accent"
               >
-                Contact
+                {copy.waitlist.contactCta}
                 <ArrowRight className="w-5 h-5" />
               </button>
 
               {showContact && (
                 <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 px-4 py-3 rounded-xl bg-surface border border-border-subtle text-text-main shadow-glow-obsidian w-max max-w-[calc(100vw-3rem)]">
-                  Email us at <span className="font-semibold text-text-main">rj@aidiofy.com</span>
+                  {copy.waitlist.emailLabel} <span className="font-semibold text-text-main">rj@aidiofy.com</span>
                 </div>
               )}
             </div>
