@@ -75,8 +75,8 @@ export const fr: Copy = {
   cookie: {
     bannerTitle: "Nous respectons votre vie privée",
     bannerBody:
-      "AIdiofy utilise des cookies et des technologies similaires. Certains sont nécessaires au fonctionnement, d’autres nous aident à mesurer l’audience et améliorer le service.",
-    bannerLearnMorePrefix: "Vous pouvez tout accepter ou gérer vos choix. Plus d’infos dans la",
+      "AIdiofy utilise des cookies et des technologies similaires. Certains sont nécessaires au fonctionnement, d'autres nous aident à mesurer l'audience et améliorer le service.",
+    bannerLearnMorePrefix: "Vous pouvez tout accepter ou gérer vos choix. Plus d'infos dans la",
     bannerLearnMoreLink: "Politique de confidentialité",
     bannerLearnMoreSuffix: ".",
     acceptAll: "Tout accepter",
@@ -89,12 +89,20 @@ export const fr: Copy = {
     necessaryDescription: "Nécessaires pour la connexion, la session et les paiements. Toujours actifs.",
     alwaysActive: "Toujours actifs",
     analyticsTitle: "Analyse & performance",
-    analyticsDescription: "Nous aide à comprendre l’utilisation. Données agrégées et anonymisées.",
+    analyticsDescription: "Nous aide à comprendre l'utilisation. Données agrégées et anonymisées.",
     enabled: "Activé",
     disabled: "Désactivé",
     saveSettings: "Enregistrer",
     cancel: "Annuler",
     cookieSettingsButton: "Paramètres des cookies",
+  },
+  legal: {
+    description: "Ce document décrit les règles d'utilisation d'AIdiofy et le traitement des données des utilisateurs. Nous valorisons la transparence et la sécurité, nous vous encourageons donc à examiner attentivement le contenu.",
+    backToHome: "Retour à l'accueil",
+    poweredBy: "Propulsé par",
+    elevenLabs: "ElevenLabs",
+    inworld: "Inworld",
+    gemini: "Gemini",
   },
 };
 

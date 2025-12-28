@@ -95,5 +95,13 @@ export const ja: Copy = {
     cancel: "キャンセル",
     cookieSettingsButton: "Cookie 設定",
   },
+  legal: {
+    description: "このドキュメントは、AIdiofyの利用規則とユーザーデータの処理方法について説明しています。透明性と安全性を重視しているため、内容をよくお読みいただくことをお勧めします。",
+    backToHome: "ホームに戻る",
+    poweredBy: "Powered by",
+    elevenLabs: "ElevenLabs",
+    inworld: "Inworld",
+    gemini: "Gemini",
+  },
 };
 

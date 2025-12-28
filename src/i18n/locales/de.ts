@@ -96,5 +96,13 @@ export const de: Copy = {
     cancel: "Abbrechen",
     cookieSettingsButton: "Cookie‑Einstellungen",
   },
+  legal: {
+    description: "Dieses Dokument beschreibt die Nutzungsbedingungen von AIdiofy und die Verarbeitung von Benutzerdaten. Wir legen Wert auf Transparenz und Sicherheit und empfehlen Ihnen, den Inhalt sorgfältig zu lesen.",
+    backToHome: "Zurück zur Startseite",
+    poweredBy: "Powered by",
+    elevenLabs: "ElevenLabs",
+    inworld: "Inworld",
+    gemini: "Gemini",
+  },
 };
 

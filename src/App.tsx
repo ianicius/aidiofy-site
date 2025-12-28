@@ -86,6 +86,23 @@ function App() {
         <Waitlist />
       </main>
 
+      <div className="border-t border-border-subtle/30 py-8 bg-background-dark">
+        <div className="max-w-6xl mx-auto px-4 flex flex-col items-center gap-4">
+          <p className="text-sm font-medium text-text-muted">{copy.legal.poweredBy}</p>
+          <div className="flex items-center gap-6 text-text-muted">
+            <span className="text-sm hover:text-text-main transition-colors" title="AI Voice Technology">
+              {copy.legal.elevenLabs}
+            </span>
+            <span className="text-sm hover:text-text-main transition-colors" title="AI Character Platform">
+              {copy.legal.inworld}
+            </span>
+            <span className="text-sm hover:text-text-main transition-colors" title="Google AI">
+              {copy.legal.gemini}
+            </span>
+          </div>
+        </div>
+      </div>
+
       <Footer />
       <CookieBanner />
     </div>

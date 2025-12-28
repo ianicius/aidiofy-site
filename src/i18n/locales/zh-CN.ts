@@ -94,5 +94,13 @@ export const zhCN: Copy = {
     cancel: "取消",
     cookieSettingsButton: "Cookie 设置",
   },
+  legal: {
+    description: "本文件描述了使用AIdiofy的规则以及用户数据的处理方式。我们重视透明度和安全性，因此建议您仔细阅读内容。",
+    backToHome: "返回首页",
+    poweredBy: "Powered by",
+    elevenLabs: "ElevenLabs",
+    inworld: "Inworld",
+    gemini: "Gemini",
+  },
 };
 

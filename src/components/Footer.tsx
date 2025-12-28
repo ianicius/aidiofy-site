@@ -11,7 +11,7 @@ export const Footer: FC = () => {
           <Logo className="w-10 h-10" />
           <span className="text-2xl font-bold text-text-main">AIdiofy</span>
         </div>
-        
+
         <div className="flex gap-8 text-sm text-text-muted">
           <a href="#/privacy-policy" className="hover:text-text-main transition-colors">{copy.footer.privacy}</a>
           <a href="#/terms-of-use" className="hover:text-text-main transition-colors">{copy.footer.terms}</a>

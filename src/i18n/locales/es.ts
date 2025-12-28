@@ -96,5 +96,13 @@ export const es: Copy = {
     cancel: "Cancelar",
     cookieSettingsButton: "Ajustes de cookies",
   },
+  legal: {
+    description: "Este documento describe las reglas de uso de AIdiofy y cómo se procesan los datos de los usuarios. Valoramos la transparencia y la seguridad, por lo que le recomendamos revisar cuidadosamente el contenido.",
+    backToHome: "Volver a la página de inicio",
+    poweredBy: "Powered by",
+    elevenLabs: "ElevenLabs",
+    inworld: "Inworld",
+    gemini: "Gemini",
+  },
 };
 

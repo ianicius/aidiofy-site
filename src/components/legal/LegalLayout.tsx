@@ -1,5 +1,6 @@
 import type { FC, ReactNode } from "react";
 import { Logo } from "../Logo";
+import { useI18n } from "../../i18n";
 
 interface LegalLayoutProps {
   title: string;
@@ -8,6 +9,8 @@ interface LegalLayoutProps {
 }
 
 export const LegalLayout: FC<LegalLayoutProps> = ({ title, lastUpdated, children }) => {
+  const { copy } = useI18n();
+  
   return (
     <div className="min-h-screen w-full bg-background-dark text-text-main">
       <header className="w-full border-b border-border-subtle/60 bg-background-dark/90 backdrop-blur-lg sticky top-0 z-30">
@@ -21,7 +24,7 @@ export const LegalLayout: FC<LegalLayoutProps> = ({ title, lastUpdated, children
             className="text-sm font-medium text-text-muted hover:text-text-main transition-colors"
             aria-label="Back to homepage"
           >
-            Powrót do strony głównej
+            {copy.legal.backToHome}
           </a>
         </div>
       </header>
@@ -31,8 +34,7 @@ export const LegalLayout: FC<LegalLayoutProps> = ({ title, lastUpdated, children
           <p className="text-xs uppercase tracking-[0.18em] text-text-muted">Last updated: {lastUpdated}</p>
           <h1 className="text-3xl md:text-4xl font-bold text-text-main">{title}</h1>
           <p className="text-base text-text-muted">
-            Poniższy dokument opisuje zasady korzystania z AIdiofy oraz sposób przetwarzania danych użytkowników. Dbamy
-            o przejrzystość i bezpieczeństwo, dlatego zachęcamy do dokładnego zapoznania się z treścią.
+            {copy.legal.description}
           </p>
         </div>
 

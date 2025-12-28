@@ -95,5 +95,13 @@ export const ko: Copy = {
     cancel: "취소",
     cookieSettingsButton: "쿠키 설정",
   },
+  legal: {
+    description: "이 문서는 AIdiofy 사용 규칙과 사용자 데이터 처리 방식을 설명합니다. 투명성과 보안을 중요시하므로 내용을 주의 깊게 검토하시기 바랍니다.",
+    backToHome: "홈페이지로 돌아가기",
+    poweredBy: "Powered by",
+    elevenLabs: "ElevenLabs",
+    inworld: "Inworld",
+    gemini: "Gemini",
+  },
 };
 

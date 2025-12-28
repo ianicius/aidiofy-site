@@ -89,12 +89,20 @@ export const it: Copy = {
     necessaryDescription: "Necessari per accesso, sessione e pagamenti. Sempre attivi.",
     alwaysActive: "Sempre attivi",
     analyticsTitle: "Analisi e performance",
-    analyticsDescription: "Ci aiuta a capire l’utilizzo. Dati aggregati e anonimizzati.",
+    analyticsDescription: "Ci aiuta a capire l'utilizzo. Dati aggregati e anonimizzati.",
     enabled: "Attivo",
     disabled: "Disattivo",
     saveSettings: "Salva",
     cancel: "Annulla",
     cookieSettingsButton: "Impostazioni cookie",
+  },
+  legal: {
+    description: "Questo documento descrive le regole per l'utilizzo di AIdiofy e il modo in cui vengono elaborati i dati degli utenti. Apprezziamo la trasparenza e la sicurezza, quindi ti incoraggiamo a leggere attentamente il contenuto.",
+    backToHome: "Torna alla home page",
+    poweredBy: "Powered by",
+    elevenLabs: "ElevenLabs",
+    inworld: "Inworld",
+    gemini: "Gemini",
   },
 };
 

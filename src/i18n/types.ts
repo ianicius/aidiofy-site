@@ -66,5 +66,13 @@ export type Copy = {
     cancel: string;
     cookieSettingsButton: string;
   };
+  legal: {
+    description: string;
+    backToHome: string;
+    poweredBy: string;
+    elevenLabs: string;
+    inworld: string;
+    gemini: string;
+  };
 };
 
