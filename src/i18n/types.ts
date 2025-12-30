@@ -2,9 +2,11 @@ export type Copy = {
   nav: {
     features: string;
     howItWorks: string;
+    faq: string;
     privacy: string;
     terms: string;
     app: string;
+    skipToMainContent: string;
   };
   hero: {
     title: string;
@@ -38,6 +40,9 @@ export type Copy = {
     emailLabel: string;
   };
   footer: {
+    tagline: string;
+    navigationHeading: string;
+    legalHeading: string;
     privacy: string;
     terms: string;
     contact: string;
@@ -68,6 +73,7 @@ export type Copy = {
   };
   legal: {
     description: string;
+    lastUpdatedLabel: string;
     backToHome: string;
     poweredBy: string;
     elevenLabs: string;
@@ -75,4 +81,3 @@ export type Copy = {
     gemini: string;
   };
 };
-

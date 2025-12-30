@@ -48,7 +48,7 @@ export const Waitlist: FC = () => {
                 rel="noreferrer"
                 className="h-14 px-8 rounded-xl bg-primary hover:bg-primary-hover text-text-main font-bold text-lg shadow-glow-accent smooth-transition flex items-center justify-center gap-2 group w-full sm:w-auto"
               >
-                Try the App Now
+                {copy.hero.ctaTryApp}
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 smooth-transition" />
               </a>
 

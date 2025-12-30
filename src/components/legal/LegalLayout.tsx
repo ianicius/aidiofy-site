@@ -31,7 +31,9 @@ export const LegalLayout: FC<LegalLayoutProps> = ({ title, lastUpdated, children
 
       <main className="max-w-5xl mx-auto px-4 py-16 md:py-24">
         <div className="mb-10 md:mb-12 space-y-3">
-          <p className="text-xs uppercase tracking-[0.18em] text-text-muted">Last updated: {lastUpdated}</p>
+          <p className="text-xs uppercase tracking-[0.18em] text-text-muted">
+            {copy.legal.lastUpdatedLabel} {lastUpdated}
+          </p>
           <h1 className="text-3xl md:text-4xl font-bold text-text-main">{title}</h1>
           <p className="text-base text-text-muted">
             {copy.legal.description}

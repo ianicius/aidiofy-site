@@ -53,7 +53,7 @@ function App() {
     <div className="min-h-screen w-full flex flex-col font-display bg-background-dark text-text-main overflow-x-hidden selection:bg-primary/30">
       {/* Skip Link for Accessibility */}
       <a href="#main-content" className="skip-link">
-        Skip to main content
+        {copy.nav.skipToMainContent}
       </a>
       
       {/* Navbar */}

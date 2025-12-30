@@ -15,33 +15,33 @@ export const Footer: FC = () => {
               <span className="text-2xl font-display font-bold text-text-main">AIdiofy</span>
             </div>
             <p className="text-body-sm text-text-tertiary text-center md:text-left max-w-xs">
-              Transform text into immersive audio for board gamers and book readers.
+              {copy.footer.tagline}
             </p>
           </div>
 
           {/* Column 2 - Links */}
           <div className="flex flex-col items-center md:items-start">
             <h4 className="text-caption uppercase tracking-wider text-text-tertiary mb-4 font-semibold">
-              Navigation
+              {copy.footer.navigationHeading}
             </h4>
             <div className="flex flex-col gap-3">
               <a 
                 href="#features" 
                 className="text-body-sm text-text-muted hover:text-text-main hover:underline decoration-primary/60 underline-offset-4 smooth-transition"
               >
-                Features
+                {copy.nav.features}
               </a>
               <a 
                 href="#how-it-works" 
                 className="text-body-sm text-text-muted hover:text-text-main hover:underline decoration-primary/60 underline-offset-4 smooth-transition"
               >
-                How It Works
+                {copy.nav.howItWorks}
               </a>
               <a 
                 href="#faq" 
                 className="text-body-sm text-text-muted hover:text-text-main hover:underline decoration-primary/60 underline-offset-4 smooth-transition"
               >
-                FAQ
+                {copy.nav.faq}
               </a>
             </div>
           </div>
@@ -49,7 +49,7 @@ export const Footer: FC = () => {
           {/* Column 3 - Legal */}
           <div className="flex flex-col items-center md:items-start">
             <h4 className="text-caption uppercase tracking-wider text-text-tertiary mb-4 font-semibold">
-              Legal
+              {copy.footer.legalHeading}
             </h4>
             <div className="flex flex-col gap-3">
               <a 
@@ -80,7 +80,7 @@ export const Footer: FC = () => {
             {copy.footer.copyright}
           </p>
           <div className="flex items-center gap-2">
-            <span className="text-caption text-text-tertiary">Powered by</span>
+            <span className="text-caption text-text-tertiary">{copy.legal.poweredBy}</span>
             <span className="text-caption text-text-muted hover:text-text-main smooth-transition">ElevenLabs</span>
             <span className="text-text-tertiary">•</span>
             <span className="text-caption text-text-muted hover:text-text-main smooth-transition">Inworld</span>

@@ -3,31 +3,33 @@ import type { Copy } from "../types";
 export const zhCN: Copy = {
   nav: {
     features: "功能",
-    howItWorks: "如何使用",
+    howItWorks: "使用方法",
+    faq: "常见问题",
     privacy: "隐私",
     terms: "条款",
     app: "应用",
+    skipToMainContent: "跳到主要内容",
   },
   hero: {
-    title: "游戏文字转语音",
-    highlight: "AI配音更沉浸",
-    description: "不用再在桌边念规则。AIdiofy 把规则书、RPG 剧本和文档变成语音朗读：拍照扫描，AI 转换，马上收听。",
-    ctaHowItWorks: "如何使用",
+    title: "把文字变成",
+    highlight: "沉浸式语音",
+    description: "AIdiofy 用 OCR + AI 配音，把规则书、手卡和各种印刷文字变成可收听的音频。拍照一扫，马上就能听。",
+    ctaHowItWorks: "使用方法",
     ctaTryApp: "立即体验",
   },
   features: {
-    heading: "语音 朗读 游戏：清晰自然",
-    description: "把静态文字变成动态音频体验所需的一切。",
+    heading: "核心功能",
+    description: "从纸面到声音，一套就够。",
     items: [
       { title: "即时 OCR 扫描", description: "用相机拍下印刷文字，快速高精度识别。" },
-      { title: "游戏 配音 AI", description: "自然清晰的 AI 声音，适合旁白与朗读。" },
-      { title: "声音可定制", description: "选择声音并调节语速与音调，匹配氛围。" },
-      { title: "便捷播放控制", description: "轻松播放、暂停、跳转和导航音频内容。" },
+      { title: "自然的 AI 配音", description: "清晰好听，适合规则、旁白和说明。" },
+      { title: "声音可调", description: "选择声音，并调节语速与音调，匹配氛围。" },
+      { title: "顺手的播放控制", description: "播放、暂停、跳转和导航都很方便。" },
     ],
   },
   howItWorks: {
-    heading: "文字转语音 游戏：3 步完成",
-    description: "从纸面到声音，不打断节奏。",
+    heading: "三步完成",
+    description: "不打断节奏，随时开听。",
     steps: [
       { title: "1. 扫描", description: "用摄像头拍下印刷文字。" },
       { title: "2. 转换", description: "OCR 提取文字，AI 生成配音。" },
@@ -35,30 +37,30 @@ export const zhCN: Copy = {
     ],
   },
   faq: {
-    heading: "常见问题：游戏文本转语音",
-    description: "围绕桌游与 RPG 的高频问题。",
+    heading: "常见问题",
+    description: "关于规则书、桌游和 TRPG 的一些问题。",
     items: [
       {
-        question: "如何将游戏文字转换为语音？",
-        answer: "要“将游戏文字转换为语音”，只需扫描页面：OCR 识别文字后，AI 立即生成朗读音频。",
+        question: "桌游规则可以转成语音吗？",
+        answer: "可以。扫描页面后 OCR 识别文字，再用自然的 AI 声音朗读。",
       },
       {
-        question: "有没有 ai 游戏旁白工具？",
-        answer: "AIdiofy 就是“ai 游戏旁白工具”：选择声音后可用于规则说明、剧情旁白与手卡朗读。",
+        question: "RPG/TRPG 也适用吗？",
+        answer: "很适合：场景描述、手卡、笔记都能直接朗读，不耽误流程。",
       },
       {
-        question: "可以实现 游戏文本自动朗读 吗？",
-        answer: "可以，“游戏文本自动朗读”通过扫描与播放完成，适合在游戏中快速让大家听到关键段落。",
+        question: "能调声音吗？",
+        answer: "能。可以选择声音，并调节语速和音调。",
       },
       {
-        question: "能做沉浸式游戏语音吗？",
-        answer: "可以。选择合适的声音与语速，就能获得更“沉浸式游戏语音”的体验。",
+        question: "只适合游戏吗？",
+        answer: "不止。书籍、资料、文件等，只要能扫描的印刷文本都可以。",
       },
     ],
   },
   waitlist: {
     heading: "抢先体验 AIdiofy",
-    description: "应用已上线 — 订阅获取更新、技巧与新版本通知。",
+    description: "应用已上线 — 订阅获取更新、使用技巧与新版本通知。",
     alreadyOnBoardLead: "已经在用？",
     alreadyOnBoardBeforeLink: "访问",
     alreadyOnBoardAfterLink: "马上开始收听。",
@@ -66,10 +68,13 @@ export const zhCN: Copy = {
     emailLabel: "邮件联系：",
   },
   footer: {
+    tagline: "把文字变成沉浸式语音：桌游、TRPG、读书都适用。",
+    navigationHeading: "导航",
+    legalHeading: "法律信息",
     privacy: "隐私政策",
     terms: "使用条款",
     contact: "联系",
-    copyright: "(c) 2025 AIdiofy. 保留所有权利。",
+    copyright: "© 2025 AIdiofy. 保留所有权利。",
   },
   cookie: {
     bannerTitle: "我们尊重你的隐私",
@@ -95,12 +100,12 @@ export const zhCN: Copy = {
     cookieSettingsButton: "Cookie 设置",
   },
   legal: {
-    description: "本文件描述了使用AIdiofy的规则以及用户数据的处理方式。我们重视透明度和安全性，因此建议您仔细阅读内容。",
+    description: "本页说明 AIdiofy 的使用规则以及我们如何处理用户数据。我们重视透明和安全，建议你仔细阅读。",
+    lastUpdatedLabel: "最后更新：",
     backToHome: "返回首页",
-    poweredBy: "Powered by",
+    poweredBy: "技术支持",
     elevenLabs: "ElevenLabs",
     inworld: "Inworld",
     gemini: "Gemini",
   },
 };
-

@@ -4,61 +4,63 @@ export const ko: Copy = {
   nav: {
     features: "기능",
     howItWorks: "사용 방법",
+    faq: "자주 묻는 질문",
     privacy: "개인정보",
     terms: "이용약관",
     app: "앱",
+    skipToMainContent: "본문으로 건너뛰기",
   },
   hero: {
-    title: "텍스트 음성 변환 게임",
-    highlight: "AI 나레이션으로",
+    title: "텍스트를",
+    highlight: "자연스러운 AI 음성으로",
     description:
-      "규칙을 읽느라 흐름을 끊지 마세요. AIdiofy는 규칙서, RPG 장면, 문서를 스캔해 자연스러운 음성으로 읽어줍니다.",
+      "AIdiofy는 규칙서, 핸드아웃, 문서 등 인쇄된 텍스트를 스캔해 음성으로 읽어줍니다. 찍고, 변환하고, 바로 들어보세요.",
     ctaHowItWorks: "사용 방법 보기",
     ctaTryApp: "앱 사용해보기",
   },
   features: {
-    heading: "게임 나레이션: 또렷하고 자연스럽게",
+    heading: "핵심 기능",
     description: "정적인 텍스트를 몰입형 오디오 경험으로 바꿔줍니다.",
     items: [
       { title: "즉시 OCR 스캔", description: "카메라로 찍으면 인쇄 텍스트를 빠르고 정확하게 추출합니다." },
-      { title: "자연스러운 AI 음성", description: "듣기 편한 목소리로 규칙·설명을 읽어줍니다." },
-      { title: "음성 커스터마이징", description: "목소리·속도·피치를 조절해 분위기에 맞춥니다." },
-      { title: "쉬운 재생", description: "재생/일시정지/건너뛰기 등 직관적인 컨트롤." },
+      { title: "자연스러운 AI 음성", description: "듣기 편한 목소리로 규칙과 설명을 읽어줍니다." },
+      { title: "음성 설정", description: "목소리, 속도, 피치를 조절해 분위기에 맞춥니다." },
+      { title: "간편한 재생", description: "재생/일시정지/건너뛰기를 손쉽게." },
     ],
   },
   howItWorks: {
-    heading: "음성 읽기 게임: 3단계로 끝",
+    heading: "3단계로 끝",
     description: "종이에서 오디오까지, 빠르게.",
     steps: [
-      { title: "1. 스캔", description: "카메라로 인쇄 텍스트를 촬영합니다." },
+      { title: "1. 스캔", description: "카메라로 텍스트를 촬영합니다." },
       { title: "2. 변환", description: "OCR이 텍스트를 추출하고 AI가 음성을 생성합니다." },
-      { title: "3. 듣기", description: "언제 어디서나 고품질 오디오로 듣습니다." },
+      { title: "3. 듣기", description: "언제 어디서나 고품질 오디오로 들어보세요." },
     ],
   },
   faq: {
-    heading: "자주 묻는 질문: 게임 텍스트 음성화",
-    description: "보드게임과 RPG에 자주 나오는 질문을 정리했습니다.",
+    heading: "자주 묻는 질문",
+    description: "규칙서와 게임 텍스트를 음성으로 만드는 방법을 정리했습니다.",
     items: [
       {
-        question: "게임 텍스트를 음성으로 변환할 수 있나요?",
-        answer: "네. 페이지를 스캔하면 OCR이 추출하고 바로 재생해 “게임 텍스트를 음성으로 변환”할 수 있습니다.",
+        question: "보드게임 규칙서를 음성으로 만들 수 있나요?",
+        answer: "네. 페이지를 스캔하면 OCR이 텍스트를 추출하고 자연스러운 음성으로 읽어줍니다.",
       },
       {
-        question: "rpg 게임 나레이션 음성으로 쓸 수 있나요?",
-        answer: "네. 장면 설명과 핸드아웃을 “rpg 게임 나레이션 음성”으로 자연스럽게 읽어줄 수 있습니다.",
+        question: "TRPG에도 쓸 수 있나요?",
+        answer: "그럼요. 장면 설명, 핸드아웃, 메모를 읽어줘서 진행 흐름을 끊지 않습니다.",
       },
       {
-        question: "게임 설명 음성 읽기가 가능한가요?",
-        answer: "가능합니다. 스캔→변환→재생으로 “게임 설명 음성 읽기”가 됩니다.",
+        question: "목소리를 바꿀 수 있나요?",
+        answer: "네. 목소리를 선택하고 속도와 피치도 조절할 수 있습니다.",
       },
       {
-        question: "몰입감 있는 게임 음성도 만들 수 있나요?",
-        answer: "네. 목소리와 속도를 조절해 “몰입감 있는 게임 음성”을 만들 수 있습니다.",
+        question: "게임 말고도 쓸 수 있나요?",
+        answer: "물론입니다. 책, 문서 등 스캔할 수 있는 인쇄물이라면 무엇이든 가능합니다.",
       },
     ],
   },
   waitlist: {
-    heading: "AIdiofy를 먼저 경험해보세요",
+    heading: "AIdiofy를 먼저 만나보세요",
     description: "앱은 이미 공개되어 있습니다 — 업데이트와 팁, 새 소식을 받아보세요.",
     alreadyOnBoardLead: "이미 사용 중인가요?",
     alreadyOnBoardBeforeLink: "여기에서 실행:",
@@ -67,10 +69,13 @@ export const ko: Copy = {
     emailLabel: "이메일:",
   },
   footer: {
+    tagline: "텍스트를 몰입감 있는 오디오로. 보드게임도 독서도 더 편하게.",
+    navigationHeading: "바로가기",
+    legalHeading: "법적 정보",
     privacy: "개인정보 처리방침",
     terms: "이용약관",
     contact: "문의",
-    copyright: "(c) 2025 AIdiofy. All rights reserved.",
+    copyright: "© 2025 AIdiofy. 모든 권리 보유.",
   },
   cookie: {
     bannerTitle: "개인정보를 존중합니다",
@@ -96,7 +101,9 @@ export const ko: Copy = {
     cookieSettingsButton: "쿠키 설정",
   },
   legal: {
-    description: "이 문서는 AIdiofy 사용 규칙과 사용자 데이터 처리 방식을 설명합니다. 투명성과 보안을 중요시하므로 내용을 주의 깊게 검토하시기 바랍니다.",
+    description:
+      "이 문서는 AIdiofy 이용 규칙과 사용자 데이터 처리 방식을 안내합니다. 투명성과 보안을 중요하게 생각하니 내용을 꼼꼼히 확인해 주세요.",
+    lastUpdatedLabel: "최종 업데이트:",
     backToHome: "홈페이지로 돌아가기",
     poweredBy: "Powered by",
     elevenLabs: "ElevenLabs",
@@ -104,4 +111,3 @@ export const ko: Copy = {
     gemini: "Gemini",
   },
 };
-

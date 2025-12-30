@@ -4,9 +4,11 @@ export const en: Copy = {
   nav: {
     features: "Features",
     howItWorks: "How it Works",
+    faq: "FAQ",
     privacy: "Privacy",
     terms: "Terms",
     app: "App",
+    skipToMainContent: "Skip to main content",
   },
   hero: {
     title: "Transform Text into",
@@ -79,6 +81,9 @@ export const en: Copy = {
     emailLabel: "Email us at",
   },
   footer: {
+    tagline: "Transform text into immersive audio for board gamers and book readers.",
+    navigationHeading: "Navigation",
+    legalHeading: "Legal",
     privacy: "Privacy Policy",
     terms: "Terms of Use",
     contact: "Contact",
@@ -110,6 +115,7 @@ export const en: Copy = {
   },
   legal: {
     description: "This document describes the rules for using AIdiofy and how user data is processed. We value transparency and security, so we encourage you to review the content carefully.",
+    lastUpdatedLabel: "Last updated:",
     backToHome: "Back to homepage",
     poweredBy: "Powered by",
     elevenLabs: "ElevenLabs",
@@ -117,4 +123,3 @@ export const en: Copy = {
     gemini: "Gemini",
   },
 };
-
