@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <defs>
+    <linearGradient id="favicon-grad" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+      <stop stopColor="#ff6b35" />
+      <stop offset="0.5" stopColor="#ffb347" />
+      <stop offset="1" stopColor="#f5f5f7" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Neural network paths -->
+  <path
+    stroke="url(#favicon-grad)"
+    strokeWidth="1.5"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    d="M13 4C10.5 4 9 5.2 8.2 6.5C7.2 8 5 9.5 5 11C5 13.5 6.5 15.5 8.2 16.5M19 4C21.5 4 23 5.2 23.8 6.5C24.8 8 26 9.5 26 11C26 13.5 24.5 15.5 22.8 16.5"
+    opacity="0.8"
+  />
+  <path
+    stroke="url(#favicon-grad)"
+    strokeWidth="1.5"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    d="M16 28V15"
+    filter="url(#glow)"
+  />
+  <!-- Central circle -->
+  <circle
+    cx="16"
+    cy="15"
+    r="4"
+    stroke="url(#favicon-grad)"
+    strokeWidth="1.5"
+  />
+  <!-- Core dot -->
+  <circle
+    cx="16"
+    cy="15"
+    r="2"
+    fill="#ffb347"
+    filter="url(#glow)"
+  />
+  <!-- Connection paths -->
+  <path
+    stroke="url(#favicon-grad)"
+    strokeWidth="1.5"
+    strokeLinecap="round"
+    d="M11 17L9 21"
+    opacity="0.6"
+  />
+  <path
+    stroke="url(#favicon-grad)"
+    strokeWidth="1.5"
+    strokeLinecap="round"
+    d="M21 17L23 21"
+    opacity="0.6"
+  />
+  <!-- Bottom accent dots -->
+  <circle
+    cx="9"
+    cy="21"
+    r="1.2"
+    fill="#f5f5f7"
+    filter="url(#glow)"
+  />
+  <circle
+    cx="23"
+    cy="21"
+    r="1.2"
+    fill="#ff6b35"
+    filter="url(#glow)"
+  />
+</svg>

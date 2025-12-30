@@ -7,11 +7,13 @@ const featureIcons = [ScanText, Bot, Mic, Play] as const;
 export const Features: FC = () => {
   const { copy } = useI18n();
   return (
-    <section id="features" className="py-24 px-4 relative">
+    <section id="features" className="py-24 px-4 relative bg-background-dark">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-text-main mb-4">{copy.features.heading}</h2>
-          <p className="text-text-muted max-w-xl mx-auto">
+          <h2 className="text-heading-1 md:text-display-md font-display font-bold text-text-main mb-4 animate-fade-in-up">
+            {copy.features.heading}
+          </h2>
+          <p className="text-body-lg text-text-muted max-w-xl mx-auto animate-fade-in-up" style={{ animationDelay: '100ms' }}>
             {copy.features.description}
           </p>
         </div>
@@ -19,16 +21,27 @@ export const Features: FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {copy.features.items.map((feature, idx) => {
             const Icon = featureIcons[idx] ?? ScanText;
+            const isEven = idx % 2 === 0;
             return (
             <div 
               key={idx}
-              className="glass-effect p-8 rounded-2xl flex flex-col gap-4 transition-transform hover:-translate-y-1 duration-300 group shadow-glow-obsidian border border-border-subtle/70"
+              className={`group relative bg-surface border border-border-subtle rounded-2xl p-10 smooth-transition hover:-translate-y-2 hover:border-primary/40 hover:shadow-glow-accent animate-fade-in-up ${isEven ? 'md:mr-4' : 'md:ml-4'}`}
+              style={{ animationDelay: `${200 + idx * 100}ms` }}
             >
-              <div className="w-12 h-12 rounded-xl bg-primary/15 text-primary flex items-center justify-center shadow-glow-accent border border-border-subtle/80">
-                <Icon className="w-6 h-6" />
+              {/* Subtle noise texture */}
+              <div className="absolute inset-0 rounded-2xl opacity-[0.005] pointer-events-none noise-texture"></div>
+              
+              <div className="relative z-10">
+                <div className="w-16 h-16 rounded-xl bg-glow-primary border border-primary/20 flex items-center justify-center mb-6 smooth-transition group-hover:scale-110 group-hover:border-primary/40">
+                  <Icon className="w-8 h-8 text-primary" />
+                </div>
+                <h3 className="text-heading-3 font-display font-semibold text-text-main mb-3">
+                  {feature.title}
+                </h3>
+                <p className="text-body-md text-text-muted leading-relaxed">
+                  {feature.description}
+                </p>
               </div>
-              <h3 className="text-xl font-bold text-text-main">{feature.title}</h3>
-              <p className="text-text-muted leading-relaxed">{feature.description}</p>
             </div>
           )})}
         </div>

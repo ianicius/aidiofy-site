@@ -1,5 +1,5 @@
 import type { FC, ReactNode } from "react";
-import { Logo } from "../Logo";
+import Logo from "../Logo";
 import { useI18n } from "../../i18n";
 
 interface LegalLayoutProps {

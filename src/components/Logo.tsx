@@ -1,94 +1,126 @@
-import type { FC } from "react";
+import React from 'react';
 
 interface LogoProps {
   className?: string;
+  size?: 'sm' | 'md' | 'lg';
 }
 
-export const Logo: FC<LogoProps> = ({ className = "w-10 h-10" }) => {
+const Logo: React.FC<LogoProps> = ({ className = '', size = 'md' }) => {
+  const sizeClasses = {
+    sm: 'h-8 w-8',
+    md: 'h-10 w-10 md:h-12 md:w-12',
+    lg: 'h-14 w-14 md:h-16 md:w-16'
+  };
+
   return (
     <svg
-      viewBox="0 0 100 100"
-      fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={className}
+      className={`${sizeClasses[size]} ${className}`}
+      viewBox="0 0 24 24"
+      fill="none"
       aria-label="AIdiofy Logo"
     >
       <defs>
-        <linearGradient id="logo_gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" stopColor="#0D9488" />
-          <stop offset="55%" stopColor="#14B8A6" />
-          <stop offset="100%" stopColor="#E2E8F0" />
+        <linearGradient id="logo-grad" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+          <stop stopColor="#ff6b35">
+            <animate attributeName="stop-color" values="#ff6b35;#ffb347;#ff6b35" dur="3s" repeatCount="indefinite" />
+          </stop>
+          <stop offset="0.5" stopColor="#ffb347">
+            <animate attributeName="stop-color" values="#ffb347;#ff6b35;#ffb347" dur="3s" repeatCount="indefinite" />
+          </stop>
+          <stop offset="1" stopColor="#f5f5f7">
+            <animate attributeName="stop-color" values="#f5f5f7;#ffb347;#f5f5f7" dur="3s" repeatCount="indefinite" />
+          </stop>
         </linearGradient>
-        <filter id="glow-filter" x="-50%" y="-50%" width="200%" height="200%">
-          <feGaussianBlur stdDeviation="1.4" result="coloredBlur" />
+        <filter id="glow">
+          <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
           <feMerge>
-            <feMergeNode in="coloredBlur" />
-            <feMergeNode in="SourceGraphic" />
+            <feMergeNode in="coloredBlur"/>
+            <feMergeNode in="SourceGraphic"/>
           </feMerge>
         </filter>
       </defs>
-
-      <g filter="url(#glow-filter)">
-        {/* Network Connections (The 'A' Frame) */}
-        <g stroke="url(#logo_gradient)" strokeWidth="1.5" strokeLinecap="round" strokeOpacity="0.6">
-          {/* Main Triangle Outline */}
-          <line x1="50" y1="15" x2="20" y2="85" />
-          <line x1="50" y1="15" x2="80" y2="85" />
-          
-          {/* Internal Mesh Structure */}
-          <line x1="50" y1="15" x2="50" y2="45" /> {/* Top vertical */}
-          <line x1="35" y1="50" x2="65" y2="50" /> {/* Crossbar Top */}
-          <line x1="28" y1="65" x2="72" y2="65" /> {/* Crossbar Bottom */}
-          
-          {/* Diagonal Cross Bracing */}
-          <line x1="35" y1="50" x2="50" y2="15" />
-          <line x1="65" y1="50" x2="50" y2="15" />
-          <line x1="35" y1="50" x2="50" y2="85" />
-          <line x1="65" y1="50" x2="50" y2="85" />
-          
-          <line x1="20" y1="85" x2="35" y2="50" />
-          <line x1="80" y1="85" x2="65" y2="50" />
-        </g>
-
-        {/* The Audio Waveform */}
-        <path
-          d="M10 50 
-             C 15 50, 20 40, 25 50 
-             S 30 65, 35 50 
-             S 40 25, 45 50 
-             S 50 75, 55 50 
-             S 60 30, 65 50 
-             S 70 60, 75 50 
-             S 85 50, 90 50"
-          stroke="url(#logo_gradient)"
-          strokeWidth="2.5"
-          strokeLinecap="round"
-          fill="none"
-        />
-
-        {/* Nodes (Dots) */}
-        <g fill="url(#logo_gradient)">
-          {/* Apex */}
-          <circle cx="50" cy="15" r="3" />
-          
-          {/* Mid Connectors */}
-          <circle cx="35" cy="50" r="2.5" />
-          <circle cx="65" cy="50" r="2.5" />
-          <circle cx="50" cy="45" r="2" />
-          
-          {/* Lower Connectors */}
-          <circle cx="28" cy="65" r="2" />
-          <circle cx="72" cy="65" r="2" />
-          
-          {/* Base */}
-          <circle cx="20" cy="85" r="3" />
-          <circle cx="80" cy="85" r="3" />
-          
-          {/* Waveform Intersections (Visual flair) */}
-          <circle cx="45" cy="50" r="2" fill="#F1F5F9" />
-          <circle cx="55" cy="50" r="2" fill="#F1F5F9" />
-        </g>
-      </g>
+      {/* Neural network paths */}
+      <path
+        stroke="url(#logo-grad)"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M9.75 3C7.5 3 6.3 4.2 5.5 5.5C4.5 7.2 2 8 2 11C2 13.5 3.5 15.5 5.5 16.5M14.25 3C16.5 3 17.7 4.2 18.5 5.5C19.5 7.2 22 8 22 11C22 13.5 20.5 15.5 18.5 16.5"
+        className="opacity-70"
+      >
+        <animate attributeName="stroke-opacity" values="0.7;0.9;0.7" dur="2s" repeatCount="indefinite" />
+      </path>
+      <path
+        stroke="url(#logo-grad)"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M12 21V11"
+        filter="url(#glow)"
+      />
+      {/* Central pulsing circle */}
+      <circle
+        cx="12"
+        cy="11"
+        r="3"
+        stroke="url(#logo-grad)"
+        strokeWidth="1.5"
+        className="animate-pulse"
+      >
+        <animate attributeName="r" values="3;3.5;3" dur="2s" repeatCount="indefinite" />
+      </circle>
+      {/* Core dot */}
+      <circle
+        cx="12"
+        cy="11"
+        r="1.5"
+        fill="#ffb347"
+        filter="url(#glow)"
+      >
+        <animate attributeName="r" values="1.5;2;1.5" dur="1.5s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="1;0.8;1" dur="1.5s" repeatCount="indefinite" />
+      </circle>
+      {/* Connection paths */}
+      <path
+        stroke="url(#logo-grad)"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        d="M8 13L6 16"
+        className="opacity-50"
+      >
+        <animate attributeName="opacity" values="0.5;0.8;0.5" dur="2.5s" repeatCount="indefinite" />
+      </path>
+      <path
+        stroke="url(#logo-grad)"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        d="M16 13L18 16"
+        className="opacity-50"
+      >
+        <animate attributeName="opacity" values="0.5;0.8;0.5" dur="2.5s" repeatCount="indefinite" begin="0.5s" />
+      </path>
+      {/* Bottom accent dots */}
+      <circle
+        cx="6"
+        cy="16"
+        r="1"
+        fill="#f5f5f7"
+        filter="url(#glow)"
+      >
+        <animate attributeName="r" values="1;1.3;1" dur="2s" repeatCount="indefinite" />
+      </circle>
+      <circle
+        cx="18"
+        cy="16"
+        r="1"
+        fill="#ff6b35"
+        filter="url(#glow)"
+      >
+        <animate attributeName="r" values="1;1.3;1" dur="2s" repeatCount="indefinite" begin="1s" />
+      </circle>
     </svg>
   );
 };
+
+export default Logo;
