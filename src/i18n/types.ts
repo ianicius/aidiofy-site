@@ -1,3 +1,11 @@
+export type Screenshot = {
+  src: string;
+  alt: string;
+  title: string;
+  category: string;
+  feature: string;
+};
+
 export type Copy = {
   nav: {
     features: string;
@@ -24,6 +32,22 @@ export type Copy = {
     heading: string;
     description: string;
     steps: Array<{ title: string; description: string }>;
+  };
+  productShowcase: {
+    heading: string;
+    description: string;
+    videoCaption: string;
+    screenshotsHeading: string;
+    screenshotsDescription: string;
+    screenshotDescriptions: {
+      "01-full-cast": string;
+      "02-add-text": string;
+      "03-direct-scene": string;
+      "04-cast-voices": string;
+      "05-listen-story": string;
+      "06-translate-narrate": string;
+      "07-save-stories": string;
+    };
   };
   faq: {
     heading: string;

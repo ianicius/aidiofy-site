@@ -37,6 +37,22 @@ export const es: Copy = {
       { title: "3. Escucha", description: "Disfruta del audio en cualquier momento y lugar." },
     ],
   },
+  productShowcase: {
+    heading: "Ver AIdiofy en acción",
+    description: "Mira cómo AIdiofy transforma el texto en experiencias de audio envolventes con narración de varias voces",
+    videoCaption: "Demostración · Tiempo de procesamiento reducido para la presentación",
+    screenshotsHeading: "Recorrido por la app",
+    screenshotsDescription: "Explora el viaje de 7 pasos del texto al audio envolvente",
+    screenshotDescriptions: {
+      "01-full-cast": "Genera audio con elenco completo desde cualquier página impresa, con múltiples voces de IA",
+      "02-add-text": "Agrega tu texto y prepáralo para convertirlo en audio",
+      "03-direct-scene": "Dirige la escena ajustando la forma de hablar, el ritmo y el tono emocional",
+      "04-cast-voices": "Elige voces en segundos con retratos de personajes y muestras de voz de IA",
+      "05-listen-story": "Escucha tu historia con visualización de forma de onda de audio y controles de reproducción",
+      "06-translate-narrate": "Traduce y narra tu contenido en múltiples idiomas con salida de voz",
+      "07-save-stories": "Guarda tus historias de audio en la biblioteca con opciones de reproducción y para compartir",
+    },
+  },
   faq: {
     heading: "Preguntas frecuentes: texto a audio para juegos",
     description: "Respuestas rápidas sobre reglas y textos de juego en formato audio.",
@@ -66,7 +82,7 @@ export const es: Copy = {
     alreadyOnBoardBeforeLink: "Abre la app en",
     alreadyOnBoardAfterLink: "y empieza a escuchar.",
     contactCta: "Contacto",
-    emailLabel: "Escríbenos a",
+    emailLabel: "Escríbenos a:",
   },
   footer: {
     tagline: "Convierte texto en audio envolvente para jugar y leer.",

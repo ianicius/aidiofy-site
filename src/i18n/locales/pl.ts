@@ -37,6 +37,22 @@ export const pl: Copy = {
       { title: "3. Słuchaj", description: "Słuchaj, gdzie chcesz — w domu, w drodze, przy stole." },
     ],
   },
+  productShowcase: {
+    heading: "Zobacz AIdiofy w akcji",
+    description: "Zobacz, jak AIdiofy zamienia tekst w wciągające doświadczenia audio z pełną obsadą głosową",
+    videoCaption: "Przykładowa prezentacja · Czas przetwarzania skrócony dla celów prezentacyjnych",
+    screenshotsHeading: "Przewodnik po aplikacji",
+    screenshotsDescription: "Poznaj 7-krokową podróż od tekstu do wciągającego audio",
+    screenshotDescriptions: {
+      "01-full-cast": "Generuj audio z pełną obsadą głosową z dowolnej wydrukowanej strony z wieloma głosami AI",
+      "02-add-text": "Dodaj swoją treść tekstową i przygotuj ją do konwersji na audio",
+      "03-direct-scene": "Reżyseruj scenę: dopasuj sposób mówienia, tempo i emocje",
+      "04-cast-voices": "Dobierz głosy w kilka sekund, korzystając z portretów postaci i próbek AI",
+      "05-listen-story": "Słuchaj swojej historii z wizualizacją fali dźwiękowej i kontrolkami odtwarzania",
+      "06-translate-narrate": "Tłumacz i czytaj na głos w wielu językach",
+      "07-save-stories": "Zapisuj swoje historie audio w bibliotece z opcjami odtwarzania i udostępniania",
+    },
+  },
   faq: {
     heading: "FAQ: tekst → audio do gier",
     description: "Szybkie odpowiedzi o czytaniu zasad i tekstów gry w formie audio.",
@@ -61,7 +77,7 @@ export const pl: Copy = {
   },
   waitlist: {
     heading: "Zacznij korzystać z AIdiofy",
-    description: "Aplikacja już działa — zapisz się po aktualizacje, tipy i informacje o nowościach.",
+    description: "Aplikacja już działa — zapisz się po aktualizacje, wskazówki i informacje o nowościach.",
     alreadyOnBoardLead: "Już korzystasz?",
     alreadyOnBoardBeforeLink: "Wejdź na",
     alreadyOnBoardAfterLink: "i zacznij słuchać.",

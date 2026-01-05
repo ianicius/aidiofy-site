@@ -26,8 +26,8 @@ export const Hero: FC = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 animate-fade-in-up" style={{ animationDelay: '200ms' }}>
-              <a 
-                href="#how-it-works"
+              <a
+                href="#product-showcase"
                 className="group h-14 px-8 rounded-xl bg-primary hover:bg-primary-hover text-text-main font-bold text-lg shadow-glow-accent-intense smooth-transition flex items-center justify-center gap-2"
               >
                 <Play className="w-5 h-5" />

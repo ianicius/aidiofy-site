@@ -37,6 +37,22 @@ export const ja: Copy = {
       { title: "3. 聴く", description: "いつでもどこでも、音声で楽しめます。" },
     ],
   },
+  productShowcase: {
+    heading: "AIdiofyの動きを見る",
+    description: "AIdiofyがテキストを臨場感のある音声体験に変換する様子をご覧ください",
+    videoCaption: "サンプルデモ · デモ用に処理時間を短縮しています",
+    screenshotsHeading: "アプリツアー",
+    screenshotsDescription: "テキストから音声化までの7ステップを確認",
+    screenshotDescriptions: {
+      "01-full-cast": "印刷ページから、複数のAI音声でフルキャスト音声を生成",
+      "02-add-text": "テキストを追加して、音声化の準備",
+      "03-direct-scene": "話し方、テンポ、感情を調整してシーンを演出",
+      "04-cast-voices": "キャラクター画像と音声サンプルで、数秒で声をキャスティング",
+      "05-listen-story": "波形表示と再生コントロールでストーリーを聴く",
+      "06-translate-narrate": "複数言語に翻訳して、音声で読み上げ",
+      "07-save-stories": "再生・共有オプション付きでオーディオストーリーをライブラリに保存",
+    },
+  },
   faq: {
     heading: "よくある質問",
     description: "ルールブックやゲームテキストの音声化について。",
@@ -75,7 +91,7 @@ export const ja: Copy = {
     privacy: "プライバシーポリシー",
     terms: "利用規約",
     contact: "お問い合わせ",
-    copyright: "© 2025 AIdiofy. All rights reserved.",
+    copyright: "© 2025 AIdiofy. 無断転載を禁じます。",
   },
   cookie: {
     bannerTitle: "プライバシーを尊重します",

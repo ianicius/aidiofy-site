@@ -84,9 +84,10 @@ export const CookieBanner: FC = () => {
     }
   }, [consent]);
 
-  useEffect(() => {
+  const openSettings = () => {
     setAnalyticsChecked(consent?.analytics ?? false);
-  }, [consent]);
+    setShowSettings(true);
+  };
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -157,7 +158,7 @@ export const CookieBanner: FC = () => {
                   {c.necessaryOnly}
                 </button>
                 <button
-                  onClick={() => setShowSettings(true)}
+                  onClick={openSettings}
                   className="w-full rounded-lg bg-transparent text-text-muted hover:text-text-main font-semibold px-4 py-2.5 border border-border-subtle/70 hover:border-border-subtle transition-all duration-200"
                 >
                   {c.settings}
@@ -251,7 +252,7 @@ export const CookieBanner: FC = () => {
       {!bannerVisible && !showSettings && (
         <div className="fixed bottom-4 right-4 z-40">
           <button
-            onClick={() => setShowSettings(true)}
+            onClick={openSettings}
             className="rounded-full bg-surface text-text-muted hover:text-text-main px-4 py-2 border border-border-subtle/70 hover:border-border-subtle transition-all text-xs font-semibold backdrop-blur"
           >
             {c.cookieSettingsButton}

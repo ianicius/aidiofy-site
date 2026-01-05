@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Hero } from "./components/Hero";
-import { HowItWorks } from "./components/HowItWorks";
+import { ProductShowcase } from "./components/ProductShowcase";
 import { Features } from "./components/Features";
 import { FAQ } from "./components/FAQ";
 import { Waitlist } from "./components/Waitlist";
@@ -68,7 +68,7 @@ function App() {
             <a href="#features" className="hidden sm:block text-body-sm font-medium text-text-muted hover:text-text-main hover:border-b-2 hover:border-primary/50 smooth-transition pb-1" aria-label="Go to Features section">
               {copy.nav.features}
             </a>
-            <a href="#how-it-works" className="hidden sm:block text-body-sm font-medium text-text-muted hover:text-text-main hover:border-b-2 hover:border-primary/50 smooth-transition pb-1" aria-label="Go to How It Works section">
+            <a href="#product-showcase" className="hidden sm:block text-body-sm font-medium text-text-muted hover:text-text-main hover:border-b-2 hover:border-primary/50 smooth-transition pb-1" aria-label="Go to Product Showcase section">
               {copy.nav.howItWorks}
             </a>
             <a href="#/privacy-policy" className="hidden sm:block text-body-sm font-medium text-text-muted hover:text-text-main hover:border-b-2 hover:border-primary/50 smooth-transition pb-1" aria-label="Go to Privacy Policy">
@@ -94,7 +94,7 @@ function App() {
       <main id="main-content" className="flex-grow w-full">
         <Hero />
         <Features />
-        <HowItWorks />
+        <ProductShowcase />
         <FAQ />
         <Waitlist />
       </main>

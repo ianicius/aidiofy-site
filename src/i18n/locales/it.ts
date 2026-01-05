@@ -29,13 +29,29 @@ export const it: Copy = {
     ],
   },
   howItWorks: {
-    heading: "Dal testo all’audio in 3 passaggi",
+    heading: "Dal testo all'audio in 3 passaggi",
     description: "Semplice e veloce, anche durante la partita.",
     steps: [
       { title: "1. Scansiona", description: "Cattura qualsiasi testo stampato con la fotocamera." },
-      { title: "2. Converti", description: "L’OCR estrae il testo e l’IA genera una voce naturale." },
+      { title: "2. Converti", description: "L'OCR estrae il testo e l'IA genera una voce naturale." },
       { title: "3. Ascolta", description: "Ascolta i tuoi contenuti in audio, ovunque e in qualsiasi momento." },
     ],
+  },
+  productShowcase: {
+    heading: "Vedi AIdiofy in azione",
+    description: "Scopri come AIdiofy trasforma il testo in esperienze audio immersive, con narrazione multi‑voce",
+    videoCaption: "Demo di esempio · Tempo di elaborazione ridotto per la presentazione",
+    screenshotsHeading: "Tour dell'app",
+    screenshotsDescription: "Esplora il viaggio in 7 passaggi dal testo all'audio immersivo",
+    screenshotDescriptions: {
+      "01-full-cast": "Genera audio con cast completo da qualsiasi pagina stampata con più voci IA",
+      "02-add-text": "Aggiungi il tuo contenuto testuale e preparalo per la conversione audio",
+      "03-direct-scene": "Dirigi la scena personalizzando interpretazione, ritmo e tono emotivo",
+      "04-cast-voices": "Scegli le voci in pochi secondi con ritratti dei personaggi e campioni vocali IA",
+      "05-listen-story": "Ascolta la tua storia con visualizzazione della forma d'onda audio e controlli di riproduzione",
+      "06-translate-narrate": "Traduci e narra i tuoi contenuti in più lingue, con lettura vocale",
+      "07-save-stories": "Salva le tue storie audio nella libreria con opzioni di riproduzione e condivisione",
+    },
   },
   faq: {
     heading: "FAQ: testo → audio per giochi",

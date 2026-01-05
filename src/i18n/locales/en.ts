@@ -14,7 +14,7 @@ export const en: Copy = {
     title: "Transform Text into",
     highlight: "Immersive Audio",
     description:
-      "AIdiofy uses advanced AI to convert any book, rulebook, or document into captivating audio. Just scan, and listen.",
+      "AIdiofy uses AI to turn rulebooks, handouts, and any printed text into immersive audio. Just scan and listen.",
     ctaHowItWorks: "How it Works",
     ctaTryApp: "Try the App",
   },
@@ -49,6 +49,22 @@ export const en: Copy = {
       { title: "3. Listen", description: "Enjoy your content as high-quality audio, anywhere, anytime." },
     ],
   },
+  productShowcase: {
+    heading: "See AIdiofy in Action",
+    description: "Watch how AIdiofy transforms text into immersive audio experiences with full-cast narration",
+    videoCaption: "Sample demo · Processing time shortened for presentation",
+    screenshotsHeading: "App Walkthrough",
+    screenshotsDescription: "Explore the 7-step journey from text to immersive audio",
+    screenshotDescriptions: {
+      "01-full-cast": "Generate full-cast audio from any printed page with multiple AI voices",
+      "02-add-text": "Add your text content and prepare it for audio conversion",
+      "03-direct-scene": "Direct the scene by customizing voice delivery, pacing, and emotional tone",
+      "04-cast-voices": "Cast voices in seconds with AI character portraits and voice samples",
+      "05-listen-story": "Listen to your story with audio waveform visualization and playback controls",
+      "06-translate-narrate": "Translate and narrate your content in multiple languages with voice output",
+      "07-save-stories": "Save your audio stories in the library with playback and sharing options",
+    },
+  },
   faq: {
     heading: "FAQ: Text-to-audio for games",
     description: "Quick answers about turning rulebooks and game text into immersive audio.",
@@ -73,12 +89,12 @@ export const en: Copy = {
   },
   waitlist: {
     heading: "Be the First to Experience AIdiofy",
-    description: "The AIdiofy app is already live—sign up to get feature updates, tips, and early notice about new releases.",
+    description: "The app is live — sign up for updates, tips, and announcements about new releases.",
     alreadyOnBoardLead: "Already on board?",
-    alreadyOnBoardBeforeLink: "Run the application at",
+    alreadyOnBoardBeforeLink: "Open the app at",
     alreadyOnBoardAfterLink: "and start listening now.",
     contactCta: "Contact",
-    emailLabel: "Email us at",
+    emailLabel: "Email:",
   },
   footer: {
     tagline: "Transform text into immersive audio for board gamers and book readers.",
@@ -87,7 +103,7 @@ export const en: Copy = {
     privacy: "Privacy Policy",
     terms: "Terms of Use",
     contact: "Contact",
-    copyright: "(c) 2025 AIdiofy. All rights reserved.",
+    copyright: "© 2025 AIdiofy. All rights reserved.",
   },
   cookie: {
     bannerTitle: "We respect your privacy",

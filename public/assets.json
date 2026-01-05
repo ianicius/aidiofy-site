@@ -1,0 +1,238 @@
+{
+  "screenshots": {
+    "01-full-cast": {
+      "src": "/screenshots_phone/01 Full-cast audio from any page.png",
+      "alt": {
+        "en": "AIdiofy app showing full-cast audio feature with multiple voice characters displayed on screen",
+        "pl": "Aplikacja AIdiofy pokazująca funkcję audio z pełną obsadą z wieloma postaciami głosowymi wyświetlonymi na ekranie",
+        "es": "Aplicación AIdiofy mostrando la función de audio con elenco completo con múltiples personajes de voz en pantalla",
+        "de": "AIdiofy-App zeigt die Vollbesetzungs-Audiofunktion mit mehreren Sprachfiguren auf dem Bildschirm",
+        "fr": "Application AIdiofy montrant la fonction audio avec distribution complète avec plusieurs personnages vocaux à l'écran",
+        "it": "App AIdiofy che mostra la funzione audio con cast completo e più personaggi vocali sullo schermo",
+        "ja": "AIdiofyアプリがフルキャストオーディオ機能を表示し、画面に複数のボイスキャラクターが表示されています",
+        "ko": "AIdiofy 앱이 풀 캐스트 오디오 기능을 보여주며 화면에 여러 보이스 캐릭터가 표시됩니다",
+        "pt": "Aplicativo AIdiofy mostrando o recurso de áudio com elenco completo com vários personagens de voz na tela",
+        "zh-CN": "AIdiofy应用显示全阵容音频功能，屏幕上显示多个语音角色"
+      },
+      "title": {
+        "en": "Full-Cast Audio",
+        "pl": "Audio z Pełną Obsadą",
+        "es": "Audio con Elenco Completo",
+        "de": "Audio mit Vollbesetzung",
+        "fr": "Audio avec Distribution Complète",
+        "it": "Audio con Cast Completo",
+        "ja": "フルキャストオーディオ",
+        "ko": "풀 캐스트 오디오",
+        "pt": "Áudio com Elenco Completo",
+        "zh-CN": "全阵容音频"
+      },
+      "category": "core",
+      "feature": "voice-casting"
+    },
+    "02-add-text": {
+      "src": "/screenshots_phone/02 Add Your Text.png",
+      "alt": {
+        "en": "AIdiofy app text input interface showing where users can add their own text content for audio conversion",
+        "pl": "Interfejs wprowadzania tekstu w aplikacji AIdiofy pokazujący, gdzie użytkownicy mogą dodać własną treść tekstową do konwersji na audio",
+        "es": "Interfaz de entrada de texto de la aplicación AIdiofy mostrando dónde los usuarios pueden agregar su propio contenido de texto para conversión de audio",
+        "de": "AIdiofy-App Texteingabeschnittstelle zeigt, wo Benutzer ihren eigenen Textinhalt für die Audio-Konvertierung hinzufügen können",
+        "fr": "Interface de saisie de texte de l'application AIdiofy montrant où les utilisateurs peuvent ajouter leur propre contenu textuel pour la conversion audio",
+        "it": "Interfaccia di input testo dell'app AIdiofy che mostra dove gli utenti possono aggiungere il proprio contenuto testuale per la conversione audio",
+        "ja": "AIdiofyアプリのテキスト入力インターフェースで、ユーザーがオーディオ変換用に独自のテキストコンテンツを追加できる場所を表示",
+        "ko": "AIdiofy 앱의 텍스트 입력 인터페이스에서 사용자가 오디오 변환을 위해 자신의 텍스트 콘텐츠를 추가할 수 있는 위치를 표시합니다",
+        "pt": "Interface de entrada de texto do aplicativo AIdiofy mostrando onde os usuários podem adicionar seu próprio conteúdo de texto para conversão de áudio",
+        "zh-CN": "AIdiofy应用文本输入界面显示用户可以在哪里添加自己的文本内容进行音频转换"
+      },
+      "title": {
+        "en": "Add Your Text",
+        "pl": "Dodaj Swój Tekst",
+        "es": "Agrega Tu Texto",
+        "de": "Füge Deinen Text Hinzu",
+        "fr": "Ajoutez Votre Texte",
+        "it": "Aggiungi Il Tuo Testo",
+        "ja": "テキストを追加",
+        "ko": "텍스트 추가",
+        "pt": "Adicione Seu Texto",
+        "zh-CN": "添加您的文本"
+      },
+      "category": "input",
+      "feature": "text-input"
+    },
+    "03-direct-scene": {
+      "src": "/screenshots_phone/03 Direct the Scene.png",
+      "alt": {
+        "en": "AIdiofy app scene direction controls allowing users to customize voice delivery, pacing, and emotional tone",
+        "pl": "Kontrolki reżyserii sceny w aplikacji AIdiofy pozwalające użytkownikom na dostosowanie dostarczania głosu, tempa i tonu emocjonalnego",
+        "es": "Controles de dirección de escena de la aplicación AIdiofy que permiten a los usuarios personalizar la entrega de voz, el ritmo y el tono emocional",
+        "de": "AIdiofy-App Szenensteuerungssteuerungen ermöglichen Benutzern die Anpassung der Stimmenabgabe, des Tempos und der emotionalen Tonart",
+        "fr": "Contrôles de direction de scène de l'application AIdiofy permettant aux utilisateurs de personnaliser la livraison vocale, le rythme et le ton émotionnel",
+        "it": "Controlli di direzione della scena dell'app AIdiofy che consentono agli utenti di personalizzare la consegna vocale, il ritmo e il tono emotivo",
+        "ja": "AIdiofyアプリのシーン演出コントロールで、ユーザーがボイスデリバリー、ペーシング、感情的なトーンをカスタマイズできます",
+        "ko": "AIdiofy 앱의 장면 방향 컨트롤을 통해 사용자가 음성 전달, 속도 및 감정적 톤을 사용자 지정할 수 있습니다",
+        "pt": "Controles de direção de cena do aplicativo AIdiofy permitindo aos usuários personalizar a entrega de voz, ritmo e tom emocional",
+        "zh-CN": "AIdiofy应用场景方向控制允许用户自定义语音表达、节奏和情感基调"
+      },
+      "title": {
+        "en": "Direct the Scene",
+        "pl": "Reżyseruj Scenę",
+        "es": "Dirige la Escena",
+        "de": "Inszeniere die Szene",
+        "fr": "Dirigez la Scène",
+        "it": "Dirigi la Scena",
+        "ja": "シーンを演出",
+        "ko": "장면 연출",
+        "pt": "Dirija a Cena",
+        "zh-CN": "导演场景"
+      },
+      "category": "customization",
+      "feature": "scene-direction"
+    },
+    "04-cast-voices": {
+      "src": "/screenshots_phone/04 Cast voices in seconds.jpg",
+      "alt": {
+        "en": "AIdiofy app voice casting interface showing multiple AI voice options with character portraits and voice samples",
+        "pl": "Interfejs obsady głosowej w aplikacji AIdiofy pokazująca wiele opcji głosów AI z portretami postaci i próbkami głosu",
+        "es": "Interfaz de reparto de voces de la aplicación AIdiofy mostrando múltiples opciones de voces de IA con retratos de personajes y muestras de voz",
+        "de": "AIdiofy-App Synchronisierungsschnittstelle zeigt mehrere KI-Stimmenoptionen mit Charakterporträts und Stimmproben",
+        "fr": "Interface de casting vocal de l'application AIdiofy montrant plusieurs options de voix IA avec portraits de personnages et échantillons vocaux",
+        "it": "Interfaccia di doppiaggio dell'app AIdiofy che mostra più opzioni di voci AI con ritratti dei personaggi e campioni vocali",
+        "ja": "AIdiofyアプリのボイスキャスティングインターフェースで、キャラクターのポートレートとボイスサンプルを含む複数のAIボイスオプションを表示",
+        "ko": "AIdiofy 앱의 보이스 캐스팅 인터페이스에서 캐릭터 초상화와 보이스 샘플이 포함된 여러 AI 보이스 옵션을 표시합니다",
+        "pt": "Interface de elenco de vozes do aplicativo AIdiofy mostrando várias opções de vozes de IA com retratos de personagens e amostras de voz",
+        "zh-CN": "AIdiofy应用语音选角界面显示多个AI语音选项，包含角色肖像和语音样本"
+      },
+      "title": {
+        "en": "Cast Voices in Seconds",
+        "pl": "Obsadź Głosy w Sekundy",
+        "es": "Elige Voces en Segundos",
+        "de": "Besetze Stimmen in Sekunden",
+        "fr": "Choisissez des Voix en Secondes",
+        "it": "Doppiaggio in Secondi",
+        "ja": "数秒でボイスキャスト",
+        "ko": "몇 초 만에 보이스 캐스트",
+        "pt": "Escolha Vozes em Segundos",
+        "zh-CN": "几秒钟内完成语音选角"
+      },
+      "category": "voice",
+      "feature": "voice-selection"
+    },
+    "05-listen-story": {
+      "src": "/screenshots_phone/05 Listen to Your Story.png",
+      "alt": {
+        "en": "AIdiofy app playback interface with audio waveform visualization and playback controls for listening to generated stories",
+        "pl": "Interfejs odtwarzania w aplikacji AIdiofy z wizualizacją fali dźwiękowej i kontrolkami odtwarzania do słuchania wygenerowanych historii",
+        "es": "Interfaz de reproducción de la aplicación AIdiofy con visualización de forma de onda de audio y controles de reproducción para escuchar historias generadas",
+        "de": "AIdiofy-App Wiedergabeschnittstelle mit Audio-Wellenformvisualisierung und Wiedergabesteuerungen zum Anhören generierter Geschichten",
+        "fr": "Interface de lecture de l'application AIdiofy avec visualisation de forme d'onde audio et contrôles de lecture pour écouter les histoires générées",
+        "it": "Interfaccia di riproduzione dell'app AIdiofy con visualizzazione della forma d'onda audio e controlli di riproduzione per ascoltare le storie generate",
+        "ja": "AIdiofyアプリの再生インターフェースで、生成された物語を聞くためのオーディオ波形視覚化と再生コントロールが表示されています",
+        "ko": "AIdiofy 앱의 재생 인터페이스에서 생성된 이야기를 들을 수 있는 오디오 파형 시각화와 재생 컨트롤이 표시됩니다",
+        "pt": "Interface de reprodução do aplicativo AIdiofy com visualização de forma de onda de áudio e controles de reprodução para ouvir histórias geradas",
+        "zh-CN": "AIdiofy应用播放界面显示音频波形可视化和播放控制，用于收听生成的故事"
+      },
+      "title": {
+        "en": "Listen to Your Story",
+        "pl": "Słuchaj Swojej Historii",
+        "es": "Escucha Tu Historia",
+        "de": "Höre Deine Geschichte",
+        "fr": "Écoutez Votre Histoire",
+        "it": "Ascolta La Tua Storia",
+        "ja": "あなたの物語を聞く",
+        "ko": "당신의 이야기 듣기",
+        "pt": "Ouça Sua História",
+        "zh-CN": "收听您的故事"
+      },
+      "category": "playback",
+      "feature": "audio-playback"
+    },
+    "06-translate-narrate": {
+      "src": "/screenshots_phone/06 Translate and narrate.jpg",
+      "alt": {
+        "en": "AIdiofy app translation and narration feature showing language selection and translated text with voice output",
+        "pl": "Funkcja tłumaczenia i narracji w aplikacji AIdiofy pokazująca wybór języka i przetłumaczony tekst z wyjściem głosowym",
+        "es": "Función de traducción y narración de la aplicación AIdiofy mostrando selección de idioma y texto traducido con salida de voz",
+        "de": "AIdiofy-App Übersetzungs- und Erzählfunktion zeigt Sprachauswahl und übersetzten Text mit Sprachausgabe",
+        "fr": "Fonction de traduction et narration de l'application AIdiofy montrant la sélection de langue et le texte traduit avec sortie vocale",
+        "it": "Funzione di traduzione e narrazione dell'app AIdiofy che mostra la selezione della lingua e il testo tradotto con output vocale",
+        "ja": "AIdiofyアプリの翻訳とナレーション機能で、言語選択と音声出力付きの翻訳テキストを表示",
+        "ko": "AIdiofy 앱의 번역 및 내레이션 기능에서 언어 선택 및 음성 출력이 포함된 번역된 텍스트를 표시합니다",
+        "pt": "Função de tradução e narração do aplicativo AIdiofy mostrando seleção de idioma e texto traduzido com saída de voz",
+        "zh-CN": "AIdiofy应用翻译和旁白功能显示语言选择和带语音输出的翻译文本"
+      },
+      "title": {
+        "en": "Translate and Narrate",
+        "pl": "Tłumacz i Narruj",
+        "es": "Traduce y Narra",
+        "de": "Übersetze und Erzähle",
+        "fr": "Traduisez et Narrez",
+        "it": "Traduci e Narra",
+        "ja": "翻訳してナレーション",
+        "ko": "번역 및 내레이션",
+        "pt": "Traduza e Narre",
+        "zh-CN": "翻译并旁白"
+      },
+      "category": "translation",
+      "feature": "translation"
+    },
+    "07-save-stories": {
+      "src": "/screenshots_phone/07 Save your stories.jpg",
+      "alt": {
+        "en": "AIdiofy app story library and save interface showing saved audio stories with playback and sharing options",
+        "pl": "Biblioteka historii audio i interfejs zapisywania w aplikacji AIdiofy pokazująca zapisane historie audio z opcjami odtwarzania i udostępniania",
+        "es": "Biblioteca de historias de audio e interfaz de guardado de la aplicación AIdiofy mostrando historias de audio guardadas con opciones de reproducción y compartir",
+        "de": "AIdiofy-App Audio-Geschichtenbibliothek und Speicherschnittstelle zeigt gespeicherte Audio-Geschichten mit Wiedergabe- und Freigabeoptionen",
+        "fr": "Bibliothèque d'histoires audio et interface de sauvegarde de l'application AIdiofy montrant les histoires audio enregistrées avec des options de lecture et de partage",
+        "it": "Libreria di storie audio e interfaccia di salvataggio dell'app AIdiofy che mostra storie audio salvate con opzioni di riproduzione e condivisione",
+        "ja": "AIdiofyアプリのオーディオストーリーライブラリと保存インターフェースで、再生と共有オプションを備えた保存されたオーディオストーリーを表示",
+        "ko": "AIdiofy 앱의 오디오 스토리 라이브러리와 저장 인터페이스에서 재생 및 공유 옵션이 포함된 저장된 오디오 스토리를 표시합니다",
+        "pt": "Biblioteca de histórias de áudio e interface de salvamento do aplicativo AIdiofy mostrando histórias de áudio salvas com opções de reprodução e compartilhamento",
+        "zh-CN": "AIdiofy应用音频故事库和保存界面显示已保存的音频故事，包含播放和共享选项"
+      },
+      "title": {
+        "en": "Save Your Stories",
+        "pl": "Zapisz Swoje Historie",
+        "es": "Guarda Tus Historias",
+        "de": "Speichere Deine Geschichten",
+        "fr": "Sauvegardez Vos Histoires",
+        "it": "Salva Le Tue Storie",
+        "ja": "あなたの物語を保存",
+        "ko": "당신의 이야기 저장",
+        "pt": "Salve Suas Histórias",
+        "zh-CN": "保存您的故事"
+      },
+      "category": "storage",
+      "feature": "story-management"
+    }
+  },
+  "video": {
+    "demo": {
+      "src": "/video/Demo Recording.mp4",
+      "title": {
+        "en": "AIdiofy Demo",
+        "pl": "Demo AIdiofy",
+        "es": "Demo de AIdiofy",
+        "de": "AIdiofy Demo",
+        "fr": "Démo AIdiofy",
+        "it": "Demo AIdiofy",
+        "ja": "AIdiofyデモ",
+        "ko": "AIdiofy 데모",
+        "pt": "Demo AIdiofy",
+        "zh-CN": "AIdiofy演示"
+      },
+      "description": {
+        "en": "Watch a complete walkthrough of how AIdiofy transforms text into immersive audio experiences",
+        "pl": "Obejrzyj kompletny przewodnik po tym, jak AIdiofy przekształca tekst w immersyjne doświadczenia audio",
+        "es": "Vea un recorrido completo de cómo AIdiofy transforma texto en experiencias de audio inmersivas",
+        "de": "Sehen Sie einen vollständigen Spaziergang darüber, wie AIdiofy Text in immersives Audio-Erlebnisse verwandelt",
+        "fr": "Regardez une visite complète de la manière dont AIdiofy transforme le texte en expériences audio immersives",
+        "it": "Guarda un tour completo di come AIdiofy trasforma il testo in esperienze audio immersive",
+        "ja": "AIdiofyがテキストを没入型オーディオ体験に変換する方法の完全なウォークスルーをご覧ください",
+        "ko": "AIdiofy가 텍스트를 몰입형 오디오 경험으로 변환하는 방법에 대한 완전한 워크스루를 보세요",
+        "pt": "Veja um passeio completo de como o AIdiofy transforma texto em experiências de áudio imersivas",
+        "zh-CN": "观看AIdiofy如何将文本转换为沉浸式音频体验的完整演练"
+      },
+      "duration": "2:30",
+      "poster": "/screenshots_phone/01 Full-cast audio from any page.png"
+    }
+  }
+}

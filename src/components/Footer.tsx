@@ -32,7 +32,7 @@ export const Footer: FC = () => {
                 {copy.nav.features}
               </a>
               <a 
-                href="#how-it-works" 
+                href="#product-showcase" 
                 className="text-body-sm text-text-muted hover:text-text-main hover:underline decoration-primary/60 underline-offset-4 smooth-transition"
               >
                 {copy.nav.howItWorks}

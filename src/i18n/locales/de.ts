@@ -25,7 +25,7 @@ export const de: Copy = {
       { title: "Sofort‑OCR", description: "Fotografiere gedruckten Text — präzise erkannt und sofort bereit." },
       { title: "Natürliche KI‑Stimmen", description: "Lass dir Inhalte klar und angenehm vorlesen." },
       { title: "Stimme anpassen", description: "Wähle Stimme, Tempo und Tonhöhe passend zur Runde." },
-      { title: "Einfache Wiedergabe", description: "Play/Pause, Springen und Navigieren — ohne Umwege." },
+      { title: "Einfache Wiedergabe", description: "Abspielen, Pausieren, Springen und Navigieren — ohne Umwege." },
     ],
   },
   howItWorks: {
@@ -36,6 +36,22 @@ export const de: Copy = {
       { title: "2. Umwandeln", description: "OCR liest den Text aus, die KI erzeugt eine natürliche Stimme." },
       { title: "3. Anhören", description: "Höre deine Inhalte als Audio — überall und jederzeit." },
     ],
+  },
+  productShowcase: {
+    heading: "AIdiofy in Aktion erleben",
+    description: "Sieh, wie AIdiofy Text in immersives Audio mit mehreren KI‑Stimmen verwandelt",
+    videoCaption: "Beispiel-Demo · Verarbeitungszeit für die Präsentation verkürzt",
+    screenshotsHeading: "App-Rundgang",
+    screenshotsDescription: "Erkunde den 7‑Schritte‑Weg vom Text zum immersiven Audio",
+    screenshotDescriptions: {
+      "01-full-cast": "Erzeuge Full‑Cast‑Audio aus jeder gedruckten Seite — mit mehreren KI‑Stimmen",
+      "02-add-text": "Füge Text hinzu und bereite ihn für die Audio‑Umwandlung vor",
+      "03-direct-scene": "Inszeniere die Szene: Sprechweise, Tempo und Stimmung anpassen",
+      "04-cast-voices": "Stimmen in Sekunden besetzen — mit KI‑Charakterbildern und Stimmproben",
+      "05-listen-story": "Höre deine Geschichte mit Wellenform‑Ansicht und Wiedergabesteuerung",
+      "06-translate-narrate": "Übersetze und lass deinen Inhalt in mehreren Sprachen vorlesen",
+      "07-save-stories": "Speichere deine Audio‑Stories in der Bibliothek — mit Abspiel‑ und Teilen‑Optionen",
+    },
   },
   faq: {
     heading: "FAQ: Text‑zu‑Audio für Spiele",

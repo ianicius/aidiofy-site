@@ -37,6 +37,22 @@ export const pt: Copy = {
       { title: "3. Ouvir", description: "Ouça seus conteúdos em áudio, em qualquer lugar." },
     ],
   },
+  productShowcase: {
+    heading: "Ver AIdiofy em ação",
+    description: "Veja como AIdiofy transforma texto em experiências de áudio imersivas com narração completa",
+    videoCaption: "Demo de exemplo · Tempo de processamento reduzido para apresentação",
+    screenshotsHeading: "Tour pelo app",
+    screenshotsDescription: "Explore a jornada de 7 etapas do texto ao áudio imersivo",
+    screenshotDescriptions: {
+      "01-full-cast": "Gere áudio com elenco completo de qualquer página impressa com múltiplas vozes de IA",
+      "02-add-text": "Adicione seu conteúdo de texto e prepare-o para conversão de áudio",
+      "03-direct-scene": "Dirija a cena ajustando a interpretação, o ritmo e o tom emocional",
+      "04-cast-voices": "Escolha vozes em segundos com retratos de personagens e amostras de voz de IA",
+      "05-listen-story": "Ouça sua história com visualização de forma de onda de áudio e controles de reprodução",
+      "06-translate-narrate": "Traduza e narre seu conteúdo em múltiplos idiomas com saída de voz",
+      "07-save-stories": "Salve suas histórias de áudio na biblioteca com opções de reprodução e compartilhamento",
+    },
+  },
   faq: {
     heading: "FAQ: texto → áudio para jogos",
     description: "Respostas rápidas sobre transformar regras e textos de jogo em áudio.",
