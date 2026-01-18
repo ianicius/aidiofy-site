@@ -10,44 +10,67 @@ import { PrivacyPolicy } from "./components/legal/PrivacyPolicy";
 import { TermsOfUse } from "./components/legal/TermsOfUse";
 import { CookieBanner } from "./components/CookieBanner";
 import { LanguageSwitcher } from "./components/LanguageSwitcher";
+import { BlogList } from "./components/Blog/BlogList";
+import { BlogPost } from "./components/Blog/BlogPost";
+import { BLOG_POSTS, BlogPost as BlogPostType } from "./data/blog";
 import { useI18n } from "./i18n";
 
-type View = "home" | "privacy" | "terms";
+type View = "home" | "privacy" | "terms" | "blog" | "blog-post";
 
-const resolveView = (hash: string): View => {
+interface ViewState {
+  view: View;
+  post?: BlogPostType;
+}
+
+const resolveViewState = (hash: string): ViewState => {
   const normalized = hash.replace(/^#/, "").toLowerCase();
-  if (normalized.startsWith("/privacy")) return "privacy";
-  if (normalized.startsWith("/terms")) return "terms";
-  return "home";
+
+  if (normalized.startsWith("/privacy")) return { view: "privacy" };
+  if (normalized.startsWith("/terms")) return { view: "terms" };
+  if (normalized === "/blog") return { view: "blog" };
+
+  if (normalized.startsWith("/blog/")) {
+    const slug = normalized.split("/blog/")[1];
+    const post = BLOG_POSTS.find(p => p.slug === slug);
+    if (post) return { view: "blog-post", post };
+  }
+
+  return { view: "home" };
 };
 
 function App() {
   const { copy } = useI18n();
-  const [view, setView] = useState<View>(() => resolveView(window.location.hash));
+  const [viewState, setViewState] = useState<ViewState>(() => resolveViewState(window.location.hash));
 
   useEffect(() => {
-    const onHashChange = () => setView(resolveView(window.location.hash));
+    const onHashChange = () => setViewState(resolveViewState(window.location.hash));
     window.addEventListener("hashchange", onHashChange);
     return () => window.removeEventListener("hashchange", onHashChange);
   }, []);
 
-  if (view === "privacy") {
-    return (
-      <>
-        <PrivacyPolicy />
-        <CookieBanner />
-      </>
-    );
-  }
-
-  if (view === "terms") {
-    return (
-      <>
-        <TermsOfUse />
-        <CookieBanner />
-      </>
-    );
-  }
+  // Dedicated Landing Page View
+  const renderContent = () => {
+    switch (viewState.view) {
+      case "privacy":
+        return <PrivacyPolicy />;
+      case "terms":
+        return <TermsOfUse />;
+      case "blog":
+        return <BlogList />;
+      case "blog-post":
+        return viewState.post ? <BlogPost post={viewState.post} /> : <div className="pt-32 text-center text-text-main">Post not found</div>;
+      default:
+        return (
+          <>
+            <Hero />
+            <Features />
+            <ProductShowcase />
+            <FAQ />
+            <Waitlist />
+          </>
+        );
+    }
+  };
 
   return (
     <div className="min-h-screen w-full flex flex-col font-display bg-background-dark text-text-main overflow-x-hidden selection:bg-primary/30">
@@ -55,15 +78,15 @@ function App() {
       <a href="#main-content" className="skip-link">
         {copy.nav.skipToMainContent}
       </a>
-      
+
       {/* Navbar */}
       <nav className="fixed top-0 left-0 w-full z-40 bg-background-dark/85 backdrop-blur-xl border-b border-border-subtle/60" role="navigation" aria-label="Main navigation">
         <div className="max-w-7xl mx-auto px-4 h-18 flex items-center justify-between">
-          <div className="flex items-center gap-3 text-text-main font-display font-bold text-2xl">
+          <a href="#/" className="flex items-center gap-3 text-text-main font-display font-bold text-2xl hover:opacity-80 transition-opacity">
             <Logo className="w-9 h-9" aria-hidden="true" />
             <span>AIdiofy</span>
-          </div>
-          
+          </a>
+
           <div className="flex items-center gap-6">
             <a href="#features" className="hidden sm:block text-body-sm font-medium text-text-muted hover:text-text-main hover:border-b-2 hover:border-primary/50 smooth-transition pb-1" aria-label="Go to Features section">
               {copy.nav.features}
@@ -71,14 +94,11 @@ function App() {
             <a href="#product-showcase" className="hidden sm:block text-body-sm font-medium text-text-muted hover:text-text-main hover:border-b-2 hover:border-primary/50 smooth-transition pb-1" aria-label="Go to Product Showcase section">
               {copy.nav.howItWorks}
             </a>
-            <a href="#/privacy-policy" className="hidden sm:block text-body-sm font-medium text-text-muted hover:text-text-main hover:border-b-2 hover:border-primary/50 smooth-transition pb-1" aria-label="Go to Privacy Policy">
-              {copy.nav.privacy}
-            </a>
-            <a href="#/terms-of-use" className="hidden sm:block text-body-sm font-medium text-text-muted hover:text-text-main hover:border-b-2 hover:border-primary/50 smooth-transition pb-1" aria-label="Go to Terms of Use">
-              {copy.nav.terms}
+            <a href="#/blog" className="hidden sm:block text-body-sm font-medium text-text-muted hover:text-text-main hover:border-b-2 hover:border-primary/50 smooth-transition pb-1" aria-label="Go to Blog">
+              Blog
             </a>
             <LanguageSwitcher />
-            <a 
+            <a
               href="https://app.aidiofy.com"
               target="_blank"
               rel="noreferrer"
@@ -92,31 +112,30 @@ function App() {
       </nav>
 
       <main id="main-content" className="flex-grow w-full">
-        <Hero />
-        <Features />
-        <ProductShowcase />
-        <FAQ />
-        <Waitlist />
+        {renderContent()}
       </main>
 
-      <div className="border-t border-border-subtle/30 py-8 bg-surface">
-        <div className="max-w-6xl mx-auto px-4 flex flex-col items-center gap-4">
-          <p className="text-body-sm font-medium text-text-tertiary">{copy.legal.poweredBy}</p>
-          <div className="flex items-center gap-6 text-text-muted">
-            <span className="text-body-sm hover:text-text-main smooth-transition" title="AI Voice Technology">
-              {copy.legal.elevenLabs}
-            </span>
-            <span className="text-body-sm hover:text-text-main smooth-transition" title="AI Character Platform">
-              {copy.legal.inworld}
-            </span>
-            <span className="text-body-sm hover:text-text-main smooth-transition" title="Google AI">
-              {copy.legal.gemini}
-            </span>
+      {/* Shared Footer Area */}
+      {viewState.view !== "privacy" && viewState.view !== "terms" && (
+        <div className="border-t border-border-subtle/30 py-8 bg-surface">
+          <div className="max-w-6xl mx-auto px-4 flex flex-col items-center gap-4">
+            <p className="text-body-sm font-medium text-text-tertiary">{copy.legal.poweredBy}</p>
+            <div className="flex items-center gap-6 text-text-muted">
+              <span className="text-body-sm hover:text-text-main smooth-transition" title="AI Voice Technology">
+                {copy.legal.elevenLabs}
+              </span>
+              <span className="text-body-sm hover:text-text-main smooth-transition" title="AI Character Platform">
+                {copy.legal.inworld}
+              </span>
+              <span className="text-body-sm hover:text-text-main smooth-transition" title="Google AI">
+                {copy.legal.gemini}
+              </span>
+            </div>
           </div>
         </div>
-      </div>
+      )}
 
-      <Footer />
+      {viewState.view !== "privacy" && viewState.view !== "terms" && <Footer />}
       <CookieBanner />
     </div>
   );

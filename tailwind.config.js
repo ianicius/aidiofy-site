@@ -21,20 +21,20 @@ export default {
         'surface': '#141416',
         'surface-elevated': '#1c1c1f',
         'border-subtle': '#2a2a2e',
-        
+
         // Accent Colors
         'primary': '#ff6b35',
         'primary-hover': '#ff7b4a',
         'secondary': '#ffb347',
         'secondary-hover': '#ffc266',
         'accent-crimson': '#dc143c',
-        
+
         // Text Colors (WCAG AAA)
         'text-main': '#f5f5f7',
         'text-muted': '#a1a1a6',
         'text-tertiary': '#6e6e73',
         'text-disabled': '#48484a',
-        
+
         // Glow Colors
         'glow-primary': 'rgba(255, 107, 53, 0.15)',
         'glow-secondary': 'rgba(255, 179, 71, 0.12)',
@@ -118,5 +118,7 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }
