@@ -66,4 +66,4 @@ The trick is treating it like actual directing: if the first take doesn't work, 
 
 Your script already has emotion in it. Now your audio can too.
 
-**[Try Director Tags free in AIdiofy Studio →]**
+**[Try Director Tags free in AIdiofy Studio →](https://app.aidiofy.com)**

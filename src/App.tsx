@@ -12,8 +12,9 @@ import { CookieBanner } from "./components/CookieBanner";
 import { LanguageSwitcher } from "./components/LanguageSwitcher";
 import { BlogList } from "./components/Blog/BlogList";
 import { BlogPost } from "./components/Blog/BlogPost";
-import { BLOG_POSTS, BlogPost as BlogPostType } from "./data/blog";
+import { getBlogPosts, BlogPost as BlogPostType } from "./data/blog";
 import { useI18n } from "./i18n";
+import { Locale } from "./i18n/locale";
 
 type View = "home" | "privacy" | "terms" | "blog" | "blog-post";
 
@@ -22,7 +23,7 @@ interface ViewState {
   post?: BlogPostType;
 }
 
-const resolveViewState = (hash: string): ViewState => {
+const resolveViewState = (hash: string, posts: BlogPostType[]): ViewState => {
   const normalized = hash.replace(/^#/, "").toLowerCase();
 
   if (normalized.startsWith("/privacy")) return { view: "privacy" };
@@ -31,7 +32,7 @@ const resolveViewState = (hash: string): ViewState => {
 
   if (normalized.startsWith("/blog/")) {
     const slug = normalized.split("/blog/")[1];
-    const post = BLOG_POSTS.find(p => p.slug === slug);
+    const post = posts.find(p => p.slug === slug);
     if (post) return { view: "blog-post", post };
   }
 
@@ -39,14 +40,21 @@ const resolveViewState = (hash: string): ViewState => {
 };
 
 function App() {
-  const { copy } = useI18n();
-  const [viewState, setViewState] = useState<ViewState>(() => resolveViewState(window.location.hash));
+  const { copy, locale } = useI18n();
+  // Get posts for current locale
+  const posts = getBlogPosts(locale);
+
+  const [viewState, setViewState] = useState<ViewState>(() => resolveViewState(window.location.hash, posts));
 
   useEffect(() => {
-    const onHashChange = () => setViewState(resolveViewState(window.location.hash));
-    window.addEventListener("hashchange", onHashChange);
-    return () => window.removeEventListener("hashchange", onHashChange);
-  }, []);
+    const updateView = () => setViewState(resolveViewState(window.location.hash, posts));
+
+    window.addEventListener("hashchange", updateView);
+    // Also update when locale/posts change
+    updateView();
+
+    return () => window.removeEventListener("hashchange", updateView);
+  }, [locale]); // posts is derived from locale, so dependency on locale matches
 
   // Dedicated Landing Page View
   const renderContent = () => {

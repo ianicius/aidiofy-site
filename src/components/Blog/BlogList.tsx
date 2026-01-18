@@ -1,8 +1,17 @@
-import { BLOG_POSTS } from '../../data/blog';
+import { getBlogPosts } from '../../data/blog';
 import { Helmet } from 'react-helmet-async';
 import { ArrowRight, Calendar, Clock } from 'lucide-react';
+import { useI18n } from '../../i18n';
+import { useEffect } from 'react';
 
 export function BlogList() {
+    const { locale } = useI18n();
+    const posts = getBlogPosts(locale);
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <div className="pt-32 pb-20 px-4 min-h-screen bg-background-dark">
             <Helmet>
@@ -20,7 +29,7 @@ export function BlogList() {
                 </div>
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {BLOG_POSTS.map((post, index) => (
+                    {posts.map((post, index) => (
                         <article
                             key={post.id}
                             className="group relative bg-surface hover:bg-surface-elevated border border-border-subtle hover:border-primary/30 rounded-3xl p-8 transition-all duration-300 hover:shadow-glow-accent animate-fade-in-up"

@@ -48,4 +48,4 @@ You could listen to a module on your commute and actually absorb the story inste
 
 Stop being your own audio janitor. That's what the AI is for.
 
-**[Try it free — clean your first PDF page →]**
+**[Try it free — clean your first PDF page →](https://app.aidiofy.com)**
