@@ -102,7 +102,7 @@ function App() {
             <a href="#product-showcase" className="hidden sm:block text-body-sm font-medium text-text-muted hover:text-text-main hover:border-b-2 hover:border-primary/50 smooth-transition pb-1" aria-label="Go to Product Showcase section">
               {copy.nav.howItWorks}
             </a>
-            <a href="#/blog" className="hidden sm:block text-body-sm font-medium text-text-muted hover:text-text-main hover:border-b-2 hover:border-primary/50 smooth-transition pb-1" aria-label="Go to Blog">
+            <a href="#/blog" className="text-body-sm font-medium text-text-muted hover:text-text-main hover:border-b-2 hover:border-primary/50 smooth-transition pb-1" aria-label="Go to Blog">
               Blog
             </a>
             <LanguageSwitcher />

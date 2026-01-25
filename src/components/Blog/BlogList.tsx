@@ -5,7 +5,7 @@ import { useI18n } from '../../i18n';
 import { useEffect } from 'react';
 
 export function BlogList() {
-    const { locale } = useI18n();
+    const { copy, locale } = useI18n();
     const posts = getBlogPosts(locale);
 
     useEffect(() => {
@@ -15,16 +15,16 @@ export function BlogList() {
     return (
         <div className="pt-32 pb-20 px-4 min-h-screen bg-background-dark">
             <Helmet>
-                <title>Blog | AIdiofy - AI Voice Technology for RPGs</title>
-                <meta name="description" content="Insights on RPG audio, GM tips, and product updates from the AIdiofy team." />
+                <title>{copy.blog.title}</title>
+                <meta name="description" content={copy.blog.description} />
             </Helmet>
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-16 animate-fade-in-up">
                     <h1 className="text-heading-1 md:text-display-md font-display font-bold text-text-main mb-6">
-                        Latest from <span className="text-primary">AIdiofy</span>
+                        {copy.blog.latestHeading} <span className="text-primary">AIdiofy</span>
                     </h1>
                     <p className="text-body-lg text-text-muted max-w-2xl mx-auto">
-                        Insights on RPG audio, GM tips, and product updates.
+                        {copy.blog.latestDescription}
                     </p>
                 </div>
 
@@ -57,7 +57,7 @@ export function BlogList() {
                             </p>
 
                             <div className="flex items-center text-primary font-medium group-hover:translate-x-2 transition-transform duration-300">
-                                Read Article <ArrowRight className="w-4 h-4 ml-2" />
+                                {copy.blog.readArticle} <ArrowRight className="w-4 h-4 ml-2" />
                             </div>
                         </article>
                     ))}

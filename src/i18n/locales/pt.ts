@@ -126,4 +126,14 @@ export const pt: Copy = {
     inworld: "Inworld",
     gemini: "Gemini",
   },
+  blog: {
+    title: "Blog | AIdiofy",
+    description: "Insights sobre áudio para RPG, dicas para mestres e atualizações da equipe AIdiofy.",
+    latestHeading: "Últimas de",
+    latestDescription: "Insights sobre áudio para RPG, dicas para mestres e novidades.",
+    readArticle: "Ler artigo",
+    backToBlog: "Voltar ao blog",
+    moreArticles: "Mais artigos",
+    share: "Compartilhar",
+  },
 };

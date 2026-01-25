@@ -127,4 +127,14 @@ export const it: Copy = {
     inworld: "Inworld",
     gemini: "Gemini",
   },
+  blog: {
+    title: "Blog | AIdiofy",
+    description: "Approfondimenti sull'audio RPG, consigli per GM e aggiornamenti dal team AIdiofy.",
+    latestHeading: "Ultimi da",
+    latestDescription: "Approfondimenti sull'audio RPG, consigli per GM e novità.",
+    readArticle: "Leggi l'articolo",
+    backToBlog: "Torna al blog",
+    moreArticles: "Altri articoli",
+    share: "Condividi",
+  },
 };

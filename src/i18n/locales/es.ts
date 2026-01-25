@@ -127,4 +127,14 @@ export const es: Copy = {
     inworld: "Inworld",
     gemini: "Gemini",
   },
+  blog: {
+    title: "Blog | AIdiofy - Tecnología de voz IA para RPGs",
+    description: "Ideas sobre audio RPG, consejos para GM y actualizaciones del equipo AIdiofy.",
+    latestHeading: "Lo último de",
+    latestDescription: "Ideas sobre audio RPG, consejos para GM y actualizaciones.",
+    readArticle: "Leer artículo",
+    backToBlog: "Volver al blog",
+    moreArticles: "Más artículos",
+    share: "Compartir",
+  },
 };

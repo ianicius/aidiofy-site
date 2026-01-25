@@ -126,4 +126,14 @@ export const ja: Copy = {
     inworld: "Inworld",
     gemini: "Gemini",
   },
+  blog: {
+    title: "Blog | AIdiofy - AI Voice Technology for RPGs",
+    description: "Insights on RPG audio, GM tips, and product updates from the AIdiofy team.",
+    latestHeading: "Latest from",
+    latestDescription: "Insights on RPG audio, GM tips, and product updates.",
+    readArticle: "Read Article",
+    backToBlog: "Back to Blog",
+    moreArticles: "More Articles",
+    share: "Share",
+  },
 };

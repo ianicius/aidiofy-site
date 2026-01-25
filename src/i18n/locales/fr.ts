@@ -127,4 +127,14 @@ export const fr: Copy = {
     inworld: "Inworld",
     gemini: "Gemini",
   },
+  blog: {
+    title: "Blog | AIdiofy - Technologie vocale IA pour JDR",
+    description: "Conseils audio JDR, astuces MJ et mises à jour de l'équipe AIdiofy.",
+    latestHeading: "Dernières nouvelles de",
+    latestDescription: "Conseils audio JDR, astuces MJ et mises à jour.",
+    readArticle: "Lire l'article",
+    backToBlog: "Retour au blog",
+    moreArticles: "Plus d'articles",
+    share: "Partager",
+  },
 };

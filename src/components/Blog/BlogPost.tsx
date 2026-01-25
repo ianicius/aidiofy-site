@@ -4,12 +4,15 @@ import { Helmet } from 'react-helmet-async';
 import { BlogPost as BlogPostType } from '../../data/blog';
 import { ArrowLeft, Calendar, Clock, Share2 } from 'lucide-react';
 import { useEffect } from 'react';
+import { useI18n } from '../../i18n';
 
 interface BlogPostProps {
     post: BlogPostType;
 }
 
 export function BlogPost({ post }: BlogPostProps) {
+    const { copy } = useI18n();
+
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [post.id]);
@@ -22,6 +25,9 @@ export function BlogPost({ post }: BlogPostProps) {
                 <meta property="og:title" content={post.title} />
                 <meta property="og:description" content={post.excerpt} />
                 <meta property="og:type" content="article" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content={post.title} />
+                <meta name="twitter:description" content={post.excerpt} />
             </Helmet>
             <div className="max-w-3xl mx-auto animate-fade-in-up">
                 {/* Header */}
@@ -31,7 +37,7 @@ export function BlogPost({ post }: BlogPostProps) {
                         className="inline-flex items-center text-text-muted hover:text-primary mb-8 transition-colors"
                     >
                         <ArrowLeft className="w-4 h-4 mr-2" />
-                        Back to Blog
+                        {copy.blog.backToBlog}
                     </a>
 
                     <h1 className="text-heading-1 md:text-display-md font-display font-bold text-text-main mb-6">
@@ -70,7 +76,7 @@ export function BlogPost({ post }: BlogPostProps) {
                         href="#/blog"
                         className="text-text-muted hover:text-text-main transition-colors font-medium"
                     >
-                        ← More Articles
+                        ← {copy.blog.moreArticles}
                     </a>
 
                     <button
@@ -81,7 +87,7 @@ export function BlogPost({ post }: BlogPostProps) {
                         className="flex items-center gap-2 text-text-muted hover:text-primary transition-colors"
                     >
                         <Share2 className="w-4 h-4" />
-                        <span className="text-sm">Share</span>
+                        <span className="text-sm">{copy.blog.share}</span>
                     </button>
                 </div>
             </div>

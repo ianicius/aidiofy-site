@@ -25,23 +25,29 @@ export const Footer: FC = () => {
               {copy.footer.navigationHeading}
             </h4>
             <div className="flex flex-col gap-3">
-              <a 
-                href="#features" 
+              <a
+                href="#features"
                 className="text-body-sm text-text-muted hover:text-text-main hover:underline decoration-primary/60 underline-offset-4 smooth-transition"
               >
                 {copy.nav.features}
               </a>
-              <a 
-                href="#product-showcase" 
+              <a
+                href="#product-showcase"
                 className="text-body-sm text-text-muted hover:text-text-main hover:underline decoration-primary/60 underline-offset-4 smooth-transition"
               >
                 {copy.nav.howItWorks}
               </a>
-              <a 
-                href="#faq" 
+              <a
+                href="#faq"
                 className="text-body-sm text-text-muted hover:text-text-main hover:underline decoration-primary/60 underline-offset-4 smooth-transition"
               >
                 {copy.nav.faq}
+              </a>
+              <a
+                href="#/blog"
+                className="text-body-sm text-text-muted hover:text-text-main hover:underline decoration-primary/60 underline-offset-4 smooth-transition"
+              >
+                Blog
               </a>
             </div>
           </div>
@@ -52,20 +58,20 @@ export const Footer: FC = () => {
               {copy.footer.legalHeading}
             </h4>
             <div className="flex flex-col gap-3">
-              <a 
-                href="#/privacy-policy" 
+              <a
+                href="#/privacy-policy"
                 className="text-body-sm text-text-muted hover:text-text-main hover:underline decoration-primary/60 underline-offset-4 smooth-transition"
               >
                 {copy.footer.privacy}
               </a>
-              <a 
-                href="#/terms-of-use" 
+              <a
+                href="#/terms-of-use"
                 className="text-body-sm text-text-muted hover:text-text-main hover:underline decoration-primary/60 underline-offset-4 smooth-transition"
               >
                 {copy.footer.terms}
               </a>
-              <a 
-                href="mailto:rj@aidiofy.com" 
+              <a
+                href="mailto:rj@aidiofy.com"
                 className="text-body-sm text-text-muted hover:text-text-main hover:underline decoration-primary/60 underline-offset-4 smooth-transition"
               >
                 {copy.footer.contact}

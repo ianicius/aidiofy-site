@@ -104,4 +104,14 @@ export type Copy = {
     inworld: string;
     gemini: string;
   };
+  blog: {
+    title: string;
+    description: string;
+    latestHeading: string;
+    latestDescription: string;
+    readArticle: string;
+    backToBlog: string;
+    moreArticles: string;
+    share: string;
+  };
 };

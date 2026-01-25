@@ -127,4 +127,14 @@ export const de: Copy = {
     inworld: "Inworld",
     gemini: "Gemini",
   },
+  blog: {
+    title: "Blog | AIdiofy - KI-Stimmtechnologie für RPGs",
+    description: "Einblicke in RPG-Audio, Spielleitertipps und Updates vom AIdiofy-Team.",
+    latestHeading: "Neuestes von",
+    latestDescription: "Einblicke in RPG-Audio, Spielleitertipps und Updates.",
+    readArticle: "Artikel lesen",
+    backToBlog: "Zurück zum Blog",
+    moreArticles: "Weitere Artikel",
+    share: "Teilen",
+  },
 };
