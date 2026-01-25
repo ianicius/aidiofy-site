@@ -34,6 +34,18 @@ const POST_METADATA: Record<string, { slug: string; date: string; readTime: stri
         date: 'January 18, 2026',
         readTime: '6 min read',
         filename: 'blog_post_4.md'
+    },
+    '5': {
+        slug: 'how-board-gamers-deal-with-language-barriers',
+        date: 'January 20, 2026',
+        readTime: '5 min read',
+        filename: 'blog_post_5.md'
+    },
+    '6': {
+        slug: 'what-reddit-taught-us-about-gaming-language-barriers',
+        date: 'January 25, 2026',
+        readTime: '7 min read',
+        filename: 'blog_post_6.md'
     }
 };
 
