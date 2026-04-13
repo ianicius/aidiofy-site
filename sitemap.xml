@@ -78,6 +78,37 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://aidiofy.com/blog/walls-of-text-board-game-ai-narrator</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aidiofy.com/blog/stop-being-the-table-translator</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aidiofy.com/blog/apps-that-scan-text-and-turn-it-into-audio</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aidiofy.com/blog/let-ai-read-your-board-game-rulebook</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aidiofy.com/blog/board-game-rules-explained-in-audio</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Legal pages -->
   <url>
     <loc>https://aidiofy.com/privacy</loc>

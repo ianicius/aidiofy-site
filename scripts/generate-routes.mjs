@@ -22,6 +22,11 @@ const BLOG_SLUGS = [
   'audio-and-tts-tools-comparison',
   'how-board-gamers-deal-with-language-barriers',
   'what-reddit-taught-us-about-gaming-language-barriers',
+  'walls-of-text-board-game-ai-narrator',
+  'stop-being-the-table-translator',
+  'apps-that-scan-text-and-turn-it-into-audio',
+  'let-ai-read-your-board-game-rulebook',
+  'board-game-rules-explained-in-audio',
 ];
 
 // Locale path segments (empty string = English / root)

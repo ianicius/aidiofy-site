@@ -46,6 +46,36 @@ const POST_METADATA: Record<string, { slug: string; date: string; readTime: stri
         date: 'January 25, 2026',
         readTime: '7 min read',
         filename: 'blog_post_6.md'
+    },
+    '7': {
+        slug: 'walls-of-text-board-game-ai-narrator',
+        date: 'April 13, 2026',
+        readTime: '6 min read',
+        filename: 'blog_post_7.md'
+    },
+    '8': {
+        slug: 'stop-being-the-table-translator',
+        date: 'April 13, 2026',
+        readTime: '6 min read',
+        filename: 'blog_post_8.md'
+    },
+    '9': {
+        slug: 'apps-that-scan-text-and-turn-it-into-audio',
+        date: 'April 13, 2026',
+        readTime: '7 min read',
+        filename: 'blog_post_9.md'
+    },
+    '10': {
+        slug: 'let-ai-read-your-board-game-rulebook',
+        date: 'April 13, 2026',
+        readTime: '6 min read',
+        filename: 'blog_post_10.md'
+    },
+    '11': {
+        slug: 'board-game-rules-explained-in-audio',
+        date: 'April 13, 2026',
+        readTime: '6 min read',
+        filename: 'blog_post_11.md'
     }
 };
 
