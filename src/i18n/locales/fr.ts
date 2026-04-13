@@ -7,7 +7,7 @@ export const fr: Copy = {
     faq: "FAQ",
     privacy: "Vie privée",
     terms: "Conditions",
-    app: "Appli",
+    app: "Essai gratuit",
     skipToMainContent: "Aller au contenu principal",
   },
   hero: {
@@ -16,7 +16,7 @@ export const fr: Copy = {
     description:
       "AIdiofy transforme règles, livrets et tout texte imprimé en narration audio grâce à l’IA. Scannez une page et écoutez : idéal pour jeux de société, JdR et lectures.",
     ctaHowItWorks: "Comment ça marche",
-    ctaTryApp: "Essayer l’app",
+    ctaTryApp: "Commencer l’écoute gratuite",
   },
   features: {
     heading: "Fonctionnalités clés",
@@ -91,7 +91,7 @@ export const fr: Copy = {
     privacy: "Politique de confidentialité",
     terms: "Conditions d’utilisation",
     contact: "Contact",
-    copyright: "© 2025 AIdiofy. Tous droits réservés.",
+    copyright: "© 2026 AIdiofy. Tous droits réservés.",
   },
   cookie: {
     bannerTitle: "Nous respectons votre vie privée",
@@ -127,6 +127,37 @@ export const fr: Copy = {
     inworld: "Inworld",
     gemini: "Gemini",
   },
+  socialProof: {
+    statUsers: "500+",
+    statUsersLabel: "Meneurs de jeu et joueurs",
+    statVoices: "10,000+",
+    statVoicesLabel: "Voix IA disponibles",
+    statLanguages: "10+",
+    statLanguagesLabel: "Langues prises en charge",
+    testimonials: [
+      {
+        quote: "Enfin, mes joueurs de D&D retiennent les noms des PNJ. Le casting multi-voix rend chaque personnage unique et crédible.",
+        name: "Marcus T.",
+        initials: "MT",
+        role: "Meneur de jeu, 8 ans d'expérience",
+      },
+      {
+        quote: "Nous jouons à Gloomhaven en français, mais le jeu est en anglais. AIdiofy lit le texte du scénario à voix haute avec des voix distinctes — c'est comme avoir un livre audio intégré au jeu.",
+        name: "Anna K.",
+        initials: "AK",
+        role: "Joueuse de jeux de société, Munich",
+      },
+      {
+        quote: "Avant, je sautais le texte d'ambiance dans nos parties de JdR parce que lire à voix haute me gênait. Maintenant j'appuie sur lecture et toute la table est plongée dans l'histoire.",
+        name: "Jake R.",
+        initials: "JR",
+        role: "MJ, Pathfinder homebrew",
+      },
+    ],
+    badgeFree: "Gratuit pour commencer",
+    badgeNoCard: "Aucune carte bancaire requise",
+    badgeCancel: "Résiliation à tout moment",
+  },
   blog: {
     title: "Blog | AIdiofy - Technologie vocale IA pour JDR",
     description: "Conseils audio JDR, astuces MJ et mises à jour de l'équipe AIdiofy.",
@@ -136,5 +167,23 @@ export const fr: Copy = {
     backToBlog: "Retour au blog",
     moreArticles: "Plus d'articles",
     share: "Partager",
+  },
+  meta: {
+    home: {
+      title: "AIdiofy - Transformez le texte en audio immersif",
+      description: "Transformez livres, règles de jeu et textes en audio immersif avec AIdiofy. Scannez n'importe quel texte, attribuez des voix IA et écoutez vos contenus avec une profondeur émotionnelle.",
+    },
+    blog: {
+      title: "Blog | AIdiofy - Technologie vocale IA pour JDR",
+      description: "Découvrez les dernières actualités sur l'audio JDR, les astuces MJ et les mises à jour produit de l'équipe AIdiofy. Apprenez à enrichir vos sessions de jeu de rôle avec un audio immersif.",
+    },
+    privacy: {
+      title: "Politique de confidentialité | AIdiofy",
+      description: "Découvrez comment AIdiofy collecte, utilise et protège vos données personnelles. Nous nous engageons pour la transparence et la sécurité dans toutes nos pratiques de traitement des données.",
+    },
+    terms: {
+      title: "Conditions d'utilisation | AIdiofy",
+      description: "Lisez les Conditions d'utilisation d'AIdiofy. Comprenez les règles, droits des utilisateurs et responsabilités lors de l'utilisation de nos services de synthèse vocale IA.",
+    },
   },
 };

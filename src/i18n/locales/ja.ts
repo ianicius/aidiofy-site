@@ -7,7 +7,7 @@ export const ja: Copy = {
     faq: "よくある質問",
     privacy: "プライバシー",
     terms: "利用規約",
-    app: "アプリ",
+    app: "無料で試す",
     skipToMainContent: "本文へスキップ",
   },
   hero: {
@@ -16,7 +16,7 @@ export const ja: Copy = {
     description:
       "AIdiofyはOCRとAI音声で、ルールブックやハンドアウト、書籍などの印刷文字を読み上げます。撮って、変換して、すぐに聴けます。",
     ctaHowItWorks: "使い方を見る",
-    ctaTryApp: "アプリを試す",
+    ctaTryApp: "無料で聴き始める",
   },
   features: {
     heading: "主な機能",
@@ -91,7 +91,7 @@ export const ja: Copy = {
     privacy: "プライバシーポリシー",
     terms: "利用規約",
     contact: "お問い合わせ",
-    copyright: "© 2025 AIdiofy. 無断転載を禁じます。",
+    copyright: "© 2026 AIdiofy. 無断転載を禁じます。",
   },
   cookie: {
     bannerTitle: "プライバシーを尊重します",
@@ -126,14 +126,63 @@ export const ja: Copy = {
     inworld: "Inworld",
     gemini: "Gemini",
   },
+  socialProof: {
+    statUsers: "500+",
+    statUsersLabel: "ゲームマスター＆プレイヤー",
+    statVoices: "10,000+",
+    statVoicesLabel: "利用可能なAI音声",
+    statLanguages: "10+",
+    statLanguagesLabel: "対応言語",
+    testimonials: [
+      {
+        quote: "ようやくD&DプレイヤーたちがNPCの名前を覚えてくれるようになりました。マルチボイスキャスティングで、どのキャラクターも個性的でリアルに感じられます。",
+        name: "Marcus T.",
+        initials: "MT",
+        role: "ダンジョンマスター、経験8年",
+      },
+      {
+        quote: "Gloomhavenをドイツ語で遊んでいますが、ゲーム自体は英語です。AIdiofyがシナリオテキストをキャラごとの声で読み上げてくれるので、まるでゲームにオーディオブックが組み込まれたようです。",
+        name: "Anna K.",
+        initials: "AK",
+        role: "ボードゲーマー、ミュンヘン",
+      },
+      {
+        quote: "以前はRPGセッションでフレーバーテキストを読み飛ばしていました。声に出して読むのが気恥ずかしかったからです。今はPlayを押すだけで、テーブル全体が物語に没入します。",
+        name: "Jake R.",
+        initials: "JR",
+        role: "GM、Pathfinderホームブリュー",
+      },
+    ],
+    badgeFree: "無料で始められる",
+    badgeNoCard: "クレジットカード不要",
+    badgeCancel: "いつでも解約可能",
+  },
   blog: {
-    title: "Blog | AIdiofy - AI Voice Technology for RPGs",
-    description: "Insights on RPG audio, GM tips, and product updates from the AIdiofy team.",
-    latestHeading: "Latest from",
-    latestDescription: "Insights on RPG audio, GM tips, and product updates.",
-    readArticle: "Read Article",
-    backToBlog: "Back to Blog",
-    moreArticles: "More Articles",
-    share: "Share",
+    title: "ブログ | AIdiofy - RPG向けAI音声技術",
+    description: "RPGオーディオ、GM向けヒント、AIdiofy チームからの最新情報。",
+    latestHeading: "最新の記事",
+    latestDescription: "RPGオーディオ、GM向けヒント、製品アップデート。",
+    readArticle: "記事を読む",
+    backToBlog: "ブログに戻る",
+    moreArticles: "その他の記事",
+    share: "共有",
+  },
+  meta: {
+    home: {
+      title: "AIdiofy - テキストを没入型オーディオに変換",
+      description: "AIdiofy で書籍、ルールブック、ゲームテキストを没入型オーディオに変換。テキストをスキャンし、AI音声を割り当て、感情豊かなコンテンツを聴きましょう。",
+    },
+    blog: {
+      title: "ブログ | AIdiofy - RPG向けAI音声技術",
+      description: "AIdiofy チームによるRPGオーディオ、GMヒント、製品アップデートの最新情報をお読みください。没入型オーディオでテーブルトップセッションを向上させる方法を学びましょう。",
+    },
+    privacy: {
+      title: "プライバシーポリシー | AIdiofy",
+      description: "AIdiofy がお客様の個人データをどのように収集、使用、保護するかについてご案内します。データ処理における透明性とセキュリティに取り組んでいます。",
+    },
+    terms: {
+      title: "利用規約 | AIdiofy",
+      description: "AIdiofy の利用規約をお読みください。AIテキスト読み上げサービスおよびアプリケーションをご利用いただく際のルール、ユーザーの権利、責任についてご確認いただけます。",
+    },
   },
 };

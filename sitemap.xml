@@ -1,13 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://aidiofy.com/</loc></url>
-  <url><loc>https://aidiofy.com/de/</loc></url>
-  <url><loc>https://aidiofy.com/fr/</loc></url>
-  <url><loc>https://aidiofy.com/es/</loc></url>
-  <url><loc>https://aidiofy.com/it/</loc></url>
-  <url><loc>https://aidiofy.com/pl/</loc></url>
-  <url><loc>https://aidiofy.com/zh-cn/</loc></url>
-  <url><loc>https://aidiofy.com/ja/</loc></url>
-  <url><loc>https://aidiofy.com/ko/</loc></url>
-  <url><loc>https://aidiofy.com/pt/</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://aidiofy.com/</loc>
+    <lastmod>2026-04-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aidiofy.com/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://aidiofy.com/de/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aidiofy.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://aidiofy.com/es/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://aidiofy.com/it/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://aidiofy.com/pl/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aidiofy.com/zh-cn/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aidiofy.com/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://aidiofy.com/ko/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aidiofy.com/pt/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aidiofy.com/" />
+  </url>
+
+  <!-- Localized homepages -->
+  <url><loc>https://aidiofy.com/de/</loc><lastmod>2026-04-13</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://aidiofy.com/fr/</loc><lastmod>2026-04-13</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://aidiofy.com/es/</loc><lastmod>2026-04-13</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://aidiofy.com/it/</loc><lastmod>2026-04-13</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://aidiofy.com/pl/</loc><lastmod>2026-04-13</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://aidiofy.com/zh-cn/</loc><lastmod>2026-04-13</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://aidiofy.com/ja/</loc><lastmod>2026-04-13</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://aidiofy.com/ko/</loc><lastmod>2026-04-13</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://aidiofy.com/pt/</loc><lastmod>2026-04-13</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+
+  <!-- Blog listing -->
+  <url>
+    <loc>https://aidiofy.com/blog</loc>
+    <lastmod>2026-01-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog posts -->
+  <url>
+    <loc>https://aidiofy.com/blog/what-reddit-taught-us-about-gaming-language-barriers</loc>
+    <lastmod>2026-01-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aidiofy.com/blog/how-board-gamers-deal-with-language-barriers</loc>
+    <lastmod>2026-01-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aidiofy.com/blog/audio-and-tts-tools-comparison</loc>
+    <lastmod>2026-01-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aidiofy.com/blog/why-your-tabletop-rpg-session-sounds-like-a-spreadsheet</loc>
+    <lastmod>2026-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aidiofy.com/blog/stop-listening-to-page-numbers</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aidiofy.com/blog/meaning-what-you-say-direct-ai-voices</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Legal pages -->
+  <url>
+    <loc>https://aidiofy.com/privacy</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://aidiofy.com/terms</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
 </urlset>

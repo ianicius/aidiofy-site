@@ -1,9 +1,13 @@
 import type { FC } from "react";
+import { Link } from "react-router-dom";
 import Logo from "./Logo";
 import { useI18n } from "../i18n";
+import { LOCALE_PATH_SEGMENT } from "../i18n/locale";
 
 export const Footer: FC = () => {
-  const { copy } = useI18n();
+  const { copy, locale } = useI18n();
+  const homeBase = locale === "en" ? "/" : `/${LOCALE_PATH_SEGMENT[locale]}/`;
+
   return (
     <footer className="border-t border-border-subtle/60 py-16 bg-surface">
       <div className="max-w-6xl mx-auto px-4">
@@ -26,29 +30,29 @@ export const Footer: FC = () => {
             </h4>
             <div className="flex flex-col gap-3">
               <a
-                href="#features"
+                href={`${homeBase}#features`}
                 className="text-body-sm text-text-muted hover:text-text-main hover:underline decoration-primary/60 underline-offset-4 smooth-transition"
               >
                 {copy.nav.features}
               </a>
               <a
-                href="#product-showcase"
+                href={`${homeBase}#product-showcase`}
                 className="text-body-sm text-text-muted hover:text-text-main hover:underline decoration-primary/60 underline-offset-4 smooth-transition"
               >
                 {copy.nav.howItWorks}
               </a>
               <a
-                href="#faq"
+                href={`${homeBase}#faq`}
                 className="text-body-sm text-text-muted hover:text-text-main hover:underline decoration-primary/60 underline-offset-4 smooth-transition"
               >
                 {copy.nav.faq}
               </a>
-              <a
-                href="#/blog"
+              <Link
+                to="/blog"
                 className="text-body-sm text-text-muted hover:text-text-main hover:underline decoration-primary/60 underline-offset-4 smooth-transition"
               >
                 Blog
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -58,18 +62,18 @@ export const Footer: FC = () => {
               {copy.footer.legalHeading}
             </h4>
             <div className="flex flex-col gap-3">
-              <a
-                href="#/privacy-policy"
+              <Link
+                to="/privacy"
                 className="text-body-sm text-text-muted hover:text-text-main hover:underline decoration-primary/60 underline-offset-4 smooth-transition"
               >
                 {copy.footer.privacy}
-              </a>
-              <a
-                href="#/terms-of-use"
+              </Link>
+              <Link
+                to="/terms"
                 className="text-body-sm text-text-muted hover:text-text-main hover:underline decoration-primary/60 underline-offset-4 smooth-transition"
               >
                 {copy.footer.terms}
-              </a>
+              </Link>
               <a
                 href="mailto:rj@aidiofy.com"
                 className="text-body-sm text-text-muted hover:text-text-main hover:underline decoration-primary/60 underline-offset-4 smooth-transition"
@@ -88,9 +92,9 @@ export const Footer: FC = () => {
           <div className="flex items-center gap-2">
             <span className="text-caption text-text-tertiary">{copy.legal.poweredBy}</span>
             <span className="text-caption text-text-muted hover:text-text-main smooth-transition">ElevenLabs</span>
-            <span className="text-text-tertiary">•</span>
+            <span className="text-text-tertiary">&bull;</span>
             <span className="text-caption text-text-muted hover:text-text-main smooth-transition">Inworld</span>
-            <span className="text-text-tertiary">•</span>
+            <span className="text-text-tertiary">&bull;</span>
             <span className="text-caption text-text-muted hover:text-text-main smooth-transition">Gemini</span>
           </div>
         </div>

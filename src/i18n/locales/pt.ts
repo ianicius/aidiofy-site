@@ -7,7 +7,7 @@ export const pt: Copy = {
     faq: "FAQ",
     privacy: "Privacidade",
     terms: "Termos",
-    app: "App",
+    app: "Teste grátis",
     skipToMainContent: "Ir para o conteúdo principal",
   },
   hero: {
@@ -16,7 +16,7 @@ export const pt: Copy = {
     description:
       "AIdiofy usa IA para transformar regras, manuais e qualquer texto impresso em áudio. Basta escanear e ouvir — ótimo para jogos de tabuleiro, RPG e leitura.",
     ctaHowItWorks: "Como funciona",
-    ctaTryApp: "Experimentar o app",
+    ctaTryApp: "Comece a ouvir grátis",
   },
   features: {
     heading: "Recursos principais",
@@ -91,7 +91,7 @@ export const pt: Copy = {
     privacy: "Política de privacidade",
     terms: "Termos de uso",
     contact: "Contato",
-    copyright: "© 2025 AIdiofy. Todos os direitos reservados.",
+    copyright: "© 2026 AIdiofy. Todos os direitos reservados.",
   },
   cookie: {
     bannerTitle: "Respeitamos sua privacidade",
@@ -126,6 +126,37 @@ export const pt: Copy = {
     inworld: "Inworld",
     gemini: "Gemini",
   },
+  socialProof: {
+    statUsers: "500+",
+    statUsersLabel: "Mestres de jogo e jogadores",
+    statVoices: "10,000+",
+    statVoicesLabel: "Vozes de IA disponíveis",
+    statLanguages: "10+",
+    statLanguagesLabel: "Idiomas suportados",
+    testimonials: [
+      {
+        quote: "Finalmente meus jogadores de D&D lembram os nomes dos NPCs. O casting de múltiplas vozes faz cada personagem parecer único e real.",
+        name: "Marcus T.",
+        initials: "MT",
+        role: "Mestre de jogo, 8 anos",
+      },
+      {
+        quote: "Jogamos Gloomhaven em português, mas o jogo é em inglês. AIdiofy lê o texto do cenário em voz alta com vozes distintas — é como ter um audiolivro embutido no jogo.",
+        name: "Anna K.",
+        initials: "AK",
+        role: "Jogadora de mesa, Munique",
+      },
+      {
+        quote: "Eu costumava pular o texto narrativo nas nossas sessões de RPG porque ler em voz alta era estranho. Agora é só dar play e toda a mesa mergulha na história.",
+        name: "Jake R.",
+        initials: "JR",
+        role: "Mestre, Pathfinder homebrew",
+      },
+    ],
+    badgeFree: "Comece grátis",
+    badgeNoCard: "Sem cartão de crédito",
+    badgeCancel: "Cancele quando quiser",
+  },
   blog: {
     title: "Blog | AIdiofy",
     description: "Insights sobre áudio para RPG, dicas para mestres e atualizações da equipe AIdiofy.",
@@ -135,5 +166,23 @@ export const pt: Copy = {
     backToBlog: "Voltar ao blog",
     moreArticles: "Mais artigos",
     share: "Compartilhar",
+  },
+  meta: {
+    home: {
+      title: "AIdiofy - Transforme texto em áudio imersivo",
+      description: "Transforme livros, manuais de regras e textos de jogos em áudio imersivo com AIdiofy. Escaneie qualquer texto, atribua vozes de IA e ouça seus conteúdos com profundidade emocional.",
+    },
+    blog: {
+      title: "Blog | AIdiofy - Tecnologia de voz IA para RPGs",
+      description: "Leia as últimas novidades sobre áudio para RPG, dicas para mestres e atualizações do time AIdiofy. Saiba como melhorar suas sessões de mesa com áudio imersivo.",
+    },
+    privacy: {
+      title: "Política de privacidade | AIdiofy",
+      description: "Saiba como a AIdiofy coleta, utiliza e protege seus dados pessoais. Estamos comprometidos com a transparência e a segurança em todas as nossas práticas de tratamento de dados.",
+    },
+    terms: {
+      title: "Termos de uso | AIdiofy",
+      description: "Leia os Termos de uso do AIdiofy. Entenda as regras, direitos do usuário e responsabilidades ao usar nossos serviços de conversão de texto em áudio com IA.",
+    },
   },
 };

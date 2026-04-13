@@ -1,9 +1,18 @@
 import type { FC } from "react";
 import { LegalLayout } from "./LegalLayout";
+import { Helmet } from "react-helmet-async";
+import { useI18n } from "../../i18n";
 
 export const PrivacyPolicy: FC = () => {
+  const { copy } = useI18n();
   return (
     <LegalLayout title="Privacy Policy" lastUpdated="27 November 2025">
+      <Helmet>
+        <title>{copy.meta.privacy.title}</title>
+        <meta name="description" content={copy.meta.privacy.description} />
+        <meta property="og:title" content={copy.meta.privacy.title} />
+        <meta property="og:description" content={copy.meta.privacy.description} />
+      </Helmet>
       <section className="space-y-3">
         <h2 className="text-xl md:text-2xl font-semibold text-text-main">1. Data controller</h2>
         <p>

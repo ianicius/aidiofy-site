@@ -7,7 +7,7 @@ export const zhCN: Copy = {
     faq: "常见问题",
     privacy: "隐私政策",
     terms: "使用条款",
-    app: "应用",
+    app: "免费试用",
     skipToMainContent: "跳到主要内容",
   },
   hero: {
@@ -15,7 +15,7 @@ export const zhCN: Copy = {
     highlight: "沉浸式语音",
     description: "AIdiofy 用 OCR + AI 配音，把规则书、手卡和各种印刷文字变成可收听的音频。拍照一扫，马上就能听。",
     ctaHowItWorks: "使用方法",
-    ctaTryApp: "立即体验",
+    ctaTryApp: "免费开始收听",
   },
   features: {
     heading: "核心功能",
@@ -90,7 +90,7 @@ export const zhCN: Copy = {
     privacy: "隐私政策",
     terms: "使用条款",
     contact: "联系",
-    copyright: "© 2025 AIdiofy. 保留所有权利。",
+    copyright: "© 2026 AIdiofy. 保留所有权利。",
   },
   cookie: {
     bannerTitle: "我们尊重你的隐私",
@@ -124,14 +124,63 @@ export const zhCN: Copy = {
     inworld: "Inworld",
     gemini: "Gemini",
   },
+  socialProof: {
+    statUsers: "500+",
+    statUsersLabel: "游戏主持人和玩家",
+    statVoices: "10,000+",
+    statVoicesLabel: "可用 AI 语音",
+    statLanguages: "10+",
+    statLanguagesLabel: "支持语言",
+    testimonials: [
+      {
+        quote: "我的 D&D 玩家终于记住 NPC 的名字了。多角色配音让每个角色都独特而真实。",
+        name: "Marcus T.",
+        initials: "MT",
+        role: "地下城主，8 年经验",
+      },
+      {
+        quote: "我们用中文玩 Gloomhaven，但游戏本身是英文的。AIdiofy 用不同的声音朗读场景文本——就像游戏里内置了有声书。",
+        name: "Anna K.",
+        initials: "AK",
+        role: "桌游玩家，慕尼黑",
+      },
+      {
+        quote: "以前我总是跳过 RPG 环节中的氛围描述，因为大声朗读很尴尬。现在只需按下播放，全桌都沉浸其中。",
+        name: "Jake R.",
+        initials: "JR",
+        role: "GM，Pathfinder 自制团",
+      },
+    ],
+    badgeFree: "免费开始",
+    badgeNoCard: "无需信用卡",
+    badgeCancel: "随时取消",
+  },
   blog: {
-    title: "Blog | AIdiofy - AI Voice Technology for RPGs",
-    description: "Insights on RPG audio, GM tips, and product updates from the AIdiofy team.",
-    latestHeading: "Latest from",
-    latestDescription: "Insights on RPG audio, GM tips, and product updates.",
-    readArticle: "Read Article",
-    backToBlog: "Back to Blog",
-    moreArticles: "More Articles",
-    share: "Share",
+    title: "博客 | AIdiofy - RPG AI语音技术",
+    description: "RPG音频见解、GM技巧和AIdiofy团队的最新动态。",
+    latestHeading: "最新文章",
+    latestDescription: "RPG音频见解、GM技巧和产品更新。",
+    readArticle: "阅读文章",
+    backToBlog: "返回博客",
+    moreArticles: "更多文章",
+    share: "分享",
+  },
+  meta: {
+    home: {
+      title: "AIdiofy - 将文字转化为沉浸式音频",
+      description: "使用AIdiofy将书籍、规则书和游戏文字转化为沉浸式音频。扫描任何文本，分配AI语音，聆听富有情感深度的内容。",
+    },
+    blog: {
+      title: "博客 | AIdiofy - RPG AI语音技术",
+      description: "阅读AIdiofy团队关于RPG音频、GM技巧和产品更新的最新资讯。了解如何用沉浸式音频提升桌面角色扮演体验。",
+    },
+    privacy: {
+      title: "隐私政策 | AIdiofy",
+      description: "了解AIdiofy如何收集、使用和保护您的个人数据。我们致力于在所有数据处理实践中保持透明和安全。",
+    },
+    terms: {
+      title: "使用条款 | AIdiofy",
+      description: "阅读AIdiofy使用条款。了解使用我们的AI文字转音频服务和应用程序时的规则、用户权利和责任。",
+    },
   },
 };

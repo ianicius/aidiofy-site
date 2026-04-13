@@ -31,6 +31,9 @@ jobs:
           cp sitemap.xml dist/sitemap.xml
           cp sitemap-zh.xml dist/sitemap-zh.xml
 
+      - name: Generate route HTML files for SPA
+        run: node scripts/generate-routes.mjs
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist

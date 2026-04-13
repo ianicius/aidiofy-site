@@ -7,7 +7,7 @@ export const de: Copy = {
     faq: "FAQ",
     privacy: "Datenschutz",
     terms: "Nutzungsbedingungen",
-    app: "App",
+    app: "Kostenlos testen",
     skipToMainContent: "Zum Inhalt springen",
   },
   hero: {
@@ -16,7 +16,7 @@ export const de: Copy = {
     description:
       "AIdiofy macht aus Regelheften, Handouts und Büchern Audio — einfach scannen und direkt anhören. Perfekt für Brettspiele, Rollenspiele und unterwegs.",
     ctaHowItWorks: "So funktioniert’s",
-    ctaTryApp: "App ausprobieren",
+    ctaTryApp: "Jetzt kostenlos anhören",
   },
   features: {
     heading: "Die wichtigsten Funktionen",
@@ -91,7 +91,7 @@ export const de: Copy = {
     privacy: "Datenschutz",
     terms: "Nutzungsbedingungen",
     contact: "Kontakt",
-    copyright: "© 2025 AIdiofy. Alle Rechte vorbehalten.",
+    copyright: "© 2026 AIdiofy. Alle Rechte vorbehalten.",
   },
   cookie: {
     bannerTitle: "Wir respektieren deine Privatsphäre",
@@ -127,6 +127,37 @@ export const de: Copy = {
     inworld: "Inworld",
     gemini: "Gemini",
   },
+  socialProof: {
+    statUsers: "500+",
+    statUsersLabel: "Spielleiter & Spieler",
+    statVoices: "10,000+",
+    statVoicesLabel: "KI-Stimmen verfügbar",
+    statLanguages: "10+",
+    statLanguagesLabel: "Unterstützte Sprachen",
+    testimonials: [
+      {
+        quote: "Endlich merken sich meine D&D-Spieler die NPC-Namen. Das Multi-Stimmen-Casting lässt jeden Charakter einzigartig und lebendig klingen.",
+        name: "Marcus T.",
+        initials: "MT",
+        role: "Spielleiter, 8 Jahre Erfahrung",
+      },
+      {
+        quote: "Wir spielen Gloomhaven auf Deutsch, aber das Spiel ist auf Englisch. AIdiofy liest den Szenariotext mit passenden Stimmen vor — wie ein Hörbuch direkt im Spiel.",
+        name: "Anna K.",
+        initials: "AK",
+        role: "Brettspielerin, München",
+      },
+      {
+        quote: "Früher habe ich den Flavour-Text bei unseren RPG-Runden übersprungen, weil Vorlesen sich komisch anfühlte. Jetzt drücke ich einfach auf Play und der ganze Tisch ist mittendrin.",
+        name: "Jake R.",
+        initials: "JR",
+        role: "Spielleiter, Pathfinder-Homebrew",
+      },
+    ],
+    badgeFree: "Kostenlos starten",
+    badgeNoCard: "Keine Kreditkarte nötig",
+    badgeCancel: "Jederzeit kündbar",
+  },
   blog: {
     title: "Blog | AIdiofy - KI-Stimmtechnologie für RPGs",
     description: "Einblicke in RPG-Audio, Spielleitertipps und Updates vom AIdiofy-Team.",
@@ -136,5 +167,23 @@ export const de: Copy = {
     backToBlog: "Zurück zum Blog",
     moreArticles: "Weitere Artikel",
     share: "Teilen",
+  },
+  meta: {
+    home: {
+      title: "AIdiofy - Text in immersives Audio verwandeln",
+      description: "Verwandle Bücher, Regelwerke und Spieltexte mit AIdiofy in immersives Audio. Scanne beliebigen Text, weise KI-Stimmen zu und höre deine Inhalte mit emotionaler Tiefe.",
+    },
+    blog: {
+      title: "Blog | AIdiofy - KI-Stimmtechnologie für RPGs",
+      description: "Lies die neuesten Einblicke zu RPG-Audio, Spielleitertipps und Produktupdates vom AIdiofy-Team. Erfahre, wie du deine Tischrollenspielsitzungen mit immersivem Audio verbesserst.",
+    },
+    privacy: {
+      title: "Datenschutzrichtlinie | AIdiofy",
+      description: "Erfahre, wie AIdiofy deine personenbezogenen Daten erhebt, nutzt und schützt. Wir setzen auf Transparenz und Sicherheit bei allen Datenverarbeitungsprozessen.",
+    },
+    terms: {
+      title: "Nutzungsbedingungen | AIdiofy",
+      description: "Lies die Nutzungsbedingungen von AIdiofy. Erfahre die Regeln, Nutzerrechte und Pflichten bei der Nutzung unserer KI-Text-zu-Audio-Dienste und Anwendung.",
+    },
   },
 };

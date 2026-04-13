@@ -104,6 +104,23 @@ export type Copy = {
     inworld: string;
     gemini: string;
   };
+  socialProof: {
+    statUsers: string;
+    statUsersLabel: string;
+    statVoices: string;
+    statVoicesLabel: string;
+    statLanguages: string;
+    statLanguagesLabel: string;
+    testimonials: Array<{
+      quote: string;
+      name: string;
+      initials: string;
+      role: string;
+    }>;
+    badgeFree: string;
+    badgeNoCard: string;
+    badgeCancel: string;
+  };
   blog: {
     title: string;
     description: string;
@@ -113,5 +130,23 @@ export type Copy = {
     backToBlog: string;
     moreArticles: string;
     share: string;
+  };
+  meta: {
+    home: {
+      title: string;
+      description: string;
+    };
+    blog: {
+      title: string;
+      description: string;
+    };
+    privacy: {
+      title: string;
+      description: string;
+    };
+    terms: {
+      title: string;
+      description: string;
+    };
   };
 };

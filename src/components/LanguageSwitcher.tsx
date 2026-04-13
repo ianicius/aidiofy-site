@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState, type FC } from "react";
+import { useLocation } from "react-router-dom";
 import { ChevronDown } from "lucide-react";
 import { localeToPathname, useI18n, type Locale } from "../i18n";
 
@@ -24,6 +25,7 @@ const LANGUAGES: readonly LanguageOption[] = [
 
 export const LanguageSwitcher: FC = () => {
   const { locale } = useI18n();
+  const location = useLocation();
   const [open, setOpen] = useState(false);
   const rootRef = useRef<HTMLDivElement | null>(null);
 
@@ -53,7 +55,8 @@ export const LanguageSwitcher: FC = () => {
     [locale],
   );
 
-  const currentHash = typeof window !== "undefined" ? window.location.hash : "";
+  // Current sub-path (relative to locale basename), e.g. "/blog/slug"
+  const subPath = location.pathname + location.hash;
 
   return (
     <div ref={rootRef} className="relative">
@@ -82,7 +85,9 @@ export const LanguageSwitcher: FC = () => {
           className="absolute right-0 mt-3 w-56 rounded-2xl bg-surface border border-border-subtle/80 shadow-glow-obsidian overflow-hidden"
         >
           {LANGUAGES.map((lang) => {
-            const href = `${localeToPathname(lang.locale)}${currentHash}`;
+            // Build full URL: locale base + current sub-path
+            const base = localeToPathname(lang.locale).replace(/\/$/, "");
+            const href = `${base}${subPath}`;
             const active = lang.locale === locale;
             return (
               <a

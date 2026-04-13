@@ -1,4 +1,5 @@
 import type { FC, ReactNode } from "react";
+import { Link } from "react-router-dom";
 import Logo from "../Logo";
 import { useI18n } from "../../i18n";
 
@@ -10,22 +11,22 @@ interface LegalLayoutProps {
 
 export const LegalLayout: FC<LegalLayoutProps> = ({ title, lastUpdated, children }) => {
   const { copy } = useI18n();
-  
+
   return (
     <div className="min-h-screen w-full bg-background-dark text-text-main">
       <header className="w-full border-b border-border-subtle/60 bg-background-dark/90 backdrop-blur-lg sticky top-0 z-30">
         <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-          <a href="#/" className="flex items-center gap-3 text-text-main font-bold text-xl">
+          <Link to="/" className="flex items-center gap-3 text-text-main font-bold text-xl">
             <Logo className="w-9 h-9" />
             AIdiofy
-          </a>
-          <a
-            href="#/"
+          </Link>
+          <Link
+            to="/"
             className="text-sm font-medium text-text-muted hover:text-text-main transition-colors"
             aria-label="Back to homepage"
           >
             {copy.legal.backToHome}
-          </a>
+          </Link>
         </div>
       </header>
 

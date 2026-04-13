@@ -1,9 +1,18 @@
 import type { FC } from "react";
 import { LegalLayout } from "./LegalLayout";
+import { Helmet } from "react-helmet-async";
+import { useI18n } from "../../i18n";
 
 export const TermsOfUse: FC = () => {
+  const { copy } = useI18n();
   return (
     <LegalLayout title="Terms of Use" lastUpdated="27 November 2025">
+      <Helmet>
+        <title>{copy.meta.terms.title}</title>
+        <meta name="description" content={copy.meta.terms.description} />
+        <meta property="og:title" content={copy.meta.terms.title} />
+        <meta property="og:description" content={copy.meta.terms.description} />
+      </Helmet>
       <section className="space-y-3">
         <h2 className="text-xl md:text-2xl font-semibold text-text-main">1. Introduction</h2>
         <p>

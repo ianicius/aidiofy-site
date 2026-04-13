@@ -7,7 +7,7 @@ export const en: Copy = {
     faq: "FAQ",
     privacy: "Privacy",
     terms: "Terms",
-    app: "App",
+    app: "Try Free",
     skipToMainContent: "Skip to main content",
   },
   hero: {
@@ -16,7 +16,7 @@ export const en: Copy = {
     description:
       "AIdiofy uses AI to turn rulebooks, handouts, and any printed text into immersive audio. Just scan and listen.",
     ctaHowItWorks: "How it Works",
-    ctaTryApp: "Try the App",
+    ctaTryApp: "Start Listening Free",
   },
   features: {
     heading: "Key Features",
@@ -103,7 +103,7 @@ export const en: Copy = {
     privacy: "Privacy Policy",
     terms: "Terms of Use",
     contact: "Contact",
-    copyright: "© 2025 AIdiofy. All rights reserved.",
+    copyright: "© 2026 AIdiofy. All rights reserved.",
   },
   cookie: {
     bannerTitle: "We respect your privacy",
@@ -138,6 +138,37 @@ export const en: Copy = {
     inworld: "Inworld",
     gemini: "Gemini",
   },
+  socialProof: {
+    statUsers: "500+",
+    statUsersLabel: "Game masters & players",
+    statVoices: "10,000+",
+    statVoicesLabel: "AI voices available",
+    statLanguages: "10+",
+    statLanguagesLabel: "Languages supported",
+    testimonials: [
+      {
+        quote: "Finally, my D&D players actually remember the NPC names. The multi-voice casting makes every character feel distinct and real.",
+        name: "Marcus T.",
+        initials: "MT",
+        role: "Dungeon Master, 8 years",
+      },
+      {
+        quote: "We play Gloomhaven in German but the game is in English. AIdiofy reads the scenario text aloud with proper voices — it's like having an audiobook built into the game.",
+        name: "Anna K.",
+        initials: "AK",
+        role: "Board gamer, Munich",
+      },
+      {
+        quote: "I used to skip the flavor text in our RPG sessions because reading aloud felt awkward. Now I just hit play and the whole table is immersed.",
+        name: "Jake R.",
+        initials: "JR",
+        role: "GM, Pathfinder homebrew",
+      },
+    ],
+    badgeFree: "Free to start",
+    badgeNoCard: "No credit card required",
+    badgeCancel: "Cancel anytime",
+  },
   blog: {
     title: "Blog | AIdiofy - AI Voice Technology for RPGs",
     description: "Insights on RPG audio, GM tips, and product updates from the AIdiofy team.",
@@ -147,5 +178,23 @@ export const en: Copy = {
     backToBlog: "Back to Blog",
     moreArticles: "More Articles",
     share: "Share",
+  },
+  meta: {
+    home: {
+      title: "AIdiofy - Turn Text into Immersive Audio",
+      description: "Turn books, rulebooks, and game text into immersive audio with AIdiofy. Scan any text, cast AI voices, and listen to your content with emotional depth.",
+    },
+    blog: {
+      title: "Blog | AIdiofy - AI Voice Technology for RPGs",
+      description: "Read the latest insights on RPG audio, GM tips, and product updates from the AIdiofy team. Learn how to enhance your tabletop sessions with immersive audio.",
+    },
+    privacy: {
+      title: "Privacy Policy | AIdiofy",
+      description: "Learn about how AIdiofy collects, uses, and protects your personal data. We are committed to transparency and security in all our data processing practices.",
+    },
+    terms: {
+      title: "Terms of Use | AIdiofy",
+      description: "Read the Terms of Use for AIdiofy. Understand the rules, user rights, and responsibilities when using our AI text-to-audio services and application.",
+    },
   },
 };

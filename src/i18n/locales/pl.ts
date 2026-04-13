@@ -7,7 +7,7 @@ export const pl: Copy = {
     faq: "FAQ",
     privacy: "Prywatność",
     terms: "Regulamin",
-    app: "Aplikacja",
+    app: "Wypróbuj za darmo",
     skipToMainContent: "Przejdź do treści",
   },
   hero: {
@@ -16,7 +16,7 @@ export const pl: Copy = {
     description:
       "AIdiofy zamienia zasady, instrukcje i dowolny drukowany tekst w audio z naturalnym głosem AI. Zeskanuj stronę i słuchaj — idealne do planszówek, RPG i książek.",
     ctaHowItWorks: "Jak to działa",
-    ctaTryApp: "Wypróbuj aplikację",
+    ctaTryApp: "Zacznij słuchać za darmo",
   },
   features: {
     heading: "Najważniejsze funkcje",
@@ -91,7 +91,7 @@ export const pl: Copy = {
     privacy: "Polityka prywatności",
     terms: "Regulamin",
     contact: "Kontakt",
-    copyright: "© 2025 AIdiofy. Wszelkie prawa zastrzeżone.",
+    copyright: "© 2026 AIdiofy. Wszelkie prawa zastrzeżone.",
   },
   cookie: {
     bannerTitle: "Szanujemy Twoją prywatność",
@@ -127,14 +127,63 @@ export const pl: Copy = {
     inworld: "Inworld",
     gemini: "Gemini",
   },
+  socialProof: {
+    statUsers: "500+",
+    statUsersLabel: "Mistrzów gry i graczy",
+    statVoices: "10,000+",
+    statVoicesLabel: "Dostępnych głosów AI",
+    statLanguages: "10+",
+    statLanguagesLabel: "Obsługiwanych języków",
+    testimonials: [
+      {
+        quote: "Wreszcie moi gracze D&D zapamiętują imiona BN-ów. Obsada wielu głosów sprawia, że każda postać brzmi niepowtarzalnie i wiarygodnie.",
+        name: "Marcus T.",
+        initials: "MT",
+        role: "Mistrz Gry, 8 lat doświadczenia",
+      },
+      {
+        quote: "Gramy w Gloomhaven po polsku, ale gra jest po angielsku. AIdiofy czyta tekst scenariusza na głos z odpowiednimi głosami — to jak wbudowany audiobook w grze.",
+        name: "Anna K.",
+        initials: "AK",
+        role: "Graczka planszowa, Monachium",
+      },
+      {
+        quote: "Kiedyś pomijałem teksty fabularne podczas sesji RPG, bo czytanie na głos było niezręczne. Teraz naciskam play i cały stół zanurza się w historii.",
+        name: "Jake R.",
+        initials: "JR",
+        role: "MG, Pathfinder homebrew",
+      },
+    ],
+    badgeFree: "Zacznij za darmo",
+    badgeNoCard: "Bez karty kredytowej",
+    badgeCancel: "Anuluj w dowolnym momencie",
+  },
   blog: {
-    title: "Blog | AIdiofy - Technologia głosu AI dla gier RPG",
-    description: "Wskazówki dotyczące audio w RPG, porady dla Mistrzów Gry i aktualizacje produktu od zespołu AIdiofy.",
+    title: "Blog | AIdiofy - Technologia Głosowa AI dla RPG",
+    description: "Spostrzeżenia na temat audio w RPG, porady dla MG i aktualizacje od zespołu AIdiofy.",
     latestHeading: "Najnowsze od",
-    latestDescription: "Wskazówki dotyczące audio w RPG, porady dla MG i nowości.",
-    readArticle: "Czytaj artykuł",
-    backToBlog: "Wróć do bloga",
-    moreArticles: "Więcej artykułów",
+    latestDescription: "Spostrzeżenia o audio w RPG, porady dla MG i aktualizacje produktu.",
+    readArticle: "Przeczytaj Artykuł",
+    backToBlog: "Wróć do Bloga",
+    moreArticles: "Więcej Artykułów",
     share: "Udostępnij",
+  },
+  meta: {
+    home: {
+      title: "AIdiofy - Zamień Tekst w Immersyjne Audio",
+      description: "Zamień książki, podręczniki i gry w wciągające audio dzięki AIdiofy. Skanuj dowolny tekst, dobieraj głosy AI i słuchaj treści z pełną głębią emocjonalną.",
+    },
+    blog: {
+      title: "Blog | AIdiofy - Technologia Głosowa AI dla RPG",
+      description: "Czytaj najnowsze informacje o audio w RPG, poradach dla MG i aktualizacjach produktu od zespołu AIdiofy. Dowiedz się, jak ulepszyć swoje sesje dzięki immersyjnemu audio.",
+    },
+    privacy: {
+      title: "Polityka Prywatności | AIdiofy",
+      description: "Dowiedz się, jak AIdiofy gromadzi, wykorzystuje i chroni Twoje dane osobowe. Jesteśmy zobowiązani do przejrzystości i bezpieczeństwa w naszych praktykach przetwarzania danych.",
+    },
+    terms: {
+      title: "Warunki Użytkowania | AIdiofy",
+      description: "Przeczytaj Warunki Użytkowania AIdiofy. Poznaj zasady, prawa użytkownika i odpowiedzialność podczas korzystania z naszych usług tekst-na-audio.",
+    },
   },
 };

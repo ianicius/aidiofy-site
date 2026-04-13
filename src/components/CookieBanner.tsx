@@ -138,7 +138,7 @@ export const CookieBanner: FC = () => {
                 <p>{c.bannerBody}</p>
                 <p>
                   {c.bannerLearnMorePrefix}{" "}
-                  <a className="text-text-main underline decoration-primary/60 hover:decoration-primary transition-colors" href="#/privacy-policy">
+                  <a className="text-text-main underline decoration-primary/60 hover:decoration-primary transition-colors" href="/privacy">
                     {c.bannerLearnMoreLink}
                   </a>
                   {c.bannerLearnMoreSuffix}

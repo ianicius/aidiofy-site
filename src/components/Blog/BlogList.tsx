@@ -1,23 +1,29 @@
 import { getBlogPosts } from '../../data/blog';
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
 import { ArrowRight, Calendar, Clock } from 'lucide-react';
 import { useI18n } from '../../i18n';
-import { useEffect } from 'react';
+import { LOCALE_PATH_SEGMENT } from '../../i18n/locale';
+import { BlogListStructuredData } from '../StructuredData';
 
 export function BlogList() {
     const { copy, locale } = useI18n();
     const posts = getBlogPosts(locale);
-
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
+    const prefix = locale === 'en' ? '' : `/${LOCALE_PATH_SEGMENT[locale]}`;
+    const canonicalUrl = `https://aidiofy.com${prefix}/blog`;
 
     return (
         <div className="pt-32 pb-20 px-4 min-h-screen bg-background-dark">
             <Helmet>
-                <title>{copy.blog.title}</title>
-                <meta name="description" content={copy.blog.description} />
+                <title>{copy.meta.blog.title}</title>
+                <meta name="description" content={copy.meta.blog.description} />
+                <link rel="canonical" href={canonicalUrl} />
+                <meta property="og:title" content={copy.meta.blog.title} />
+                <meta property="og:description" content={copy.meta.blog.description} />
+                <meta property="og:url" content={canonicalUrl} />
+                <meta property="og:image" content="https://aidiofy.com/og-image.png" />
             </Helmet>
+            <BlogListStructuredData />
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-16 animate-fade-in-up">
                     <h1 className="text-heading-1 md:text-display-md font-display font-bold text-text-main mb-6">
@@ -47,9 +53,9 @@ export function BlogList() {
                             </div>
 
                             <h2 className="text-heading-3 text-text-main mb-4 group-hover:text-primary transition-colors line-clamp-2">
-                                <a href={`#/blog/${post.slug}`} className="before:absolute before:inset-0">
+                                <Link to={`/blog/${post.slug}`} className="before:absolute before:inset-0">
                                     {post.title}
-                                </a>
+                                </Link>
                             </h2>
 
                             <p className="text-body-md text-text-muted mb-6 line-clamp-3">

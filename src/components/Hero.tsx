@@ -33,7 +33,7 @@ export const Hero: FC = () => {
                 <Play className="w-5 h-5" />
                 {copy.hero.ctaHowItWorks}
               </a>
-              <a 
+              <a
                 href="https://app.aidiofy.com"
                 target="_blank"
                 rel="noreferrer"
@@ -43,6 +43,9 @@ export const Hero: FC = () => {
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 smooth-transition" />
               </a>
             </div>
+            <p className="text-body-sm text-text-tertiary mt-4 animate-fade-in-up" style={{ animationDelay: '300ms' }}>
+              Free to start &middot; No credit card required
+            </p>
           </div>
 
           {/* Right Visual - Abstract Audio Wave */}

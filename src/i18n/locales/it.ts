@@ -7,7 +7,7 @@ export const it: Copy = {
     faq: "FAQ",
     privacy: "Privacy",
     terms: "Termini",
-    app: "App",
+    app: "Prova gratis",
     skipToMainContent: "Vai al contenuto principale",
   },
   hero: {
@@ -16,7 +16,7 @@ export const it: Copy = {
     description:
       "AIdiofy trasforma regolamenti, manuali e qualsiasi testo stampato in audio con l’IA. Scansiona una pagina e ascolta subito: perfetto per giochi da tavolo, giochi di ruolo e anche libri.",
     ctaHowItWorks: "Come funziona",
-    ctaTryApp: "Prova l’app",
+    ctaTryApp: "Inizia ad ascoltare gratis",
   },
   features: {
     heading: "Funzionalità principali",
@@ -91,7 +91,7 @@ export const it: Copy = {
     privacy: "Informativa sulla privacy",
     terms: "Termini d’uso",
     contact: "Contatto",
-    copyright: "© 2025 AIdiofy. Tutti i diritti riservati.",
+    copyright: "© 2026 AIdiofy. Tutti i diritti riservati.",
   },
   cookie: {
     bannerTitle: "Rispettiamo la tua privacy",
@@ -127,6 +127,37 @@ export const it: Copy = {
     inworld: "Inworld",
     gemini: "Gemini",
   },
+  socialProof: {
+    statUsers: "500+",
+    statUsersLabel: "Game master e giocatori",
+    statVoices: "10,000+",
+    statVoicesLabel: "Voci IA disponibili",
+    statLanguages: "10+",
+    statLanguagesLabel: "Lingue supportate",
+    testimonials: [
+      {
+        quote: "Finalmente i miei giocatori di D&D ricordano i nomi dei PNG. Il casting multi-voce rende ogni personaggio unico e realistico.",
+        name: "Marcus T.",
+        initials: "MT",
+        role: "Dungeon Master, 8 anni di esperienza",
+      },
+      {
+        quote: "Giochiamo a Gloomhaven in italiano ma il gioco è in inglese. AIdiofy legge il testo dello scenario ad alta voce con voci distinte — è come avere un audiolibro integrato nel gioco.",
+        name: "Anna K.",
+        initials: "AK",
+        role: "Giocatrice da tavolo, Monaco",
+      },
+      {
+        quote: "Prima saltavo il testo narrativo nelle nostre sessioni di GdR perché leggere ad alta voce mi imbarazzava. Ora premo play e tutto il tavolo è immerso nella storia.",
+        name: "Jake R.",
+        initials: "JR",
+        role: "GM, Pathfinder homebrew",
+      },
+    ],
+    badgeFree: "Inizia gratis",
+    badgeNoCard: "Nessuna carta di credito richiesta",
+    badgeCancel: "Cancella quando vuoi",
+  },
   blog: {
     title: "Blog | AIdiofy",
     description: "Approfondimenti sull'audio RPG, consigli per GM e aggiornamenti dal team AIdiofy.",
@@ -136,5 +167,23 @@ export const it: Copy = {
     backToBlog: "Torna al blog",
     moreArticles: "Altri articoli",
     share: "Condividi",
+  },
+  meta: {
+    home: {
+      title: "AIdiofy - Trasforma il testo in audio immersivo",
+      description: "Trasforma libri, regolamenti e testi di gioco in audio immersivo con AIdiofy. Scansiona qualsiasi testo, assegna voci AI e ascolta i tuoi contenuti con profondità emotiva.",
+    },
+    blog: {
+      title: "Blog | AIdiofy - Tecnologia vocale AI per RPG",
+      description: "Leggi le ultime novità su audio RPG, consigli per GM e aggiornamenti dal team AIdiofy. Scopri come migliorare le tue sessioni di gioco da tavolo con audio immersivo.",
+    },
+    privacy: {
+      title: "Informativa sulla privacy | AIdiofy",
+      description: "Scopri come AIdiofy raccoglie, utilizza e protegge i tuoi dati personali. Ci impegniamo per la trasparenza e la sicurezza in tutte le nostre pratiche di trattamento dei dati.",
+    },
+    terms: {
+      title: "Condizioni d'uso | AIdiofy",
+      description: "Leggi le Condizioni d'uso di AIdiofy. Conosci le regole, i diritti degli utenti e le responsabilità nell'uso dei nostri servizi di sintesi vocale AI.",
+    },
   },
 };
