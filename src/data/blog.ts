@@ -83,9 +83,8 @@ const POST_METADATA: Record<string, { slug: string; date: string; readTime: stri
 const modules = import.meta.glob('../blog/**/*.md', { as: 'raw', eager: true });
 
 const getPostContent = (filename: string, locale: Locale): string | null => {
-    // Construct path keys based on locale
     // EN: ../blog/filename
-    // Others: ../blog/locale/filename
+    // Others: ../blog/locale/filename — no fallback to English
 
     let key = '';
     if (locale === 'en') {
@@ -94,15 +93,8 @@ const getPostContent = (filename: string, locale: Locale): string | null => {
         key = `../blog/${locale}/${filename}`;
     }
 
-    // Try to find the module
     if (key in modules) {
         return modules[key] as string;
-    }
-
-    // Fallback to English if not found (or return null)
-    const enKey = `../blog/${filename}`;
-    if (enKey in modules) {
-        return modules[enKey] as string;
     }
 
     return null;
