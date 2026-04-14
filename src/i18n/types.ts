@@ -105,12 +105,6 @@ export type Copy = {
     gemini: string;
   };
   socialProof: {
-    statUsers: string;
-    statUsersLabel: string;
-    statVoices: string;
-    statVoicesLabel: string;
-    statLanguages: string;
-    statLanguagesLabel: string;
     badgeFree: string;
     badgeNoCard: string;
     badgeCancel: string;

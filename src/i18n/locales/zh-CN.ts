@@ -125,12 +125,6 @@ export const zhCN: Copy = {
     gemini: "Gemini",
   },
   socialProof: {
-    statUsers: "500+",
-    statUsersLabel: "游戏主持人和玩家",
-    statVoices: "10,000+",
-    statVoicesLabel: "可用 AI 语音",
-    statLanguages: "10+",
-    statLanguagesLabel: "支持语言",
     badgeFree: "免费开始",
     badgeNoCard: "无需信用卡",
     badgeCancel: "随时取消",

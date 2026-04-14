@@ -128,12 +128,6 @@ export const es: Copy = {
     gemini: "Gemini",
   },
   socialProof: {
-    statUsers: "500+",
-    statUsersLabel: "Directores de juego y jugadores",
-    statVoices: "10,000+",
-    statVoicesLabel: "Voces de IA disponibles",
-    statLanguages: "10+",
-    statLanguagesLabel: "Idiomas compatibles",
     badgeFree: "Empieza gratis",
     badgeNoCard: "Sin tarjeta de crédito",
     badgeCancel: "Cancela cuando quieras",

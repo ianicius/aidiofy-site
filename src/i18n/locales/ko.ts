@@ -127,12 +127,6 @@ export const ko: Copy = {
     gemini: "Gemini",
   },
   socialProof: {
-    statUsers: "500+",
-    statUsersLabel: "게임 마스터 및 플레이어",
-    statVoices: "10,000+",
-    statVoicesLabel: "사용 가능한 AI 음성",
-    statLanguages: "10+",
-    statLanguagesLabel: "지원 언어",
     badgeFree: "무료로 시작",
     badgeNoCard: "신용카드 불필요",
     badgeCancel: "언제든 해지 가능",

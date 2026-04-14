@@ -127,12 +127,6 @@ export const ja: Copy = {
     gemini: "Gemini",
   },
   socialProof: {
-    statUsers: "500+",
-    statUsersLabel: "ゲームマスター＆プレイヤー",
-    statVoices: "10,000+",
-    statVoicesLabel: "利用可能なAI音声",
-    statLanguages: "10+",
-    statLanguagesLabel: "対応言語",
     badgeFree: "無料で始められる",
     badgeNoCard: "クレジットカード不要",
     badgeCancel: "いつでも解約可能",
