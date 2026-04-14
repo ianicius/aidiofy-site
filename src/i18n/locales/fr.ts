@@ -134,26 +134,6 @@ export const fr: Copy = {
     statVoicesLabel: "Voix IA disponibles",
     statLanguages: "10+",
     statLanguagesLabel: "Langues prises en charge",
-    testimonials: [
-      {
-        quote: "Enfin, mes joueurs de D&D retiennent les noms des PNJ. Le casting multi-voix rend chaque personnage unique et crédible.",
-        name: "Marcus T.",
-        initials: "MT",
-        role: "Meneur de jeu, 8 ans d'expérience",
-      },
-      {
-        quote: "Nous jouons à Gloomhaven en français, mais le jeu est en anglais. AIdiofy lit le texte du scénario à voix haute avec des voix distinctes — c'est comme avoir un livre audio intégré au jeu.",
-        name: "Anna K.",
-        initials: "AK",
-        role: "Joueuse de jeux de société, Munich",
-      },
-      {
-        quote: "Avant, je sautais le texte d'ambiance dans nos parties de JdR parce que lire à voix haute me gênait. Maintenant j'appuie sur lecture et toute la table est plongée dans l'histoire.",
-        name: "Jake R.",
-        initials: "JR",
-        role: "MJ, Pathfinder homebrew",
-      },
-    ],
     badgeFree: "Gratuit pour commencer",
     badgeNoCard: "Aucune carte bancaire requise",
     badgeCancel: "Résiliation à tout moment",

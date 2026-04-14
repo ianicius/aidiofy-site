@@ -133,26 +133,6 @@ export const ja: Copy = {
     statVoicesLabel: "利用可能なAI音声",
     statLanguages: "10+",
     statLanguagesLabel: "対応言語",
-    testimonials: [
-      {
-        quote: "ようやくD&DプレイヤーたちがNPCの名前を覚えてくれるようになりました。マルチボイスキャスティングで、どのキャラクターも個性的でリアルに感じられます。",
-        name: "Marcus T.",
-        initials: "MT",
-        role: "ダンジョンマスター、経験8年",
-      },
-      {
-        quote: "Gloomhavenをドイツ語で遊んでいますが、ゲーム自体は英語です。AIdiofyがシナリオテキストをキャラごとの声で読み上げてくれるので、まるでゲームにオーディオブックが組み込まれたようです。",
-        name: "Anna K.",
-        initials: "AK",
-        role: "ボードゲーマー、ミュンヘン",
-      },
-      {
-        quote: "以前はRPGセッションでフレーバーテキストを読み飛ばしていました。声に出して読むのが気恥ずかしかったからです。今はPlayを押すだけで、テーブル全体が物語に没入します。",
-        name: "Jake R.",
-        initials: "JR",
-        role: "GM、Pathfinderホームブリュー",
-      },
-    ],
     badgeFree: "無料で始められる",
     badgeNoCard: "クレジットカード不要",
     badgeCancel: "いつでも解約可能",

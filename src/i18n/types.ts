@@ -111,12 +111,6 @@ export type Copy = {
     statVoicesLabel: string;
     statLanguages: string;
     statLanguagesLabel: string;
-    testimonials: Array<{
-      quote: string;
-      name: string;
-      initials: string;
-      role: string;
-    }>;
     badgeFree: string;
     badgeNoCard: string;
     badgeCancel: string;

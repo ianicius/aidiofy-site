@@ -133,26 +133,6 @@ export const ko: Copy = {
     statVoicesLabel: "사용 가능한 AI 음성",
     statLanguages: "10+",
     statLanguagesLabel: "지원 언어",
-    testimonials: [
-      {
-        quote: "드디어 D&D 플레이어들이 NPC 이름을 기억합니다. 멀티 보이스 캐스팅 덕분에 모든 캐릭터가 개성 있고 생생하게 느껴져요.",
-        name: "Marcus T.",
-        initials: "MT",
-        role: "던전 마스터, 경력 8년",
-      },
-      {
-        quote: "Gloomhaven을 한국어로 플레이하지만 게임 텍스트는 영어입니다. AIdiofy가 시나리오 텍스트를 캐릭터별 음성으로 읽어줘서 마치 오디오북이 게임에 내장된 것 같아요.",
-        name: "Anna K.",
-        initials: "AK",
-        role: "보드게이머, 뮌헨",
-      },
-      {
-        quote: "예전에는 RPG 세션에서 분위기 묘사 텍스트를 건너뛰곤 했어요. 소리 내어 읽는 게 어색했거든요. 이제는 재생 버튼만 누르면 테이블 전체가 몰입합니다.",
-        name: "Jake R.",
-        initials: "JR",
-        role: "GM, Pathfinder 홈브루",
-      },
-    ],
     badgeFree: "무료로 시작",
     badgeNoCard: "신용카드 불필요",
     badgeCancel: "언제든 해지 가능",

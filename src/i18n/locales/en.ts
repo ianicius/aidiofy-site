@@ -145,26 +145,6 @@ export const en: Copy = {
     statVoicesLabel: "AI voices available",
     statLanguages: "10+",
     statLanguagesLabel: "Languages supported",
-    testimonials: [
-      {
-        quote: "Finally, my D&D players actually remember the NPC names. The multi-voice casting makes every character feel distinct and real.",
-        name: "Marcus T.",
-        initials: "MT",
-        role: "Dungeon Master, 8 years",
-      },
-      {
-        quote: "We play Gloomhaven in German but the game is in English. AIdiofy reads the scenario text aloud with proper voices — it's like having an audiobook built into the game.",
-        name: "Anna K.",
-        initials: "AK",
-        role: "Board gamer, Munich",
-      },
-      {
-        quote: "I used to skip the flavor text in our RPG sessions because reading aloud felt awkward. Now I just hit play and the whole table is immersed.",
-        name: "Jake R.",
-        initials: "JR",
-        role: "GM, Pathfinder homebrew",
-      },
-    ],
     badgeFree: "Free to start",
     badgeNoCard: "No credit card required",
     badgeCancel: "Cancel anytime",

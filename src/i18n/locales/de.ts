@@ -134,26 +134,6 @@ export const de: Copy = {
     statVoicesLabel: "KI-Stimmen verfügbar",
     statLanguages: "10+",
     statLanguagesLabel: "Unterstützte Sprachen",
-    testimonials: [
-      {
-        quote: "Endlich merken sich meine D&D-Spieler die NPC-Namen. Das Multi-Stimmen-Casting lässt jeden Charakter einzigartig und lebendig klingen.",
-        name: "Marcus T.",
-        initials: "MT",
-        role: "Spielleiter, 8 Jahre Erfahrung",
-      },
-      {
-        quote: "Wir spielen Gloomhaven auf Deutsch, aber das Spiel ist auf Englisch. AIdiofy liest den Szenariotext mit passenden Stimmen vor — wie ein Hörbuch direkt im Spiel.",
-        name: "Anna K.",
-        initials: "AK",
-        role: "Brettspielerin, München",
-      },
-      {
-        quote: "Früher habe ich den Flavour-Text bei unseren RPG-Runden übersprungen, weil Vorlesen sich komisch anfühlte. Jetzt drücke ich einfach auf Play und der ganze Tisch ist mittendrin.",
-        name: "Jake R.",
-        initials: "JR",
-        role: "Spielleiter, Pathfinder-Homebrew",
-      },
-    ],
     badgeFree: "Kostenlos starten",
     badgeNoCard: "Keine Kreditkarte nötig",
     badgeCancel: "Jederzeit kündbar",

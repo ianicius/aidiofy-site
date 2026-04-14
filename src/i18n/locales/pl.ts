@@ -134,26 +134,6 @@ export const pl: Copy = {
     statVoicesLabel: "Dostępnych głosów AI",
     statLanguages: "10+",
     statLanguagesLabel: "Obsługiwanych języków",
-    testimonials: [
-      {
-        quote: "Wreszcie moi gracze D&D zapamiętują imiona BN-ów. Obsada wielu głosów sprawia, że każda postać brzmi niepowtarzalnie i wiarygodnie.",
-        name: "Marcus T.",
-        initials: "MT",
-        role: "Mistrz Gry, 8 lat doświadczenia",
-      },
-      {
-        quote: "Gramy w Gloomhaven po polsku, ale gra jest po angielsku. AIdiofy czyta tekst scenariusza na głos z odpowiednimi głosami — to jak wbudowany audiobook w grze.",
-        name: "Anna K.",
-        initials: "AK",
-        role: "Graczka planszowa, Monachium",
-      },
-      {
-        quote: "Kiedyś pomijałem teksty fabularne podczas sesji RPG, bo czytanie na głos było niezręczne. Teraz naciskam play i cały stół zanurza się w historii.",
-        name: "Jake R.",
-        initials: "JR",
-        role: "MG, Pathfinder homebrew",
-      },
-    ],
     badgeFree: "Zacznij za darmo",
     badgeNoCard: "Bez karty kredytowej",
     badgeCancel: "Anuluj w dowolnym momencie",

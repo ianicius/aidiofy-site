@@ -134,26 +134,6 @@ export const it: Copy = {
     statVoicesLabel: "Voci IA disponibili",
     statLanguages: "10+",
     statLanguagesLabel: "Lingue supportate",
-    testimonials: [
-      {
-        quote: "Finalmente i miei giocatori di D&D ricordano i nomi dei PNG. Il casting multi-voce rende ogni personaggio unico e realistico.",
-        name: "Marcus T.",
-        initials: "MT",
-        role: "Dungeon Master, 8 anni di esperienza",
-      },
-      {
-        quote: "Giochiamo a Gloomhaven in italiano ma il gioco è in inglese. AIdiofy legge il testo dello scenario ad alta voce con voci distinte — è come avere un audiolibro integrato nel gioco.",
-        name: "Anna K.",
-        initials: "AK",
-        role: "Giocatrice da tavolo, Monaco",
-      },
-      {
-        quote: "Prima saltavo il testo narrativo nelle nostre sessioni di GdR perché leggere ad alta voce mi imbarazzava. Ora premo play e tutto il tavolo è immerso nella storia.",
-        name: "Jake R.",
-        initials: "JR",
-        role: "GM, Pathfinder homebrew",
-      },
-    ],
     badgeFree: "Inizia gratis",
     badgeNoCard: "Nessuna carta di credito richiesta",
     badgeCancel: "Cancella quando vuoi",

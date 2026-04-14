@@ -34,42 +34,6 @@ export const SocialProof: FC = () => {
           </div>
         </div>
 
-        {/* Testimonials */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {c.testimonials.map((testimonial, idx) => (
-            <blockquote
-              key={idx}
-              className="bg-background-dark border border-border-subtle rounded-2xl p-6 animate-fade-in-up"
-              style={{ animationDelay: `${300 + idx * 100}ms` }}
-            >
-              <div className="flex gap-1 mb-3">
-                {[...Array(5)].map((_, i) => (
-                  <Star
-                    key={i}
-                    className="w-4 h-4 text-primary fill-primary"
-                  />
-                ))}
-              </div>
-              <p className="text-body-md text-text-muted mb-4 leading-relaxed italic">
-                &ldquo;{testimonial.quote}&rdquo;
-              </p>
-              <footer className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold text-sm">
-                  {testimonial.initials}
-                </div>
-                <div>
-                  <cite className="text-body-sm font-semibold text-text-main not-italic">
-                    {testimonial.name}
-                  </cite>
-                  <p className="text-caption text-text-tertiary">
-                    {testimonial.role}
-                  </p>
-                </div>
-              </footer>
-            </blockquote>
-          ))}
-        </div>
-
         {/* Trust Badges */}
         <div className="mt-12 flex flex-wrap items-center justify-center gap-6 text-text-tertiary text-body-sm">
           <span className="flex items-center gap-2">

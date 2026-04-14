@@ -131,26 +131,6 @@ export const zhCN: Copy = {
     statVoicesLabel: "可用 AI 语音",
     statLanguages: "10+",
     statLanguagesLabel: "支持语言",
-    testimonials: [
-      {
-        quote: "我的 D&D 玩家终于记住 NPC 的名字了。多角色配音让每个角色都独特而真实。",
-        name: "Marcus T.",
-        initials: "MT",
-        role: "地下城主，8 年经验",
-      },
-      {
-        quote: "我们用中文玩 Gloomhaven，但游戏本身是英文的。AIdiofy 用不同的声音朗读场景文本——就像游戏里内置了有声书。",
-        name: "Anna K.",
-        initials: "AK",
-        role: "桌游玩家，慕尼黑",
-      },
-      {
-        quote: "以前我总是跳过 RPG 环节中的氛围描述，因为大声朗读很尴尬。现在只需按下播放，全桌都沉浸其中。",
-        name: "Jake R.",
-        initials: "JR",
-        role: "GM，Pathfinder 自制团",
-      },
-    ],
     badgeFree: "免费开始",
     badgeNoCard: "无需信用卡",
     badgeCancel: "随时取消",
